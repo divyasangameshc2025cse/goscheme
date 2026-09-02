@@ -135,7 +135,7 @@ function createSchemeCardHTML(scheme, user = null, isEligibleOnlyPage = false) {
             <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Key Benefit</span>
             <span class="scheme-benefit-badge">${scheme.benefits.split('.')[0]}</span>
           </div>
-          <a href="scheme-details.html?id=${scheme.id}" class="btn btn-outline btn-sm">View Details &rarr;</a>
+          <a href="scheme-details.html?id=${scheme.id}" onclick="sessionStorage.setItem('active_scheme_id', '${scheme.id}')" class="btn btn-outline btn-sm">View Details &rarr;</a>
         </div>
       </div>
     </div>
@@ -334,7 +334,7 @@ let activeSchemeOfficialUrl = "";
 async function renderSchemeDetailsPage(user) {
   const container = document.getElementById("scheme-details-container");
   const urlParams = new URLSearchParams(window.location.search);
-  const schemeId = urlParams.get("id");
+  const schemeId = urlParams.get("id") || sessionStorage.getItem("active_scheme_id") || localStorage.getItem("active_scheme_id");
 
   let scheme = null;
   if (schemeId) {
@@ -344,9 +344,14 @@ async function renderSchemeDetailsPage(user) {
     }
   }
 
+  if (!scheme && schemeId) {
+    const schemes = getStoredSchemes();
+    scheme = schemes.find(s => s.id === schemeId);
+  }
+
   if (!scheme) {
     const schemes = getStoredSchemes();
-    scheme = schemes.find(s => s.id === schemeId) || schemes[0];
+    scheme = schemes[0];
   }
 
   activeSchemeOfficialUrl = scheme.officialUrl || "https://www.tn.gov.in";
