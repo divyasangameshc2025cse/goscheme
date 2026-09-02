@@ -1,5 +1,5 @@
 /* ==========================================================================
-   GO SCHEME - Mock Dataset & LocalStorage Initializer (20 Real Govt Schemes)
+   GO SCHEME - Dataset & LocalStorage Initializer (20 Real Govt Schemes)
    ========================================================================== */
 
 const INITIAL_SCHEMES = [
@@ -475,38 +475,10 @@ const INITIAL_NOTIFICATIONS = [
   }
 ];
 
-// MOCK USER DEFAULT PROFILE
-const INITIAL_MOCK_USER = {
-  fullName: "Ananya Sundaram",
-  email: "ananya.sundaram@example.com",
-  phone: "+91 98765 43210",
-  dob: "2004-05-14",
-  age: 22,
-  gender: "Female",
-  caste: "BC",
-  state: "Tamil Nadu",
-  district: "Chennai",
-  area: "Urban",
-  income: 180000,
-  occupation: "Student",
-  education: "Undergraduate",
-  rationCard: "Rice Card",
-  disabilityStatus: "No",
-  firstGenGraduate: "Yes",
-  govtSchoolStudied: "Yes",
-  isProfileComplete: true
-};
-
 function initMockDataStorage() {
   localStorage.setItem("goscheme_schemes", JSON.stringify(INITIAL_SCHEMES));
   if (!localStorage.getItem("goscheme_notifications")) {
     localStorage.setItem("goscheme_notifications", JSON.stringify(INITIAL_NOTIFICATIONS));
-  }
-  if (!localStorage.getItem("goscheme_saved")) {
-    localStorage.setItem("goscheme_saved", JSON.stringify(["TN-001", "TN-002", "CENT-005"]));
-  }
-  if (!localStorage.getItem("goscheme_user")) {
-    localStorage.setItem("goscheme_user", JSON.stringify(INITIAL_MOCK_USER));
   }
 }
 
