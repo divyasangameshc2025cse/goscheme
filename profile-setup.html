@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Setup Wizard | GO SCHEME</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 40 40" fill="none" width="36" height="36"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+        <span>GO SCHEME</span>
+      </a>
+      <div style="font-size: 0.9rem; font-weight: 600; color: var(--teal);">Demographic Eligibility Profiler</div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="profile-wizard-card">
+        <div class="wizard-header">
+          <h1 style="font-size: 1.75rem; font-weight: 800; color: var(--primary-navy);">Complete Your Citizen Profile</h1>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Answer a few questions to unlock tailored Tamil Nadu & Central schemes</p>
+
+          <div class="wizard-progress-bar">
+            <div class="wizard-progress-line" id="wizard-progress-line" style="width: 0%;"></div>
+            
+            <div class="wizard-step-node active" id="step-node-1">
+              1
+              <div class="step-label">Personal</div>
+            </div>
+            <div class="wizard-step-node" id="step-node-2">
+              2
+              <div class="step-label">Location</div>
+            </div>
+            <div class="wizard-step-node" id="step-node-3">
+              3
+              <div class="step-label">Economy</div>
+            </div>
+            <div class="wizard-step-node" id="step-node-4">
+              4
+              <div class="step-label">Education</div>
+            </div>
+          </div>
+        </div>
+
+        <form id="profile-wizard-form">
+          <!-- Step 1: Personal Details -->
+          <div class="wizard-step-content active" id="wizard-step-1">
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 1.25rem;">1. Personal & Basic Information</h3>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name</label>
+                <input type="text" id="fullName" class="form-control" value="Ananya Sundaram">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="gender">Gender</label>
+                <select id="gender" class="form-control form-select">
+                  <option value="Female" selected>Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Transgender">Transgender</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="dob">Date of Birth</label>
+                <input type="date" id="dob" class="form-control" value="2004-05-14">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="calculated-age">Calculated Age</label>
+                <input type="text" id="calculated-age" class="form-control" value="22 Years Old" readonly style="background: var(--bg-main); font-weight: 700; color: var(--royal-blue);">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="caste">Social Category / Community</label>
+              <select id="caste" class="form-control form-select">
+                <option value="BC" selected>Backward Class (BC)</option>
+                <option value="MBC">Most Backward Class (MBC)</option>
+                <option value="SC">Scheduled Caste (SC)</option>
+                <option value="ST">Scheduled Tribe (ST)</option>
+                <option value="SCC">Scheduled Caste Converted (SCC)</option>
+                <option value="General">General / OC</option>
+              </select>
+            </div>
+
+            <div class="wizard-navigation">
+              <div></div>
+              <button type="button" onclick="nextWizardStep(2)" class="btn btn-primary">Next: Location Details &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Location & Residence -->
+          <div class="wizard-step-content" id="wizard-step-2">
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 1.25rem;">2. Location & Residence</h3>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label">State</label>
+                <input type="text" class="form-control" value="Tamil Nadu" readonly style="background: var(--bg-main); font-weight: 700;">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="district">District in Tamil Nadu</label>
+                <select id="district" class="form-control form-select">
+                  <option value="Chennai" selected>Chennai</option>
+                  <option value="Coimbatore">Coimbatore</option>
+                  <option value="Madurai">Madurai</option>
+                  <option value="Salem">Salem</option>
+                  <option value="Tiruchirappalli">Tiruchirappalli</option>
+                  <option value="Tirunelveli">Tirunelveli</option>
+                  <option value="Thanjavur">Thanjavur</option>
+                  <option value="Kanchipuram">Kanchipuram</option>
+                  <option value="Vellore">Vellore</option>
+                  <option value="Erode">Erode</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="area">Residential Area Type</label>
+              <select id="area" class="form-control form-select">
+                <option value="Urban" selected>Urban (Corporation / Municipality)</option>
+                <option value="Rural">Rural (Panchayat Union)</option>
+              </select>
+            </div>
+
+            <div class="wizard-navigation">
+              <button type="button" onclick="prevWizardStep(1)" class="btn btn-outline">&larr; Back</button>
+              <button type="button" onclick="nextWizardStep(3)" class="btn btn-primary">Next: Economic Status &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Income & Occupation -->
+          <div class="wizard-step-content" id="wizard-step-3">
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 1.25rem;">3. Income & Occupation Profile</h3>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="income">Annual Household Income (₹)</label>
+                <select id="income" class="form-control form-select">
+                  <option value="120000">Below ₹1,20,000 / year (EWS)</option>
+                  <option value="180000" selected>₹1,20,000 - ₹2,50,000 / year</option>
+                  <option value="400000">₹2,50,000 - ₹5,00,000 / year</option>
+                  <option value="800000">Above ₹5,00,000 / year</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="occupation">Primary Occupation</label>
+                <select id="occupation" class="form-control form-select">
+                  <option value="Student" selected>Student</option>
+                  <option value="Farmer">Farmer / Agriculture Worker</option>
+                  <option value="Self-Employed">Self-Employed / Micro Business</option>
+                  <option value="Unemployed">Unemployed</option>
+                  <option value="Homemaker">Homemaker</option>
+                  <option value="Private Sector">Private Sector Employee</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rationCard">Smart Family Card (Ration Card) Type</label>
+              <select id="rationCard" class="form-control form-select">
+                <option value="Rice Card" selected>PHH - Rice Card (Priority Household)</option>
+                <option value="Sugar Card">NPHH - Sugar Card</option>
+                <option value="No Commodity">NPHH - No Commodity</option>
+              </select>
+            </div>
+
+            <div class="wizard-navigation">
+              <button type="button" onclick="prevWizardStep(2)" class="btn btn-outline">&larr; Back</button>
+              <button type="button" onclick="nextWizardStep(4)" class="btn btn-primary">Next: Qualification & Criteria &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Qualification & Special Criteria -->
+          <div class="wizard-step-content" id="wizard-step-4">
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 1.25rem;">4. Qualifications & Special Eligibility</h3>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="education">Highest / Current Educational Level</label>
+                <select id="education" class="form-control form-select">
+                  <option value="Primary School">Primary School (Class 1-5)</option>
+                  <option value="High School">High School (Class 6-12)</option>
+                  <option value="Diploma">Diploma / ITI</option>
+                  <option value="Undergraduate" selected>Undergraduate Degree (UG)</option>
+                  <option value="Postgraduate">Postgraduate Degree (PG)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="govtSchoolStudied">Studied in TN Govt School (Class 6-12)?</label>
+                <select id="govtSchoolStudied" class="form-control form-select">
+                  <option value="Yes" selected>Yes (Eligible for Pudhumai Penn / 7.5% Quota)</option>
+                  <option value="No">No (Private / Aided School)</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="firstGenGraduate">First Generation Graduate in Family?</label>
+                <select id="firstGenGraduate" class="form-control form-select">
+                  <option value="Yes" selected>Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="disabilityStatus">Differently Abled (Persons with Disabilities)?</label>
+                <select id="disabilityStatus" class="form-control form-select">
+                  <option value="No" selected>No</option>
+                  <option value="Yes">Yes (40%+ Disability Certificate)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="wizard-navigation">
+              <button type="button" onclick="prevWizardStep(3)" class="btn btn-outline">&larr; Back</button>
+              <button type="submit" class="btn btn-teal btn-lg">Save Profile & Discover Schemes &rarr;</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | GO SCHEME</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <div class="auth-page-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <a href="index.html" class="brand-logo" style="justify-content: center;">
+          <svg viewBox="0 0 40 40" fill="none" width="36" height="36"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+          <span>GO SCHEME</span>
+        </a>
+        <h1 class="auth-title">Welcome Back</h1>
+        <p class="auth-subtitle">Log in to view your matched Tamil Nadu & Central schemes</p>
+      </div>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="email">Email or Mobile Number</label>
+          <input type="email" id="email" class="form-control" placeholder="e.g. ananya.sundaram@example.com" value="ananya.sundaram@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label class="form-label" for="password">Password</label>
+            <a href="#" style="font-size: 0.8rem; font-weight: 600;">Forgot password?</a>
+          </div>
+          <input type="password" id="password" class="form-control" placeholder="••••••••" value="password123" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1rem;">Log In to Portal &rarr;</button>
+      </form>
+
+      <div class="auth-divider">
+        <span>Quick Demo Login</span>
+      </div>
+
+      <button onclick="document.getElementById('email').value='ananya.sundaram@example.com'; document.getElementById('password').value='password123'; document.getElementById('login-form').dispatchEvent(new Event('submit'));" class="btn btn-outline btn-block btn-sm">
+        Log In as Mock Student Profile (Ananya)
+      </button>
+
+      <div class="auth-footer">
+        Don't have a profile yet? <a href="register.html" style="font-weight: 700;">Create Account</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

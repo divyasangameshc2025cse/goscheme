@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Schemes | GO SCHEME Admin</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+  <header class="admin-header-bar">
+    <a href="../index.html" class="brand-logo" style="color: white;">
+      <svg viewBox="0 0 40 40" fill="none" width="32" height="32"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+      <span>GO SCHEME ADMIN</span>
+    </a>
+
+    <div style="display: flex; gap: 1rem; align-items: center;">
+      <a href="dashboard.html" class="admin-nav-link">Overview</a>
+      <a href="manage-schemes.html" class="admin-nav-link active">Manage Schemes</a>
+      <a href="add-scheme.html" class="admin-nav-link">+ Add New Scheme</a>
+      <a href="login.html" class="btn btn-danger btn-sm" style="margin-left: 1rem;">Logout</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <div>
+          <h1 style="font-size: 2rem; font-weight: 800; color: var(--primary-navy);">Manage Welfare Schemes</h1>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Live CRUD control: Toggle active status, edit criteria, or delete scheme records</p>
+        </div>
+
+        <a href="add-scheme.html" class="btn btn-teal">+ Add New Scheme</a>
+      </div>
+
+      <div class="admin-table-wrapper">
+        <div class="table-toolbar">
+          <div class="search-input-wrapper" style="max-width: 400px;">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <input type="text" id="admin-search-input" class="form-control" placeholder="Search by scheme ID or title...">
+          </div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">
+            Changes immediately synchronize with localStorage & user discovery portal
+          </div>
+        </div>
+
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Scheme ID</th>
+              <th>Scheme Title & Dept</th>
+              <th>Govt Level</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="admin-schemes-table-body">
+            <!-- Rendered dynamically via js/admin.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/mock-data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

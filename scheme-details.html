@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheme Details | GO SCHEME</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/schemes.css">
+</head>
+<body>
+
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 40 40" fill="none" width="36" height="36"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+        <span>GO SCHEME</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore-schemes.html" class="nav-link">Explore Schemes</a>
+        <a href="eligible-schemes.html" class="nav-link">Check Eligibility</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions" id="header-user-nav">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+      <a href="javascript:history.back()" style="display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-secondary);">
+        &larr; Back to Schemes
+      </a>
+
+      <div id="scheme-details-container">
+        <!-- Rendered dynamically via js/schemes.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Apply Redirect Modal Confirmation -->
+  <div class="modal-overlay" id="apply-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Official Portal Redirect</h3>
+        <button class="modal-close" onclick="closeModal('apply-modal')">&times;</button>
+      </div>
+
+      <div style="text-align: center; padding: 1.5rem 0;">
+        <svg width="54" height="54" fill="none" stroke="var(--royal-blue)" viewBox="0 0 24 24" style="margin: 0 auto 1rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        <h4 style="font-size: 1.2rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 0.5rem;">Redirecting to Government Site</h4>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">You are navigating to the official Tamil Nadu / Central government application portal. Make sure to keep your Aadhaar & required documents ready.</p>
+      </div>
+
+      <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+        <button class="btn btn-outline btn-block" onclick="closeModal('apply-modal')">Cancel</button>
+        <a id="official-apply-link-btn" href="#" target="_blank" class="btn btn-primary btn-block" onclick="closeModal('apply-modal')">Continue to Govt Site &nearr;</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>&copy; 2026 GO SCHEME Tamil Nadu Portal.</div>
+      <a href="admin/login.html" style="color: var(--teal); font-weight: 600;">Admin Portal</a>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/schemes.js"></script>
+</body>
+</html>

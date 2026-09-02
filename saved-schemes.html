@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Schemes | GO SCHEME</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/schemes.css">
+</head>
+<body>
+
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 40 40" fill="none" width="36" height="36"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+        <span>GO SCHEME</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="eligible-schemes.html" class="nav-link">Eligible Schemes</a>
+        <a href="explore-schemes.html" class="nav-link">Explore All</a>
+        <a href="saved-schemes.html" class="nav-link active">Saved Schemes</a>
+      </nav>
+
+      <div class="nav-actions" id="header-user-nav">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
+        <div>
+          <h1 style="font-size: 2rem; font-weight: 800; color: var(--primary-navy);">Bookmarked Schemes</h1>
+          <p style="color: var(--text-secondary); font-size: 1rem;" id="saved-count-text">Bookmarked Schemes Manager</p>
+        </div>
+        <a href="explore-schemes.html" class="btn btn-outline">+ Explore More Schemes</a>
+      </div>
+
+      <!-- Saved Schemes Grid -->
+      <div class="schemes-grid" id="saved-schemes-grid">
+        <!-- Rendered dynamically via js/schemes.js -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>&copy; 2026 GO SCHEME Tamil Nadu Portal.</div>
+      <a href="admin/login.html" style="color: var(--teal); font-weight: 600;">Admin Portal</a>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/schemes.js"></script>
+</body>
+</html>

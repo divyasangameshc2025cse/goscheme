@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | GO SCHEME</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+  <header class="admin-header-bar">
+    <a href="../index.html" class="brand-logo" style="color: white;">
+      <svg viewBox="0 0 40 40" fill="none" width="32" height="32"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+      <span>GO SCHEME ADMIN</span>
+    </a>
+
+    <div style="display: flex; gap: 1rem; align-items: center;">
+      <a href="dashboard.html" class="admin-nav-link active">Overview</a>
+      <a href="manage-schemes.html" class="admin-nav-link">Manage Schemes</a>
+      <a href="add-scheme.html" class="admin-nav-link">+ Add New Scheme</a>
+      <a href="login.html" class="btn btn-danger btn-sm" style="margin-left: 1rem;">Logout</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <div>
+          <h1 style="font-size: 2rem; font-weight: 800; color: var(--primary-navy);">Admin Management Portal</h1>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Monitor Tamil Nadu state & Central scheme listings and citizen engagement metrics</p>
+        </div>
+        <a href="add-scheme.html" class="btn btn-teal btn-lg">+ Add New Government Scheme</a>
+      </div>
+
+      <!-- Overview Stat Cards Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon-wrapper blue">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="admin-total-schemes-count">10</span>
+            <span class="metric-label">Total Registered Schemes</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-wrapper emerald">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="admin-active-schemes-count">10</span>
+            <span class="metric-label">Active Schemes</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-wrapper teal">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="admin-tn-schemes-count">6</span>
+            <span class="metric-label">Tamil Nadu State Schemes</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-wrapper rose">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V11a2 2 0 012-2h1.055"/></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="admin-central-schemes-count">4</span>
+            <span class="metric-label">Central Govt Schemes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Table Preview Link -->
+      <div class="card" style="margin-top: 2rem; padding: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 0.35rem;">Scheme Directory Controls</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Search, edit eligibility parameters, activate/deactivate, or delete schemes live.</p>
+          </div>
+          <a href="manage-schemes.html" class="btn btn-primary">Go to Scheme Management Table &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/mock-data.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

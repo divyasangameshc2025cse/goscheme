@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Schemes | GO SCHEME</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/schemes.css">
+</head>
+<body>
+
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <svg viewBox="0 0 40 40" fill="none" width="36" height="36"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+        <span>GO SCHEME</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore-schemes.html" class="nav-link active">Explore Schemes</a>
+        <a href="eligible-schemes.html" class="nav-link">Check Eligibility</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <div class="nav-actions" id="header-user-nav">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+      <div style="margin-bottom: 2rem;">
+        <h1 style="font-size: 2rem; font-weight: 800; color: var(--primary-navy);">Explore All Government Schemes</h1>
+        <p style="color: var(--text-secondary); font-size: 1rem;">Discover official Tamil Nadu State and Central Government welfare schemes</p>
+      </div>
+
+      <!-- Search & Filter Controls Toolbar -->
+      <div class="filter-toolbar">
+        <div class="search-input-wrapper">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="scheme-search-input" class="form-control" placeholder="Search by scheme name, keywords, benefits (e.g. Pudhumai Penn, Farmer, Scholarship)...">
+        </div>
+
+        <div class="filter-row">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <label class="form-label" style="margin: 0; white-space: nowrap;">Level:</label>
+            <select id="filter-level" class="form-control form-select" style="width: 160px; padding-top: 0.4rem; padding-bottom: 0.4rem;">
+              <option value="All">All Levels</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Central">Central Govt</option>
+            </select>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <label class="form-label" style="margin: 0; white-space: nowrap;">Category:</label>
+            <select id="filter-category" class="form-control form-select" style="width: 180px; padding-top: 0.4rem; padding-bottom: 0.4rem;">
+              <option value="All">All Categories</option>
+              <option value="Women">Women & Child</option>
+              <option value="Education">Education & Skill</option>
+              <option value="Scholarship">Scholarships</option>
+              <option value="Agriculture">Agriculture & Farmers</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Housing">Housing</option>
+              <option value="Entrepreneurship">Business & Loan</option>
+            </select>
+          </div>
+
+          <div style="margin-left: auto; font-size: 0.9rem; font-weight: 700; color: var(--teal);" id="schemes-count-text">
+            Showing All Schemes
+          </div>
+        </div>
+      </div>
+
+      <!-- Schemes Grid -->
+      <div class="schemes-grid" id="explore-schemes-grid">
+        <!-- Rendered dynamically via js/schemes.js -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>&copy; 2026 GO SCHEME Tamil Nadu Portal.</div>
+      <a href="admin/login.html" style="color: var(--teal); font-weight: 600;">Admin Portal</a>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/schemes.js"></script>
+</body>
+</html>
