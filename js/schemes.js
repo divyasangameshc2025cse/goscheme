@@ -2,7 +2,7 @@
    GO SCHEME - Schemes Engine, Search, Filter & Eligibility Matching Algorithm
    ========================================================================== */
 
-// Core Eligibility Engine
+// Core Eligibility Engine (Client side helper fallback)
 function evaluateEligibility(scheme, user) {
   if (!user || !user.isProfileComplete) {
     return { isEligible: true, matchPercent: 100, matchReasons: ["Complete profile for personalized match"] };
@@ -31,13 +31,16 @@ function evaluateEligibility(scheme, user) {
   }
 
   // 4. Education / Occupation Match Check
-  if (scheme.education.includes("All") || scheme.education.includes(user.education) || scheme.occupation.includes("All") || scheme.occupation.includes(user.occupation)) {
+  const edList = Array.isArray(scheme.education) ? scheme.education : [scheme.education];
+  const occList = Array.isArray(scheme.occupation) ? scheme.occupation : [scheme.occupation];
+  if (edList.includes("All") || edList.includes(user.education) || occList.includes("All") || occList.includes(user.occupation)) {
     score++;
     reasons.push(`✓ Qualification (${user.education}) & Occupation (${user.occupation})`);
   }
 
   // 5. Caste / Category or Location Check
-  if (scheme.casteCategory.includes("All") || scheme.casteCategory.includes(user.caste) || scheme.level === "Tamil Nadu") {
+  const casteList = Array.isArray(scheme.casteCategory) ? scheme.casteCategory : [scheme.casteCategory];
+  if (casteList.includes("All") || casteList.includes(user.caste) || scheme.level === "Tamil Nadu") {
     score++;
     reasons.push(`✓ Resident of ${user.state}`);
   }
@@ -111,8 +114,8 @@ function createSchemeCardHTML(scheme, user = null, isEligibleOnlyPage = false) {
 }
 
 // Global Bookmark Click Handler
-function onBookmarkClick(schemeId, buttonEl) {
-  const isNowSaved = toggleSavedScheme(schemeId);
+async function onBookmarkClick(schemeId, buttonEl) {
+  const isNowSaved = await toggleSavedScheme(schemeId);
   const svg = buttonEl.querySelector('svg');
   if (isNowSaved) {
     buttonEl.classList.add('saved');
@@ -129,8 +132,16 @@ function onBookmarkClick(schemeId, buttonEl) {
 }
 
 // Page Specific Renderers
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const user = getStoredUser();
+
+  // Sync saved schemes from API if logged in
+  if (getToken()) {
+    const savedRes = await apiFetch("/saved-schemes");
+    if (savedRes && savedRes.success && savedRes.savedIds) {
+      localStorage.setItem("goscheme_saved", JSON.stringify(savedRes.savedIds));
+    }
+  }
 
   // Explore Schemes Page
   if (document.getElementById("explore-schemes-grid")) {
@@ -153,14 +164,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-function renderExploreSchemes(user) {
+async function renderExploreSchemes(user) {
   const grid = document.getElementById("explore-schemes-grid");
   const searchInput = document.getElementById("scheme-search-input");
   const levelFilter = document.getElementById("filter-level");
   const categoryFilter = document.getElementById("filter-category");
   const countDisplay = document.getElementById("schemes-count-text");
 
-  const schemes = getStoredSchemes().filter(s => s.status === "Active");
+  let schemes = [];
+  const res = await apiFetch("/schemes");
+  if (res && res.success && res.schemes) {
+    schemes = res.schemes;
+    saveSchemes(schemes);
+  } else {
+    schemes = getStoredSchemes().filter(s => s.status === "Active");
+  }
 
   function filterAndDraw() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
@@ -198,10 +216,9 @@ function renderExploreSchemes(user) {
   filterAndDraw();
 }
 
-function renderEligibleSchemes(user) {
+async function renderEligibleSchemes(user) {
   const grid = document.getElementById("eligible-schemes-grid");
   const countDisplay = document.getElementById("eligible-count-heading");
-  const schemes = getStoredSchemes().filter(s => s.status === "Active");
 
   if (!user || !user.isProfileComplete) {
     grid.innerHTML = `
@@ -214,10 +231,21 @@ function renderEligibleSchemes(user) {
     return;
   }
 
-  const eligibleList = schemes
-    .map(s => ({ scheme: s, eval: evaluateEligibility(s, user) }))
-    .filter(item => item.eval.isEligible)
-    .sort((a, b) => b.eval.matchPercent - a.eval.matchPercent);
+  let eligibleList = [];
+  if (getToken()) {
+    const res = await apiFetch("/schemes/eligible");
+    if (res && res.success && res.schemes) {
+      eligibleList = res.schemes.map(s => ({ scheme: s, eval: { isEligible: true, matchPercent: s.matchPercent, matchReasons: s.matchReasons } }));
+    }
+  }
+
+  if (eligibleList.length === 0) {
+    const schemes = getStoredSchemes().filter(s => s.status === "Active");
+    eligibleList = schemes
+      .map(s => ({ scheme: s, eval: evaluateEligibility(s, user) }))
+      .filter(item => item.eval.isEligible)
+      .sort((a, b) => b.eval.matchPercent - a.eval.matchPercent);
+  }
 
   if (countDisplay) {
     countDisplay.innerText = `Matched (${eligibleList.length}) Schemes For ${user.fullName}`;
@@ -235,13 +263,24 @@ function renderEligibleSchemes(user) {
   }
 }
 
-function renderSavedSchemesPage() {
+async function renderSavedSchemesPage() {
   const grid = document.getElementById("saved-schemes-grid");
   const countDisplay = document.getElementById("saved-count-text");
   const user = getStoredUser();
 
-  const savedIds = getSavedSchemeIds();
-  const schemes = getStoredSchemes().filter(s => savedIds.includes(s.id));
+  let schemes = [];
+  if (getToken()) {
+    const res = await apiFetch("/saved-schemes");
+    if (res && res.success && res.schemes) {
+      schemes = res.schemes;
+      localStorage.setItem("goscheme_saved", JSON.stringify(res.savedIds));
+    }
+  }
+
+  if (schemes.length === 0) {
+    const savedIds = getSavedSchemeIds();
+    schemes = getStoredSchemes().filter(s => savedIds.includes(s.id));
+  }
 
   if (countDisplay) {
     countDisplay.innerText = `${schemes.length} Bookmarked Schemes`;
@@ -261,17 +300,27 @@ function renderSavedSchemesPage() {
   }
 }
 
-function renderSchemeDetailsPage(user) {
+async function renderSchemeDetailsPage(user) {
   const container = document.getElementById("scheme-details-container");
   const urlParams = new URLSearchParams(window.location.search);
   const schemeId = urlParams.get("id") || "TN-001";
 
-  const schemes = getStoredSchemes();
-  const scheme = schemes.find(s => s.id === schemeId) || schemes[0];
-  const evalResult = evaluateEligibility(scheme, user);
+  let scheme = null;
+  const res = await apiFetch(`/schemes/${schemeId}`);
+  if (res && res.success && res.scheme) {
+    scheme = res.scheme;
+  } else {
+    const schemes = getStoredSchemes();
+    scheme = schemes.find(s => s.id === schemeId) || schemes[0];
+  }
 
+  const evalResult = evaluateEligibility(scheme, user);
   const savedIds = getSavedSchemeIds();
   const isSaved = savedIds.includes(scheme.id);
+
+  const edText = Array.isArray(scheme.education) ? scheme.education.join(', ') : scheme.education;
+  const occText = Array.isArray(scheme.occupation) ? scheme.occupation.join(', ') : scheme.occupation;
+  const docList = Array.isArray(scheme.documents) ? scheme.documents : typeof scheme.documents === 'string' ? scheme.documents.split(',') : [];
 
   container.innerHTML = `
     <div class="scheme-details-hero">
@@ -313,19 +362,19 @@ function renderSchemeDetailsPage(user) {
             <li style="display: flex; gap: 0.75rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--emerald)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <strong>Gender:</strong> ${scheme.gender}</li>
             <li style="display: flex; gap: 0.75rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--emerald)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <strong>Age Limit:</strong> ${scheme.minAge} to ${scheme.maxAge} years</li>
             <li style="display: flex; gap: 0.75rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--emerald)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <strong>Income Ceiling:</strong> Up to ${formatCurrency(scheme.incomeCap)} per annum</li>
-            <li style="display: flex; gap: 0.75rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--emerald)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <strong>Eligible Qualifications:</strong> ${scheme.education.join(', ')}</li>
-            <li style="display: flex; gap: 0.75rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--emerald)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <strong>Eligible Occupations:</strong> ${scheme.occupation.join(', ')}</li>
+            <li style="display: flex; gap: 0.75rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--emerald)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <strong>Eligible Qualifications:</strong> ${edText}</li>
+            <li style="display: flex; gap: 0.75rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--emerald)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <strong>Eligible Occupations:</strong> ${occText}</li>
           </ul>
         </div>
 
         <div class="details-section-box">
           <h2 class="details-section-title">Required Checklist Documents</h2>
           <div class="req-docs-list">
-            ${scheme.documents.map(doc => `
+            ${docList.map(doc => `
               <div class="doc-item">
                 <span class="doc-name">
                   <svg width="18" height="18" fill="none" stroke="var(--royal-blue)" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                  ${doc}
+                  ${doc.trim()}
                 </span>
                 <span class="badge badge-new">Required</span>
               </div>

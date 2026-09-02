@@ -1,15 +1,27 @@
-/* Notification Center Logic */
+/* Notification Center Logic & API Sync */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   if (document.getElementById("notifications-list-container")) {
-    renderNotificationsPage();
+    await renderNotificationsPage();
   }
 });
 
-function renderNotificationsPage() {
+async function renderNotificationsPage() {
   const container = document.getElementById("notifications-list-container");
   const countBadge = document.getElementById("notif-unread-count");
-  let notifications = getNotifications();
+  let notifications = [];
+
+  if (getToken()) {
+    const res = await apiFetch("/notifications");
+    if (res && res.success && res.notifications) {
+      notifications = res.notifications;
+      saveNotifications(notifications);
+    }
+  }
+
+  if (notifications.length === 0) {
+    notifications = getNotifications();
+  }
 
   const unreadCount = notifications.filter(n => !n.read).length;
   if (countBadge) {
@@ -51,7 +63,11 @@ function renderNotificationsPage() {
   `).join('');
 }
 
-window.toggleReadNotification = function(notifId) {
+window.toggleReadNotification = async function(notifId) {
+  if (getToken()) {
+    await apiFetch(`/notifications/${notifId}/read`, { method: "PUT" });
+  }
+
   let notifications = getNotifications();
   notifications = notifications.map(n => {
     if (n.id === notifId) return { ...n, read: !n.read };
@@ -59,7 +75,7 @@ window.toggleReadNotification = function(notifId) {
   });
   saveNotifications(notifications);
   updateHeaderNavState();
-  renderNotificationsPage();
+  await renderNotificationsPage();
 };
 
 window.deleteNotification = function(notifId) {
@@ -71,11 +87,11 @@ window.deleteNotification = function(notifId) {
   renderNotificationsPage();
 };
 
-window.markAllNotificationsRead = function() {
+window.markAllNotificationsRead = async function() {
   let notifications = getNotifications();
   notifications = notifications.map(n => ({ ...n, read: true }));
   saveNotifications(notifications);
   showToast("All notifications marked as read", "success");
   updateHeaderNavState();
-  renderNotificationsPage();
+  await renderNotificationsPage();
 };

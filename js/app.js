@@ -1,8 +1,43 @@
 /* ==========================================================================
-   GO SCHEME - Global Application Utilities & Helper Functions
+   GO SCHEME - Global Application Utilities & API Client
    ========================================================================== */
 
-// Storage Getters & Setters
+const API_BASE_URL = "http://localhost:5000/api";
+
+function getToken() {
+  return localStorage.getItem("goscheme_jwt_token");
+}
+
+function setToken(token) {
+  if (token) localStorage.setItem("goscheme_jwt_token", token);
+  else localStorage.removeItem("goscheme_jwt_token");
+}
+
+async function apiFetch(endpoint, options = {}) {
+  const token = getToken();
+  const headers = {
+    "Content-Type": "application/json",
+    ...(options.headers || {})
+  };
+
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+
+  try {
+    const res = await fetch(`${API_BASE_URL}${endpoint}`, {
+      ...options,
+      headers
+    });
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.warn("API request fallback to local mode:", err);
+    return null;
+  }
+}
+
+// Storage Getters & Setters (with API synchronization & LocalStorage sync)
 function getStoredUser() {
   const data = localStorage.getItem("goscheme_user");
   return data ? JSON.parse(data) : null;
@@ -14,7 +49,7 @@ function saveUser(userObj) {
 
 function getStoredSchemes() {
   const data = localStorage.getItem("goscheme_schemes");
-  return data ? JSON.parse(data) : INITIAL_SCHEMES;
+  return data ? JSON.parse(data) : typeof INITIAL_SCHEMES !== 'undefined' ? INITIAL_SCHEMES : [];
 }
 
 function saveSchemes(schemesArr) {
@@ -26,7 +61,7 @@ function getSavedSchemeIds() {
   return data ? JSON.parse(data) : [];
 }
 
-function toggleSavedScheme(schemeId) {
+async function toggleSavedScheme(schemeId) {
   let saved = getSavedSchemeIds();
   if (saved.includes(schemeId)) {
     saved = saved.filter(id => id !== schemeId);
@@ -36,6 +71,15 @@ function toggleSavedScheme(schemeId) {
     showToast("Scheme saved successfully!", "success");
   }
   localStorage.setItem("goscheme_saved", JSON.stringify(saved));
+
+  // Sync with backend asynchronously
+  if (getToken()) {
+    await apiFetch("/saved-schemes/toggle", {
+      method: "POST",
+      body: JSON.stringify({ schemeId })
+    });
+  }
+
   return saved.includes(schemeId);
 }
 
@@ -116,8 +160,18 @@ function formatCurrency(amount) {
 }
 
 // Global Nav & Header Renderer
-function updateHeaderNavState() {
-  const user = getStoredUser();
+async function updateHeaderNavState() {
+  let user = getStoredUser();
+  
+  // Attempt sync with backend
+  if (getToken()) {
+    const res = await apiFetch("/auth/me");
+    if (res && res.success && res.user) {
+      user = res.user;
+      saveUser(user);
+    }
+  }
+
   const userNavContainer = document.getElementById("header-user-nav");
   if (!userNavContainer) return;
 

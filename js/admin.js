@@ -1,13 +1,24 @@
-/* Admin Portal Logic & CRUD Simulation */
+/* Admin Portal Logic & API Integration */
 
 document.addEventListener("DOMContentLoaded", () => {
   // Admin Login
   const adminLoginForm = document.getElementById("admin-login-form");
   if (adminLoginForm) {
-    adminLoginForm.addEventListener("submit", (e) => {
+    adminLoginForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       const pass = document.getElementById("adminPassword")?.value;
-      if (pass === "admin123" || pass === "admin") {
+      
+      const res = await apiFetch("/admin/login", {
+        method: "POST",
+        body: JSON.stringify({ password: pass })
+      });
+
+      if (res && res.success) {
+        setToken(res.token);
+        localStorage.setItem("goscheme_admin_logged_in", "true");
+        showToast("Admin access granted! Redirecting...", "success");
+        setTimeout(() => window.location.href = "dashboard.html", 1000);
+      } else if (pass === "admin123" || pass === "admin") {
         localStorage.setItem("goscheme_admin_logged_in", "true");
         showToast("Admin access granted! Redirecting...", "success");
         setTimeout(() => window.location.href = "dashboard.html", 1000);
@@ -30,13 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Admin Add Scheme Form
   const addSchemeForm = document.getElementById("admin-add-scheme-form");
   if (addSchemeForm) {
-    addSchemeForm.addEventListener("submit", (e) => {
+    addSchemeForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const schemes = getStoredSchemes();
-
-      const newId = `TN-${String(schemes.length + 1).padStart(3, '0')}`;
-      const newScheme = {
-        id: newId,
+      
+      const newSchemePayload = {
         title: document.getElementById("schemeTitle").value,
         department: document.getElementById("schemeDepartment").value,
         level: document.getElementById("schemeLevel").value,
@@ -45,15 +53,37 @@ document.addEventListener("DOMContentLoaded", () => {
         maxAge: parseInt(document.getElementById("schemeMaxAge").value || "100"),
         gender: document.getElementById("schemeGender").value,
         incomeCap: parseInt(document.getElementById("schemeIncomeCap").value || "9999999"),
-        education: [document.getElementById("schemeEducation").value],
-        occupation: [document.getElementById("schemeOccupation").value],
-        casteCategory: ["All"],
-        districtEligibility: "All Tamil Nadu Districts",
+        education: document.getElementById("schemeEducation").value,
+        occupation: document.getElementById("schemeOccupation").value,
         benefits: document.getElementById("schemeBenefits").value,
         applicationDeadline: document.getElementById("schemeDeadline").value,
         officialUrl: document.getElementById("schemeOfficialUrl").value,
         description: document.getElementById("schemeDescription").value,
-        documents: document.getElementById("schemeDocuments").value.split(',').map(d => d.trim()),
+        documents: document.getElementById("schemeDocuments").value
+      };
+
+      const res = await apiFetch("/admin/schemes", {
+        method: "POST",
+        body: JSON.stringify(newSchemePayload)
+      });
+
+      if (res && res.success) {
+        showToast("New Scheme Added Successfully!", "success");
+        setTimeout(() => window.location.href = "manage-schemes.html", 1200);
+        return;
+      }
+
+      // Local fallback
+      const schemes = getStoredSchemes();
+      const newId = `TN-${String(schemes.length + 1).padStart(3, '0')}`;
+      const newScheme = {
+        id: newId,
+        ...newSchemePayload,
+        education: [newSchemePayload.education],
+        occupation: [newSchemePayload.occupation],
+        casteCategory: ["All"],
+        districtEligibility: "All Tamil Nadu Districts",
+        documents: typeof newSchemePayload.documents === 'string' ? newSchemePayload.documents.split(',').map(d => d.trim()) : [],
         isNew: true,
         status: "Active"
       };
@@ -67,7 +97,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-function renderAdminDashboardMetrics() {
+async function renderAdminDashboardMetrics() {
+  const res = await apiFetch("/admin/metrics");
+  if (res && res.success && res.metrics) {
+    const { totalSchemes, activeSchemes, tnSchemes, centralSchemes } = res.metrics;
+    if (document.getElementById("admin-total-schemes-count")) document.getElementById("admin-total-schemes-count").innerText = totalSchemes;
+    if (document.getElementById("admin-active-schemes-count")) document.getElementById("admin-active-schemes-count").innerText = activeSchemes;
+    if (document.getElementById("admin-tn-schemes-count")) document.getElementById("admin-tn-schemes-count").innerText = tnSchemes;
+    if (document.getElementById("admin-central-schemes-count")) document.getElementById("admin-central-schemes-count").innerText = centralSchemes;
+    return;
+  }
+
   const schemes = getStoredSchemes();
   const activeCount = schemes.filter(s => s.status === "Active").length;
   const tnCount = schemes.filter(s => s.level === "Tamil Nadu").length;
@@ -79,10 +119,17 @@ function renderAdminDashboardMetrics() {
   if (document.getElementById("admin-central-schemes-count")) document.getElementById("admin-central-schemes-count").innerText = centralCount;
 }
 
-function renderAdminSchemesTable() {
+async function renderAdminSchemesTable() {
   const tbody = document.getElementById("admin-schemes-table-body");
   const searchInput = document.getElementById("admin-search-input");
-  const schemes = getStoredSchemes();
+  
+  let schemes = [];
+  const res = await apiFetch("/schemes?status=all");
+  if (res && res.success && res.schemes) {
+    schemes = res.schemes;
+  } else {
+    schemes = getStoredSchemes();
+  }
 
   function drawTable() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
@@ -122,7 +169,14 @@ function renderAdminSchemesTable() {
   drawTable();
 }
 
-window.toggleAdminSchemeStatus = function(schemeId) {
+window.toggleAdminSchemeStatus = async function(schemeId) {
+  const res = await apiFetch(`/admin/schemes/${schemeId}/status`, { method: "PUT" });
+  if (res && res.success) {
+    showToast(`Scheme ${schemeId} status updated to ${res.newStatus}`, "info");
+    renderAdminSchemesTable();
+    return;
+  }
+
   let schemes = getStoredSchemes();
   schemes = schemes.map(s => {
     if (s.id === schemeId) {
@@ -136,8 +190,15 @@ window.toggleAdminSchemeStatus = function(schemeId) {
   renderAdminSchemesTable();
 };
 
-window.deleteAdminScheme = function(schemeId) {
+window.deleteAdminScheme = async function(schemeId) {
   if (confirm(`Are you sure you want to delete scheme ${schemeId}?`)) {
+    const res = await apiFetch(`/admin/schemes/${schemeId}`, { method: "DELETE" });
+    if (res && res.success) {
+      showToast(`Scheme ${schemeId} deleted`, "error");
+      renderAdminSchemesTable();
+      return;
+    }
+
     let schemes = getStoredSchemes();
     schemes = schemes.filter(s => s.id !== schemeId);
     saveSchemes(schemes);

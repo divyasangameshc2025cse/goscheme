@@ -1,4 +1,4 @@
-/* Multi-step Profile Wizard & Profile Management */
+/* Multi-step Profile Wizard & Profile Management with Backend Sync */
 
 let currentStep = 1;
 const totalSteps = 4;
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   if (wizardForm) {
-    wizardForm.addEventListener("submit", (e) => {
+    wizardForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!validateWizardStep(currentStep)) return;
 
@@ -67,7 +67,21 @@ document.addEventListener("DOMContentLoaded", () => {
         isProfileComplete: true
       };
 
-      saveUser(updatedUser);
+      // Sync with backend API
+      if (getToken()) {
+        const res = await apiFetch("/auth/profile", {
+          method: "PUT",
+          body: JSON.stringify(updatedUser)
+        });
+        if (res && res.success && res.user) {
+          saveUser(res.user);
+        } else {
+          saveUser(updatedUser);
+        }
+      } else {
+        saveUser(updatedUser);
+      }
+
       showToast("Profile saved successfully! Matching schemes...", "success");
       setTimeout(() => {
         window.location.href = "eligible-schemes.html";
@@ -83,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
       populateProfilePageFields(user);
     }
 
-    profilePageForm.addEventListener("submit", (e) => {
+    profilePageForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       const updated = {
         ...user,
@@ -95,7 +109,21 @@ document.addEventListener("DOMContentLoaded", () => {
         education: document.getElementById("profile-education").value,
         caste: document.getElementById("profile-caste").value
       };
-      saveUser(updated);
+
+      if (getToken()) {
+        const res = await apiFetch("/auth/profile", {
+          method: "PUT",
+          body: JSON.stringify(updated)
+        });
+        if (res && res.success && res.user) {
+          saveUser(res.user);
+        } else {
+          saveUser(updated);
+        }
+      } else {
+        saveUser(updated);
+      }
+
       showToast("Profile updated successfully!", "success");
       setTimeout(() => {
         window.location.reload();
