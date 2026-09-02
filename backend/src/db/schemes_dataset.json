@@ -1,8 +1,4 @@
-/* ==========================================================================
-   GO SCHEME - CSV Dataset & LocalStorage Initializer (156 Real Govt Schemes)
-   ========================================================================== */
-
-const INITIAL_SCHEMES = [
+[
   {
     "id": "CENT-001",
     "title": "PM Kisan Samman Nidhi",
@@ -4916,41 +4912,4 @@ const INITIAL_SCHEMES = [
     "isNew": false,
     "status": "Active"
   }
-];
-
-const INITIAL_NOTIFICATIONS = [
-  {
-    id: "notif-1",
-    title: "Pudhumai Penn Phase 3 Registration Open",
-    message: "New application window for girl students in undergraduate 1st year is now open till Dec 15.",
-    timestamp: "2 hours ago",
-    type: "new_scheme",
-    read: false
-  },
-  {
-    id: "notif-2",
-    title: "Upcoming Deadline Alert!",
-    message: "TN Post-Matric Scholarship deadline is in 14 days (Oct 15). Complete your application soon.",
-    timestamp: "1 day ago",
-    type: "deadline",
-    read: false
-  },
-  {
-    id: "notif-3",
-    title: "Profile Eligibility Refresh Complete",
-    message: "Based on your updated profile details, you are eligible for 12 Government Schemes!",
-    timestamp: "3 days ago",
-    type: "system",
-    read: true
-  }
-];
-
-function initMockDataStorage() {
-  localStorage.setItem("goscheme_schemes", JSON.stringify(INITIAL_SCHEMES));
-  if (!localStorage.getItem("goscheme_notifications")) {
-    localStorage.setItem("goscheme_notifications", JSON.stringify(INITIAL_NOTIFICATIONS));
-  }
-}
-
-// Execute immediately on load
-initMockDataStorage();
+]
