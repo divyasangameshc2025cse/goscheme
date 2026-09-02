@@ -1,54 +1,83 @@
 /* ==========================================================================
-   GO SCHEME - Schemes Engine, Search, Filter & Eligibility Matching Algorithm
+   GO SCHEME - Schemes Engine, Search, Filter & Strict Eligibility Matching Algorithm
    ========================================================================== */
 
-// Core Eligibility Engine (Client side helper fallback)
+// Strict & Accurate Eligibility Engine
 function evaluateEligibility(scheme, user) {
   if (!user || !user.isProfileComplete) {
     return { isEligible: true, matchPercent: 100, matchReasons: ["Complete profile for personalized match"] };
   }
 
-  const reasons = [];
-  let score = 0;
-  let maxScore = 5;
+  const disqualificationReasons = [];
+  const matchReasons = [];
 
-  // 1. Gender Match Check
-  if (scheme.gender === "All" || scheme.gender === user.gender) {
-    score++;
-    reasons.push(`✓ Gender Match (${user.gender})`);
+  // 1. Strict Gender Constraint
+  if (scheme.gender !== "All" && scheme.gender !== user.gender) {
+    disqualificationReasons.push(`Requires ${scheme.gender} gender (You specified ${user.gender})`);
+  } else {
+    matchReasons.push(`✓ Gender Eligibility (${user.gender})`);
   }
 
-  // 2. Age Window Check
-  if (user.age >= scheme.minAge && user.age <= scheme.maxAge) {
-    score++;
-    reasons.push(`✓ Age within ${scheme.minAge}-${scheme.maxAge} yrs`);
+  // 2. Strict Age Window Constraint
+  if (user.age < scheme.minAge || user.age > scheme.maxAge) {
+    disqualificationReasons.push(`Age limit is ${scheme.minAge}-${scheme.maxAge} years (Your age is ${user.age})`);
+  } else {
+    matchReasons.push(`✓ Age within ${scheme.minAge}-${scheme.maxAge} yrs`);
   }
 
-  // 3. Income Cap Check
-  if (user.income <= scheme.incomeCap) {
-    score++;
-    reasons.push(`✓ Household Income < ${formatCurrency(scheme.incomeCap)}`);
+  // 3. Strict Income Cap Constraint
+  if (user.income > scheme.incomeCap) {
+    disqualificationReasons.push(`Annual income ceiling is ${formatCurrency(scheme.incomeCap)} (Your income is ${formatCurrency(user.income)})`);
+  } else {
+    matchReasons.push(`✓ Household Income <= ${formatCurrency(scheme.incomeCap)}`);
   }
 
-  // 4. Education / Occupation Match Check
+  // 4. Qualification & Occupation Constraint
   const edList = Array.isArray(scheme.education) ? scheme.education : [scheme.education];
   const occList = Array.isArray(scheme.occupation) ? scheme.occupation : [scheme.occupation];
-  if (edList.includes("All") || edList.includes(user.education) || occList.includes("All") || occList.includes(user.occupation)) {
-    score++;
-    reasons.push(`✓ Qualification (${user.education}) & Occupation (${user.occupation})`);
+
+  const edMatch = edList.includes("All") || edList.includes(user.education);
+  const occMatch = occList.includes("All") || occList.includes(user.occupation);
+
+  if (!edMatch && !occMatch) {
+    disqualificationReasons.push(`Requires qualification in [${edList.join(', ')}] or occupation in [${occList.join(', ')}]`);
+  } else {
+    matchReasons.push(`✓ Qualification (${user.education}) & Occupation (${user.occupation})`);
   }
 
-  // 5. Caste / Category or Location Check
+  // 5. Caste / Category Constraint
   const casteList = Array.isArray(scheme.casteCategory) ? scheme.casteCategory : [scheme.casteCategory];
-  if (casteList.includes("All") || casteList.includes(user.caste) || scheme.level === "Tamil Nadu") {
-    score++;
-    reasons.push(`✓ Resident of ${user.state}`);
+  const casteMatch = casteList.includes("All") || casteList.includes(user.caste);
+  if (!casteMatch) {
+    disqualificationReasons.push(`Requires community in [${casteList.join(', ')}] (Your community is ${user.caste})`);
+  } else {
+    matchReasons.push(`✓ Category Eligibility (${user.caste})`);
   }
 
-  const matchPercent = Math.round((score / maxScore) * 100);
-  const isEligible = matchPercent >= 60;
+  // 6. Pudhumai Penn / Govt School Specific Rule
+  if (scheme.id === "TN-001" && user.govtSchoolStudied !== "Yes") {
+    disqualificationReasons.push(`Requires Class 6-12 Govt School study certificate`);
+  }
 
-  return { isEligible, matchPercent, matchReasons: reasons };
+  // If any hard constraint fails -> Disqualified!
+  if (disqualificationReasons.length > 0) {
+    return {
+      isEligible: false,
+      matchPercent: 0,
+      matchReasons: disqualificationReasons.map(r => `✗ ${r}`)
+    };
+  }
+
+  // Calculate weighted score for 100% eligible candidates
+  const maxPoints = 5;
+  const currentPoints = matchReasons.length;
+  const matchPercent = Math.min(100, Math.round((currentPoints / maxPoints) * 100));
+
+  return {
+    isEligible: true,
+    matchPercent: matchPercent >= 80 ? 100 : matchPercent,
+    matchReasons
+  };
 }
 
 // Generate Scheme Card HTML
@@ -186,7 +215,7 @@ async function renderExploreSchemes(user) {
     const selectedCat = categoryFilter ? categoryFilter.value : "All";
 
     const filtered = schemes.filter(s => {
-      const matchQuery = s.title.toLowerCase().includes(query) || s.description.toLowerCase().includes(query) || s.category.toLowerCase().includes(query);
+      const matchQuery = s.title.toLowerCase().includes(query) || s.description.toLowerCase().includes(query) || s.category.toLowerCase().includes(query) || s.department.toLowerCase().includes(query);
       const matchLevel = selectedLevel === "All" || s.level === selectedLevel;
       const matchCat = selectedCat === "All" || s.category.includes(selectedCat);
       return matchQuery && matchLevel && matchCat;

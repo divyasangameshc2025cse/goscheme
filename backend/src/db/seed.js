@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 const { initDatabaseSchema, runAsync, getAsync } = require('./database');
 
 const INITIAL_SCHEMES = [
+  // TAMIL NADU STATE SCHEMES (TN)
   {
     id: "TN-001",
     title: "Pudhumai Penn Scheme (Moovalur Ramamirtham Ammiyar Higher Education Assurance)",
@@ -26,7 +27,7 @@ const INITIAL_SCHEMES = [
   },
   {
     id: "TN-002",
-    title: "Naan Mudhalvan Skill Development Program",
+    title: "Naan Mudhalvan Skill Development & Career Guidance Program",
     department: "Tamil Nadu Skill Development Corporation (TNSDC)",
     level: "Tamil Nadu",
     category: "Education & Employment",
@@ -38,7 +39,7 @@ const INITIAL_SCHEMES = [
     occupation: JSON.stringify(["Student", "Unemployed"]),
     casteCategory: JSON.stringify(["All"]),
     districtEligibility: "All Tamil Nadu Districts",
-    benefits: "Free industry-aligned tech courses, certifications, language training, and direct campus placement support.",
+    benefits: "Free industry-aligned tech courses, certifications, coding bootcamps, and direct campus placement support.",
     applicationDeadline: "2026-10-31",
     officialUrl: "https://www.naanmudhalvan.tn.gov.in",
     description: "Flagship skill enhancement initiative aimed at empowering 10 Lakh youth in Tamil Nadu with modern industry skills annually.",
@@ -48,7 +49,7 @@ const INITIAL_SCHEMES = [
   },
   {
     id: "TN-003",
-    title: "Kalaignar Magalir Urimai Thittam",
+    title: "Kalaignar Magalir Urimai Thittam (KMUT)",
     department: "Special Programme Implementation Dept, Tamil Nadu",
     level: "Tamil Nadu",
     category: "Women & Financial Aid",
@@ -60,7 +61,7 @@ const INITIAL_SCHEMES = [
     occupation: JSON.stringify(["Self-Employed", "Homemaker", "Unemployed"]),
     casteCategory: JSON.stringify(["All"]),
     districtEligibility: "All Tamil Nadu Districts",
-    benefits: "Monthly basic income rights of ₹1,000 transferred to women heads of eligible households.",
+    benefits: "Monthly basic income rights of ₹1,000 transferred directly to women heads of eligible households.",
     applicationDeadline: "2026-11-20",
     officialUrl: "https://kmut.tn.gov.in",
     description: "Rights-based monthly financial grant empowering women heads of families across rural and urban Tamil Nadu.",
@@ -114,6 +115,28 @@ const INITIAL_SCHEMES = [
   },
   {
     id: "TN-006",
+    title: "Chief Minister's Fellowship Programme (CMFP)",
+    department: "Special Programme Implementation Dept, Tamil Nadu",
+    level: "Tamil Nadu",
+    category: "Governance & Research",
+    minAge: 22,
+    maxAge: 30,
+    gender: "All",
+    incomeCap: 9999999,
+    education: JSON.stringify(["Postgraduate", "Undergraduate"]),
+    occupation: JSON.stringify(["Student", "Unemployed", "Self-Employed"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "All Tamil Nadu Districts",
+    benefits: "Monthly fellowship stipend of ₹65,000 + ₹10,000 travel allowance for working on flagship state development projects.",
+    applicationDeadline: "2026-11-30",
+    officialUrl: "https://cmfp.tn.gov.in",
+    description: "2-year prestigious fellowship program engaging young talented professionals in policy implementation across Tamil Nadu.",
+    documents: JSON.stringify(["Degree Certificate", "Curriculum Vitae", "Statement of Purpose", "Identity Proof"]),
+    isNew: 1,
+    status: "Active"
+  },
+  {
+    id: "TN-007",
     title: "TN Chief Minister's Breakfast Scheme for Primary School Students",
     department: "Social Welfare Dept, Tamil Nadu",
     level: "Tamil Nadu",
@@ -134,6 +157,74 @@ const INITIAL_SCHEMES = [
     isNew: 0,
     status: "Active"
   },
+  {
+    id: "TN-008",
+    title: "Annal Ambedkar Business Champions Scheme (AABCS)",
+    department: "Micro, Small and Medium Enterprises (MSME) Dept, Tamil Nadu",
+    level: "Tamil Nadu",
+    category: "Entrepreneurship & Loan",
+    minAge: 18,
+    maxAge: 55,
+    gender: "All",
+    incomeCap: 9999999,
+    education: JSON.stringify(["All"]),
+    occupation: JSON.stringify(["Self-Employed", "Business Owner", "Unemployed"]),
+    casteCategory: JSON.stringify(["SC", "ST"]),
+    districtEligibility: "All Tamil Nadu Districts",
+    benefits: "35% capital subsidy up to ₹1.5 Crore and 6% interest subvention for first-generation SC/ST entrepreneurs.",
+    applicationDeadline: "2026-12-31",
+    officialUrl: "https://msme.tn.gov.in",
+    description: "Promotes economic empowerment of SC/ST entrepreneurs by facilitating financial assistance and credit for new business ventures.",
+    documents: JSON.stringify(["Community Certificate", "Project Proposal Summary", "GST Registration", "Aadhaar Card"]),
+    isNew: 1,
+    status: "Active"
+  },
+  {
+    id: "TN-009",
+    title: "Tamil Nadu Chief Minister's Rural Development Fellowship Scheme",
+    department: "Rural Development & Panchayat Raj Dept, Tamil Nadu",
+    level: "Tamil Nadu",
+    category: "Rural Development",
+    minAge: 21,
+    maxAge: 32,
+    gender: "All",
+    incomeCap: 9999999,
+    education: JSON.stringify(["Undergraduate", "Postgraduate"]),
+    occupation: JSON.stringify(["Student", "Unemployed"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "All Tamil Nadu Districts",
+    benefits: "Monthly fellowship of ₹45,000 to work directly with Village Panchayats for rural digital transformation.",
+    applicationDeadline: "2026-10-25",
+    officialUrl: "https://tnrd.tn.gov.in",
+    description: "Engages youth in rural development governance, scheme monitoring, and grassroots economic strengthening.",
+    documents: JSON.stringify(["Degree Certificate", "Aadhaar Card", "College Marksheet"]),
+    isNew: 1,
+    status: "Active"
+  },
+  {
+    id: "TN-010",
+    title: "Moovalur Ramamirtham Ammiyar Marriage Assistance Scheme",
+    department: "Social Welfare & Women Empowerment, Tamil Nadu",
+    level: "Tamil Nadu",
+    category: "Marriage Assistance & Social Security",
+    minAge: 18,
+    maxAge: 30,
+    gender: "Female",
+    incomeCap: 72000,
+    education: JSON.stringify(["Diploma", "Undergraduate"]),
+    occupation: JSON.stringify(["Unemployed", "Homemaker", "Self-Employed"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "All Tamil Nadu Districts",
+    benefits: "Financial grant of ₹50,000 + 8 Grams 22 Karat Gold Coin for marriage expenses of educated poor brides.",
+    applicationDeadline: "2026-12-20",
+    officialUrl: "https://www.tn.gov.in/scheme/data_view/2026",
+    description: "Financial and gold assistance to encourage higher education among poor girls before marriage.",
+    documents: JSON.stringify(["Degree/Diploma Certificate", "Income Certificate", "Invitation Card", "Ration Card"]),
+    isNew: 0,
+    status: "Active"
+  },
+
+  // CENTRAL GOVERNMENT SCHEMES (CENTRAL / INDIA)
   {
     id: "CENT-001",
     title: "PM-KISAN Samman Nidhi (Pradhan Mantri Kisan Samman Nidhi)",
@@ -180,7 +271,7 @@ const INITIAL_SCHEMES = [
   },
   {
     id: "CENT-003",
-    title: "PM Awas Yojana (Urban) - Credit Linked Subsidy Scheme",
+    title: "PM Awas Yojana (Urban / Gramin) - Credit Linked Subsidy Scheme",
     department: "Ministry of Housing and Urban Affairs, Govt of India",
     level: "Central",
     category: "Housing",
@@ -202,7 +293,7 @@ const INITIAL_SCHEMES = [
   },
   {
     id: "CENT-004",
-    title: "National Overseas Scholarship for SC / ST / Artisan Students",
+    title: "National Overseas Scholarship for SC / ST / BC Students",
     department: "Ministry of Social Justice & Empowerment, Govt of India",
     level: "Central",
     category: "Scholarship & Overseas Education",
@@ -220,6 +311,138 @@ const INITIAL_SCHEMES = [
     description: "Supports low-income students from marginalized communities to pursue Master's or Ph.D degrees in reputed foreign universities.",
     documents: JSON.stringify(["Offer Letter from Foreign University", "Caste Certificate", "Income Certificate", "Passport Copy"]),
     isNew: 1,
+    status: "Active"
+  },
+  {
+    id: "CENT-005",
+    title: "PM Surya Ghar: Muft Bijli Yojana (Rooftop Solar Subsidy)",
+    department: "Ministry of New and Renewable Energy, Govt of India",
+    level: "Central",
+    category: "Solar & Energy",
+    minAge: 18,
+    maxAge: 80,
+    gender: "All",
+    incomeCap: 9999999,
+    education: JSON.stringify(["All"]),
+    occupation: JSON.stringify(["All"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "Applicable in Tamil Nadu",
+    benefits: "Direct government financial subsidy up to ₹78,000 for installing rooftop solar + 300 units of free electricity every month.",
+    applicationDeadline: "2026-12-31",
+    officialUrl: "https://pmsuryaghar.gov.in",
+    description: "Provides clean solar power to 1 Crore households across India while drastically reducing monthly electricity bills.",
+    documents: JSON.stringify(["Electricity Bill Copy", "Aadhaar Card", "Rooftop Property Document", "Bank Passbook"]),
+    isNew: 1,
+    status: "Active"
+  },
+  {
+    id: "CENT-006",
+    title: "PM Vishwakarma Scheme for Artisans and Traditional Craftsmen",
+    department: "Ministry of Micro, Small and Medium Enterprises, Govt of India",
+    level: "Central",
+    category: "Artisans & Skill Development",
+    minAge: 18,
+    maxAge: 65,
+    gender: "All",
+    incomeCap: 9999999,
+    education: JSON.stringify(["All"]),
+    occupation: JSON.stringify(["Self-Employed", "Business Owner", "Unemployed"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "Applicable in Tamil Nadu",
+    benefits: "Skill training stipend of ₹500/day, ₹15,000 digital toolkit e-voucher, and collateral-free loan up to ₹3 Lakhs at 5% interest rate.",
+    applicationDeadline: "2027-02-28",
+    officialUrl: "https://pmvishwakarma.gov.in",
+    description: "End-to-end support for traditional artisans including carpenters, weavers, blacksmiths, barbers, tailors, and cobblers.",
+    documents: JSON.stringify(["Aadhaar Card", "Bank Account Details", "Traditional Craft Certificate / Verification"]),
+    isNew: 1,
+    status: "Active"
+  },
+  {
+    id: "CENT-007",
+    title: "National Apprenticeship Promotion Scheme (NAPS)",
+    department: "Ministry of Skill Development and Entrepreneurship, Govt of India",
+    level: "Central",
+    category: "Skill Training & Internship",
+    minAge: 18,
+    maxAge: 28,
+    gender: "All",
+    incomeCap: 9999999,
+    education: JSON.stringify(["ITI", "Diploma", "Undergraduate"]),
+    occupation: JSON.stringify(["Student", "Unemployed"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "Applicable in Tamil Nadu",
+    benefits: "Direct stipend subsidy of up to ₹1,500/month per apprentice plus certified practical industrial training.",
+    applicationDeadline: "2026-11-30",
+    officialUrl: "https://www.apprenticeshipindia.gov.in",
+    description: "Promotes apprenticeship training in top industries for ITI, diploma, and degree holders to gain practical experience.",
+    documents: JSON.stringify(["Aadhaar Card", "Marksheets", "Bank Account Details"]),
+    isNew: 0,
+    status: "Active"
+  },
+  {
+    id: "CENT-008",
+    title: "Central Sector Scheme of Scholarship for College and University Students (NSP)",
+    department: "Department of Higher Education, Ministry of Education, Govt of India",
+    level: "Central",
+    category: "Scholarship",
+    minAge: 18,
+    maxAge: 25,
+    gender: "All",
+    incomeCap: 450000,
+    education: JSON.stringify(["Undergraduate", "Postgraduate"]),
+    occupation: JSON.stringify(["Student"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "Applicable in Tamil Nadu",
+    benefits: "₹12,000 per annum at Graduation level for first 3 years and ₹20,000 per annum at Post-Graduation level.",
+    applicationDeadline: "2026-10-31",
+    officialUrl: "https://scholarships.gov.in",
+    description: "Financial assistance to meritorious students from low-income families to meet day-to-day expenses while pursuing higher studies.",
+    documents: JSON.stringify(["Class 12 Marksheet", "Income Certificate", "Bonafide Student Certificate", "Aadhaar Card"]),
+    isNew: 0,
+    status: "Active"
+  },
+  {
+    id: "CENT-009",
+    title: "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+    department: "Department of Financial Services, Govt of India",
+    level: "Central",
+    category: "Banking & Financial Inclusion",
+    minAge: 10,
+    maxAge: 75,
+    gender: "All",
+    incomeCap: 9999999,
+    education: JSON.stringify(["All"]),
+    occupation: JSON.stringify(["All"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "Applicable in Tamil Nadu",
+    benefits: "Zero balance savings account, free RuPay debit card, ₹2 Lakh accidental insurance, and ₹10,000 overdraft facility.",
+    applicationDeadline: "2027-03-31",
+    officialUrl: "https://pmjdy.gov.in",
+    description: "National mission for financial inclusion ensuring universal access to banking facilities and insurance for all households.",
+    documents: JSON.stringify(["Aadhaar Card", "Passport Size Photograph"]),
+    isNew: 0,
+    status: "Active"
+  },
+  {
+    id: "CENT-010",
+    title: "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+    department: "National Health Authority (NHA), Govt of India",
+    level: "Central",
+    category: "Healthcare",
+    minAge: 0,
+    maxAge: 100,
+    gender: "All",
+    incomeCap: 180000,
+    education: JSON.stringify(["All"]),
+    occupation: JSON.stringify(["All"]),
+    casteCategory: JSON.stringify(["All"]),
+    districtEligibility: "Applicable in Tamil Nadu",
+    benefits: "Cashless health insurance coverage of ₹5 Lakhs per family per year for secondary and tertiary care hospitalization.",
+    applicationDeadline: "2027-03-31",
+    officialUrl: "https://pmjay.gov.in",
+    description: "World's largest government-funded health insurance scheme covering over 12 Crore poor and vulnerable families.",
+    documents: JSON.stringify(["Aadhaar Card", "Ration Card / PM-JAY Family Letter"]),
+    isNew: 0,
     status: "Active"
   }
 ];
@@ -253,7 +476,7 @@ const INITIAL_NOTIFICATIONS = [
 
 async function seedDatabase() {
   await initDatabaseSchema();
-  console.log('Seeding initial data...');
+  console.log('Seeding initial dataset with 20 Tamil Nadu and Central schemes...');
 
   // 1. Seed Schemes
   for (const s of INITIAL_SCHEMES) {
@@ -263,6 +486,14 @@ async function seedDatabase() {
         `INSERT INTO schemes (id, title, department, level, category, min_age, max_age, gender, income_cap, education, occupation, caste_category, district_eligibility, benefits, application_deadline, official_url, description, documents, is_new, status)
          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [s.id, s.title, s.department, s.level, s.category, s.minAge, s.maxAge, s.gender, s.incomeCap, s.education, s.occupation, s.casteCategory, s.districtEligibility, s.benefits, s.applicationDeadline, s.officialUrl, s.description, s.documents, s.isNew, s.status]
+      );
+    } else {
+      // Update existing record with updated fields & working official links
+      await runAsync(
+        `UPDATE schemes SET
+          title = ?, department = ?, level = ?, category = ?, min_age = ?, max_age = ?, gender = ?, income_cap = ?, education = ?, occupation = ?, caste_category = ?, district_eligibility = ?, benefits = ?, application_deadline = ?, official_url = ?, description = ?, documents = ?, is_new = ?, status = ?
+         WHERE id = ?`,
+        [s.title, s.department, s.level, s.category, s.minAge, s.maxAge, s.gender, s.incomeCap, s.education, s.occupation, s.casteCategory, s.districtEligibility, s.benefits, s.applicationDeadline, s.officialUrl, s.description, s.documents, s.isNew, s.status, s.id]
       );
     }
   }
@@ -317,7 +548,7 @@ async function seedDatabase() {
 
   // 4. Seed Saved Schemes for Default User
   if (userId) {
-    const defaultSaved = ["TN-001", "TN-002"];
+    const defaultSaved = ["TN-001", "TN-002", "CENT-005"];
     for (const schemeId of defaultSaved) {
       const savedExist = await getAsync(`SELECT id FROM saved_schemes WHERE user_id = ? AND scheme_id = ?`, [userId, schemeId]);
       if (!savedExist) {
@@ -338,7 +569,7 @@ async function seedDatabase() {
     }
   }
 
-  console.log('Database seeding completed successfully.');
+  console.log('Database seeding completed successfully with 20 government schemes.');
 }
 
 if (require.main === module) {
