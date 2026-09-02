@@ -329,19 +329,27 @@ async function renderSavedSchemesPage() {
   }
 }
 
+let activeSchemeOfficialUrl = "";
+
 async function renderSchemeDetailsPage(user) {
   const container = document.getElementById("scheme-details-container");
   const urlParams = new URLSearchParams(window.location.search);
-  const schemeId = urlParams.get("id") || "TN-001";
+  const schemeId = urlParams.get("id");
 
   let scheme = null;
-  const res = await apiFetch(`/schemes/${schemeId}`);
-  if (res && res.success && res.scheme) {
-    scheme = res.scheme;
-  } else {
+  if (schemeId) {
+    const res = await apiFetch(`/schemes/${schemeId}`);
+    if (res && res.success && res.scheme) {
+      scheme = res.scheme;
+    }
+  }
+
+  if (!scheme) {
     const schemes = getStoredSchemes();
     scheme = schemes.find(s => s.id === schemeId) || schemes[0];
   }
+
+  activeSchemeOfficialUrl = scheme.officialUrl || "https://www.tn.gov.in";
 
   const evalResult = evaluateEligibility(scheme, user);
   const savedIds = getSavedSchemeIds();
@@ -368,7 +376,7 @@ async function renderSchemeDetailsPage(user) {
       <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem;">${scheme.department}</p>
 
       <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-        <button onclick="confirmApplyModal('${scheme.officialUrl}')" class="btn btn-primary btn-lg">Apply on Official Government Website &nearr;</button>
+        <button onclick="confirmApplyModal()" class="btn btn-primary btn-lg">Apply on Official Government Website &nearr;</button>
         <button onclick="window.print()" class="btn btn-outline btn-lg">Print Details</button>
       </div>
     </div>
@@ -422,11 +430,17 @@ async function renderSchemeDetailsPage(user) {
             <div class="timer-unit"><div class="timer-num" id="cd-hours">14</div><div class="timer-label">Hours</div></div>
             <div class="timer-unit"><div class="timer-num" id="cd-mins">28</div><div class="timer-label">Mins</div></div>
           </div>
-          <button onclick="confirmApplyModal('${scheme.officialUrl}')" class="btn btn-teal btn-block" style="margin-top: 1rem;">Apply Now &rarr;</button>
+          <button onclick="confirmApplyModal()" class="btn btn-teal btn-block" style="margin-top: 1rem;">Apply Now &rarr;</button>
         </div>
       </div>
     </div>
   `;
+
+  // Set official apply link button href immediately
+  const linkBtn = document.getElementById("official-apply-link-btn");
+  if (linkBtn) {
+    linkBtn.href = activeSchemeOfficialUrl;
+  }
 
   initCountdownTimer(scheme.applicationDeadline);
 }
@@ -459,9 +473,15 @@ function initCountdownTimer(deadlineStr) {
 }
 
 window.confirmApplyModal = function(url) {
-  const modal = document.getElementById("apply-modal");
+  const targetUrl = url || activeSchemeOfficialUrl || "https://www.tn.gov.in";
   const linkBtn = document.getElementById("official-apply-link-btn");
-  if (linkBtn) linkBtn.href = url;
-  if (modal) openModal("apply-modal");
-  else window.open(url, "_blank");
+  if (linkBtn) {
+    linkBtn.href = targetUrl;
+  }
+  const modal = document.getElementById("apply-modal");
+  if (modal) {
+    openModal("apply-modal");
+  } else {
+    window.open(targetUrl, "_blank");
+  }
 };
