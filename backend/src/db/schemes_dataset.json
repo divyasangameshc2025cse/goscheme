@@ -29,7 +29,8 @@
       "Bank Passbook"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-002",
@@ -61,7 +62,8 @@
       "SECC Database Proof"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-003",
@@ -93,7 +95,8 @@
       "Property Documents"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-004",
@@ -125,7 +128,8 @@
       "Bank Passbook"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-005",
@@ -157,7 +161,8 @@
       "Bank Passbook"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-006",
@@ -188,7 +193,8 @@
       "Address Proof"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-007",
@@ -219,7 +225,8 @@
       "Bank Account"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-008",
@@ -250,7 +257,8 @@
       "Bank Account"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-009",
@@ -281,7 +289,8 @@
       "Bank Account"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-010",
@@ -312,7 +321,8 @@
       "Aadhaar Card of guardian"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-011",
@@ -343,7 +353,8 @@
       "Aadhaar Card"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-012",
@@ -375,7 +386,8 @@
       "Bank Details"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-013",
@@ -409,7 +421,8 @@
       "Business Plan"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-014",
@@ -442,7 +455,8 @@
       "Business Plan"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-015",
@@ -473,7 +487,8 @@
       "Aadhaar Card"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-016",
@@ -505,7 +520,8 @@
       "Bank Passbook"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-017",
@@ -536,7 +552,8 @@
       "Land Records"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-018",
@@ -567,7 +584,8 @@
       "Land Records"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-019",
@@ -599,7 +617,8 @@
       "Bank Account"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-020",
@@ -631,7 +650,8 @@
       "Bank Account"
     ],
     "isNew": true,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-021",
@@ -662,7 +682,8 @@
       "JSY Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-022",
@@ -694,7 +715,8 @@
       "Bank Account"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-023",
@@ -726,7 +748,8 @@
       "Bank Account"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-024",
@@ -756,7 +779,8 @@
       "Village Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-025",
@@ -787,7 +811,8 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-026",
@@ -820,7 +845,8 @@
       "Educational Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-027",
@@ -853,7 +879,8 @@
       "Educational Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-028",
@@ -885,7 +912,8 @@
       "Educational Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-029",
@@ -915,7 +943,8 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-030",
@@ -946,7 +975,8 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-031",
@@ -977,7 +1007,8 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-032",
@@ -1008,7 +1039,8 @@
       "Address Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-033",
@@ -1039,7 +1071,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-034",
@@ -1070,7 +1103,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-035",
@@ -1100,7 +1134,8 @@
       "Aadhaar Card of guardian"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-036",
@@ -1131,7 +1166,8 @@
       "School Enrollment Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-037",
@@ -1163,7 +1199,8 @@
       "School Enrollment"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-038",
@@ -1196,7 +1233,8 @@
       "Mark Sheet"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-039",
@@ -1228,7 +1266,8 @@
       "Mark Sheet"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-040",
@@ -1263,7 +1302,8 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-041",
@@ -1295,7 +1335,8 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-042",
@@ -1326,7 +1367,8 @@
       "Minority Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-043",
@@ -1360,7 +1402,8 @@
       "Admission Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-044",
@@ -1393,7 +1436,8 @@
       "Disability Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-045",
@@ -1424,7 +1468,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-046",
@@ -1454,7 +1499,8 @@
       "Disability Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-047",
@@ -1486,7 +1532,8 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-048",
@@ -1518,7 +1565,8 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-049",
@@ -1550,7 +1598,8 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-050",
@@ -1582,7 +1631,8 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-051",
@@ -1613,7 +1663,8 @@
       "Age Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-052",
@@ -1644,7 +1695,8 @@
       "Tribal Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-053",
@@ -1676,7 +1728,8 @@
       "Tribal Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-054",
@@ -1709,7 +1762,8 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-055",
@@ -1741,7 +1795,8 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-056",
@@ -1773,7 +1828,8 @@
       "Admission Letter"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-057",
@@ -1804,7 +1860,8 @@
       "Occupation Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-058",
@@ -1835,7 +1892,8 @@
       "Occupation Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-059",
@@ -1866,7 +1924,8 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-060",
@@ -1897,7 +1956,8 @@
       "Minority Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-061",
@@ -1929,7 +1989,8 @@
       "Minority Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-062",
@@ -1961,7 +2022,8 @@
       "Minority Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-063",
@@ -1993,7 +2055,8 @@
       "Loan Documents"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-064",
@@ -2023,7 +2086,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-065",
@@ -2054,7 +2118,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-066",
@@ -2085,7 +2150,8 @@
       "Employment Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-067",
@@ -2115,7 +2181,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-068",
@@ -2145,7 +2212,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-069",
@@ -2176,7 +2244,8 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-070",
@@ -2207,7 +2276,8 @@
       "Vendor Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-071",
@@ -2238,7 +2308,8 @@
       "EPFO Registration"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-072",
@@ -2269,7 +2340,8 @@
       "Educational Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-073",
@@ -2301,7 +2373,8 @@
       "Project Report"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-074",
@@ -2333,7 +2406,8 @@
       "Business Plan"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-075",
@@ -2365,7 +2439,8 @@
       "Business Plan"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-076",
@@ -2396,7 +2471,8 @@
       "Business Registration"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-077",
@@ -2426,7 +2502,8 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-078",
@@ -2458,7 +2535,8 @@
       "Age Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-079",
@@ -2489,7 +2567,8 @@
       "Tribal Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-080",
@@ -2519,7 +2598,8 @@
       "Village Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "CENT-081",
@@ -2553,12 +2633,13 @@
       "Business Plan"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "All India"
   },
   {
     "id": "STATE-001",
     "title": "Kanya Vidya Dhan Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Uttar Pradesh",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -2574,7 +2655,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Uttar Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 30,000 lump sum",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://scholarship.up.gov.in",
@@ -2585,12 +2666,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Uttar Pradesh"
   },
   {
     "id": "STATE-002",
     "title": "Mukhyamantri Kanya Sumangala Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Uttar Pradesh",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -2606,7 +2688,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Uttar Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 15,000 across installments",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://mksy.up.gov.in",
@@ -2617,12 +2699,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Uttar Pradesh"
   },
   {
     "id": "STATE-003",
     "title": "UP Vidhwa Pension Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Uttar Pradesh",
     "level": "State",
     "category": "Pension & Social Security",
     "minAge": 18,
@@ -2638,7 +2721,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Uttar Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 1,000 per month",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sspy-up.gov.in",
@@ -2649,12 +2732,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Uttar Pradesh"
   },
   {
     "id": "STATE-004",
     "title": "UP Free Boring Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Uttar Pradesh",
     "level": "State",
     "category": "Agriculture",
     "minAge": 18,
@@ -2670,7 +2754,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Uttar Pradesh (not Tamil Nadu-specific)",
     "benefits": "Subsidy on boring installation cost",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://upagriculture.com",
@@ -2680,12 +2764,13 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Uttar Pradesh"
   },
   {
     "id": "STATE-005",
     "title": "Sarvajan Pension Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Rajasthan",
     "level": "State",
     "category": "Pension & Social Security",
     "minAge": 60,
@@ -2701,7 +2786,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Rajasthan (not Tamil Nadu-specific)",
     "benefits": "Rs 1,000 per month",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sspy-up.gov.in",
@@ -2712,13 +2797,14 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Rajasthan"
   },
   {
     "id": "TN-001",
     "title": "Amma Unavagam",
     "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
+    "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 0,
     "maxAge": 100,
@@ -2743,13 +2829,14 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Tamil Nadu"
   },
   {
     "id": "TN-002",
     "title": "Dr Muthulakshmi Reddy Maternity Benefit Scheme",
     "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
+    "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 19,
     "maxAge": 100,
@@ -2775,13 +2862,14 @@
       "MCP Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Tamil Nadu"
   },
   {
     "id": "TN-003",
     "title": "Moovalur Ramamirtham Ammaiyar Higher Education Assistance Scheme",
     "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
+    "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
     "maxAge": 100,
@@ -2807,13 +2895,14 @@
       "Mark Sheet"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Tamil Nadu"
   },
   {
     "id": "TN-004",
     "title": "Naan Mudhalvan Scheme",
     "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
+    "level": "State",
     "category": "Scholarship & Education",
     "minAge": 18,
     "maxAge": 100,
@@ -2838,13 +2927,14 @@
       "Educational Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Tamil Nadu"
   },
   {
     "id": "TN-005",
     "title": "Chief Minister's Comprehensive Health Insurance Scheme",
     "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
+    "level": "State",
     "category": "Healthcare",
     "minAge": 0,
     "maxAge": 100,
@@ -2869,12 +2959,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Tamil Nadu"
   },
   {
     "id": "STATE-006",
     "title": "Rythu Bandhu Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Telangana",
     "level": "State",
     "category": "Agriculture",
     "minAge": 18,
@@ -2890,7 +2981,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Telangana (not Tamil Nadu-specific)",
     "benefits": "Rs 10,000 per acre per year",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://rythubandhu.telangana.gov.in",
@@ -2900,12 +2991,13 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Telangana"
   },
   {
     "id": "STATE-007",
     "title": "Kalyana Lakshmi Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Telangana",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -2921,7 +3013,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Telangana (not Tamil Nadu-specific)",
     "benefits": "Rs 1,00,116 lump sum",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://kalyanalakshmi.cgg.gov.in",
@@ -2932,12 +3024,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Telangana"
   },
   {
     "id": "STATE-008",
     "title": "Aasara Pension Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Telangana",
     "level": "State",
     "category": "Pension & Social Security",
     "minAge": 57,
@@ -2953,7 +3046,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Telangana (not Tamil Nadu-specific)",
     "benefits": "Rs 2,016-3,016 per month",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://aasara.telangana.gov.in",
@@ -2964,12 +3057,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Telangana"
   },
   {
     "id": "STATE-009",
     "title": "KCR Kit Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Telangana",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 19,
@@ -2985,7 +3079,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Telangana (not Tamil Nadu-specific)",
     "benefits": "Rs 12,000-13,000 and nutrition kit",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://kcrkit.telangana.gov.in",
@@ -2995,12 +3089,13 @@
       "MCP Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Telangana"
   },
   {
     "id": "STATE-010",
     "title": "YSR Rythu Bharosa",
-    "department": "Govt of India",
+    "department": "Govt of Andhra Pradesh",
     "level": "State",
     "category": "Agriculture",
     "minAge": 18,
@@ -3016,7 +3111,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Andhra Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 13,500 per year",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ysrrythubharosa.ap.gov.in",
@@ -3026,12 +3121,13 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Andhra Pradesh"
   },
   {
     "id": "STATE-011",
     "title": "YSR Aarogyasri",
-    "department": "Govt of India",
+    "department": "Govt of Andhra Pradesh",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -3047,7 +3143,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Andhra Pradesh (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 5,00,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ysraarogyasri.ap.gov.in",
@@ -3057,12 +3153,13 @@
       "White Ration Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Andhra Pradesh"
   },
   {
     "id": "STATE-012",
     "title": "Amma Vodi",
-    "department": "Govt of India",
+    "department": "Govt of Andhra Pradesh",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -3079,7 +3176,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Andhra Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 15,000 per year",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://jaganannaammavodi.ap.gov.in",
@@ -3090,12 +3187,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Andhra Pradesh"
   },
   {
     "id": "STATE-013",
     "title": "YSR Pension Kanuka",
-    "department": "Govt of India",
+    "department": "Govt of Andhra Pradesh",
     "level": "State",
     "category": "Pension & Social Security",
     "minAge": 60,
@@ -3111,7 +3209,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Andhra Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 2,750-10,000 per month",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ysrpensionkanuka.ap.gov.in",
@@ -3122,12 +3220,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Andhra Pradesh"
   },
   {
     "id": "STATE-014",
     "title": "Karunya Health Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Kerala",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -3143,7 +3242,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Kerala (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 3,00,000",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://karunyabenevolentfund.kerala.gov.in",
@@ -3154,12 +3253,13 @@
       "Medical Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Kerala"
   },
   {
     "id": "STATE-015",
     "title": "Kudumbashree Mission",
-    "department": "Govt of India",
+    "department": "Govt of Kerala",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -3175,7 +3275,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Kerala (not Tamil Nadu-specific)",
     "benefits": "Micro credit and livelihood support",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://kudumbashree.org",
@@ -3184,12 +3284,13 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Kerala"
   },
   {
     "id": "STATE-016",
     "title": "Bhagyalakshmi Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Karnataka",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -3205,7 +3306,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Karnataka (not Tamil Nadu-specific)",
     "benefits": "Rs 1,00,000 maturity amount",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ahvahinikaryakramagalu.karnataka.gov.in",
@@ -3216,12 +3317,13 @@
       "BPL Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Karnataka"
   },
   {
     "id": "STATE-017",
     "title": "Vidyasiri Scholarship",
-    "department": "Govt of India",
+    "department": "Govt of Karnataka",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -3237,7 +3339,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Karnataka (not Tamil Nadu-specific)",
     "benefits": "Rs 11,000-16,750 per year",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ssp.postmatric.karnataka.gov.in",
@@ -3248,12 +3350,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Karnataka"
   },
   {
     "id": "STATE-018",
     "title": "Gruha Lakshmi Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Karnataka",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 18,
@@ -3269,7 +3372,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Karnataka (not Tamil Nadu-specific)",
     "benefits": "Rs 2,000 per month",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://gruhalakshmi.karnataka.gov.in",
@@ -3279,12 +3382,13 @@
       "Ration Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Karnataka"
   },
   {
     "id": "STATE-019",
     "title": "Anna Bhagya Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Karnataka",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 0,
@@ -3300,7 +3404,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Karnataka (not Tamil Nadu-specific)",
     "benefits": "10 kg free rice per member per month",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ahara.kar.nic.in",
@@ -3310,12 +3414,13 @@
       "Aadhaar Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Karnataka"
   },
   {
     "id": "STATE-020",
     "title": "Shiv Bhojan Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Maharashtra",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 0,
@@ -3331,7 +3436,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Maharashtra (not Tamil Nadu-specific)",
     "benefits": "Meal at Rs 5-10",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://mahafood.gov.in",
@@ -3341,12 +3446,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Maharashtra"
   },
   {
     "id": "STATE-021",
     "title": "Majhi Kanya Bhagyashree Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Maharashtra",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -3362,7 +3468,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Maharashtra (not Tamil Nadu-specific)",
     "benefits": "Rs 50,000-1,01,000 maturity amount",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://womenchild.maharashtra.gov.in",
@@ -3373,12 +3479,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Maharashtra"
   },
   {
     "id": "STATE-022",
     "title": "Mahatma Jyotirao Phule Jan Arogya Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Maharashtra",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -3394,7 +3501,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Maharashtra (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 1,50,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://www.jeevandayee.gov.in",
@@ -3404,12 +3511,13 @@
       "Ration Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Maharashtra"
   },
   {
     "id": "STATE-023",
     "title": "Lek Ladki Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Maharashtra",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -3425,7 +3533,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Maharashtra (not Tamil Nadu-specific)",
     "benefits": "Rs 75,000 across installments",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://womenchild.maharashtra.gov.in",
@@ -3436,12 +3544,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Maharashtra"
   },
   {
     "id": "STATE-024",
     "title": "Kanyashree Prakalpa",
-    "department": "Govt of India",
+    "department": "Govt of West Bengal",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 13,
@@ -3458,7 +3567,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across West Bengal (not Tamil Nadu-specific)",
     "benefits": "Rs 1,000 annual and Rs 25,000 one time",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://wbkanyashree.gov.in",
@@ -3469,12 +3578,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "West Bengal"
   },
   {
     "id": "STATE-025",
     "title": "Sabuj Sathi Scheme",
-    "department": "Govt of India",
+    "department": "Govt of West Bengal",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 9,
@@ -3490,7 +3600,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across West Bengal (not Tamil Nadu-specific)",
     "benefits": "Free bicycle",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sabujsathi.gov.in",
@@ -3499,12 +3609,13 @@
       "School Enrollment Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "West Bengal"
   },
   {
     "id": "STATE-026",
     "title": "Swasthya Sathi Scheme",
-    "department": "Govt of India",
+    "department": "Govt of West Bengal",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -3520,7 +3631,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across West Bengal (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 5,00,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://swasthyasathi.gov.in",
@@ -3530,12 +3641,13 @@
       "Ration Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "West Bengal"
   },
   {
     "id": "STATE-027",
     "title": "Rupashree Prakalpa",
-    "department": "Govt of India",
+    "department": "Govt of West Bengal",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -3551,7 +3663,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across West Bengal (not Tamil Nadu-specific)",
     "benefits": "Rs 25,000 lump sum",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://wbcdwdsw.gov.in",
@@ -3562,12 +3674,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "West Bengal"
   },
   {
     "id": "STATE-028",
     "title": "Krishak Bandhu Scheme",
-    "department": "Govt of India",
+    "department": "Govt of West Bengal",
     "level": "State",
     "category": "Healthcare",
     "minAge": 18,
@@ -3583,7 +3696,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across West Bengal (not Tamil Nadu-specific)",
     "benefits": "Rs 4,000-10,000 per year plus insurance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://krishakbandhu.net",
@@ -3593,12 +3706,13 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "West Bengal"
   },
   {
     "id": "STATE-029",
     "title": "Mukhyamantri Kanya Utthan Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Bihar",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -3614,7 +3728,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Bihar (not Tamil Nadu-specific)",
     "benefits": "Rs 54,100 across stages",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://medhasoft.bih.nic.in",
@@ -3624,12 +3738,13 @@
       "Birth Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Bihar"
   },
   {
     "id": "STATE-030",
     "title": "Bihar Student Credit Card Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Bihar",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -3645,7 +3760,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Bihar (not Tamil Nadu-specific)",
     "benefits": "Loan up to Rs 4,00,000",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in",
@@ -3655,12 +3770,13 @@
       "Admission Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Bihar"
   },
   {
     "id": "STATE-031",
     "title": "Mukhyamantri Kanya Vivah Yojana Bihar",
-    "department": "Govt of India",
+    "department": "Govt of Bihar",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -3676,7 +3792,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Bihar (not Tamil Nadu-specific)",
     "benefits": "Rs 5,000-6,000 assistance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://state.bihar.gov.in",
@@ -3686,12 +3802,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Bihar"
   },
   {
     "id": "STATE-032",
     "title": "Ladli Laxmi Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Madhya Pradesh",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -3707,7 +3824,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Madhya Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 1,43,000 across installments",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ladlilaxmi.mp.gov.in",
@@ -3717,12 +3834,13 @@
       "Birth Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Madhya Pradesh"
   },
   {
     "id": "STATE-033",
     "title": "Sambal Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Madhya Pradesh",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 18,
@@ -3738,7 +3856,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Madhya Pradesh (not Tamil Nadu-specific)",
     "benefits": "Insurance, pension and welfare benefits",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sambal.mp.gov.in",
@@ -3748,12 +3866,13 @@
       "Labour Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Madhya Pradesh"
   },
   {
     "id": "STATE-034",
     "title": "Mukhyamantri Medhavi Vidyarthi Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Madhya Pradesh",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -3769,7 +3888,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Madhya Pradesh (not Tamil Nadu-specific)",
     "benefits": "Fee reimbursement up to Rs 1,50,000",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://mmvy.mp.gov.in",
@@ -3780,12 +3899,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Madhya Pradesh"
   },
   {
     "id": "STATE-035",
     "title": "Mukhyamantri Tirth Yatra Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Madhya Pradesh",
     "level": "State",
     "category": "Pension & Social Security",
     "minAge": 60,
@@ -3801,7 +3921,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Madhya Pradesh (not Tamil Nadu-specific)",
     "benefits": "Free pilgrimage travel and accommodation",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://mptirthdarshan.mp.gov.in",
@@ -3811,12 +3931,13 @@
       "Age Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Madhya Pradesh"
   },
   {
     "id": "STATE-036",
     "title": "Bhamashah Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Rajasthan",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 0,
@@ -3832,7 +3953,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Rajasthan (not Tamil Nadu-specific)",
     "benefits": "Direct benefit transfer of subsidies",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://bhamashah.rajasthan.gov.in",
@@ -3842,12 +3963,13 @@
       "Bhamashah Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Rajasthan"
   },
   {
     "id": "STATE-037",
     "title": "Mukhyamantri Rajshri Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Rajasthan",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -3864,7 +3986,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Rajasthan (not Tamil Nadu-specific)",
     "benefits": "Rs 50,000 across installments",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://wcd.rajasthan.gov.in",
@@ -3874,12 +3996,13 @@
       "Birth Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Rajasthan"
   },
   {
     "id": "STATE-038",
     "title": "Anuprati Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Rajasthan",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -3897,7 +4020,7 @@
       "SC",
       "ST"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Rajasthan (not Tamil Nadu-specific)",
     "benefits": "Rs 10,000-1,20,000 assistance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sje.rajasthan.gov.in",
@@ -3908,12 +4031,13 @@
       "Admission Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Rajasthan"
   },
   {
     "id": "STATE-039",
     "title": "Kalibai Bheel Scholarship",
-    "department": "Govt of India",
+    "department": "Govt of Rajasthan",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -3930,7 +4054,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Rajasthan (not Tamil Nadu-specific)",
     "benefits": "Free scooty or cash incentive",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sje.rajasthan.gov.in",
@@ -3941,12 +4065,13 @@
       "Mark Sheet"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Rajasthan"
   },
   {
     "id": "STATE-040",
     "title": "Ladli Beti Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Haryana",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -3962,7 +4087,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Haryana (not Tamil Nadu-specific)",
     "benefits": "Rs 21,000 fixed deposit",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://wcdhry.gov.in",
@@ -3972,12 +4097,13 @@
       "Birth Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Haryana"
   },
   {
     "id": "STATE-041",
     "title": "Chirayu Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Haryana",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -3993,7 +4119,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Haryana (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 5,00,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://chirayuayushmanharyana.in",
@@ -4003,12 +4129,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Haryana"
   },
   {
     "id": "STATE-042",
     "title": "Deen Dayal Jan Awas Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Haryana",
     "level": "State",
     "category": "Housing",
     "minAge": 18,
@@ -4024,7 +4151,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Haryana (not Tamil Nadu-specific)",
     "benefits": "Affordable housing plots and units",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://tcpharyana.gov.in",
@@ -4034,12 +4161,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Haryana"
   },
   {
     "id": "STATE-043",
     "title": "Punjab Shagun Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Punjab",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -4055,7 +4183,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Punjab (not Tamil Nadu-specific)",
     "benefits": "Rs 51,000 assistance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sswcd.punjab.gov.in",
@@ -4066,12 +4194,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Punjab"
   },
   {
     "id": "STATE-044",
     "title": "Ashirwad Scheme Punjab",
-    "department": "Govt of India",
+    "department": "Govt of Punjab",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -4087,7 +4216,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Punjab (not Tamil Nadu-specific)",
     "benefits": "Rs 51,000 assistance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sswcd.punjab.gov.in",
@@ -4097,12 +4226,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Punjab"
   },
   {
     "id": "STATE-045",
     "title": "Assam Orunodoi Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Assam",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -4118,7 +4248,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Assam (not Tamil Nadu-specific)",
     "benefits": "Rs 1,250 per month",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://orunodoi.assam.gov.in",
@@ -4129,12 +4259,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Assam"
   },
   {
     "id": "STATE-046",
     "title": "Mukhya Mantri Krishi Sahay Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Gujarat",
     "level": "State",
     "category": "Agriculture",
     "minAge": 18,
@@ -4150,7 +4281,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Gujarat (not Tamil Nadu-specific)",
     "benefits": "Compensation as per crop loss assessment",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ikhedut.gujarat.gov.in",
@@ -4160,12 +4291,13 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Gujarat"
   },
   {
     "id": "STATE-047",
     "title": "Vahli Dikri Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Gujarat",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -4181,7 +4313,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Gujarat (not Tamil Nadu-specific)",
     "benefits": "Rs 1,10,000 across installments",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://wcd.gujarat.gov.in",
@@ -4192,12 +4324,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Gujarat"
   },
   {
     "id": "STATE-048",
     "title": "Mukhyamantri Amrutum Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Gujarat",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -4213,7 +4346,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Gujarat (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 5,00,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://magujarat.com",
@@ -4223,12 +4356,13 @@
       "BPL Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Gujarat"
   },
   {
     "id": "STATE-049",
     "title": "Manav Kalyan Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Gujarat",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 16,
@@ -4244,7 +4378,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Gujarat (not Tamil Nadu-specific)",
     "benefits": "Free tool kits for self employment",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://e-kutir.gujarat.gov.in",
@@ -4254,12 +4388,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Gujarat"
   },
   {
     "id": "STATE-050",
     "title": "Odisha KALIA Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Odisha",
     "level": "State",
     "category": "Agriculture",
     "minAge": 18,
@@ -4275,7 +4410,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Odisha (not Tamil Nadu-specific)",
     "benefits": "Rs 10,000-12,500 per year",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://kalia.odisha.gov.in",
@@ -4285,12 +4420,13 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Odisha"
   },
   {
     "id": "STATE-051",
     "title": "Biju Swasthya Kalyan Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Odisha",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -4306,7 +4442,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Odisha (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 5,00,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://bsky.odisha.gov.in",
@@ -4316,12 +4452,13 @@
       "Ration Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Odisha"
   },
   {
     "id": "STATE-052",
     "title": "Mukhyamantri Kanya Vivah Yojana Odisha",
-    "department": "Govt of India",
+    "department": "Govt of Odisha",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -4337,7 +4474,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Odisha (not Tamil Nadu-specific)",
     "benefits": "Rs 10,000-25,000 assistance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://ssepd.odisha.gov.in",
@@ -4347,12 +4484,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Odisha"
   },
   {
     "id": "STATE-053",
     "title": "Jharkhand Mukhyamantri Kanyadan Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Jharkhand",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -4368,7 +4506,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Jharkhand (not Tamil Nadu-specific)",
     "benefits": "Rs 30,000 assistance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://jsly.jharkhand.gov.in",
@@ -4378,12 +4516,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Jharkhand"
   },
   {
     "id": "STATE-054",
     "title": "Mukhyamantri Sukanya Yojana Jharkhand",
-    "department": "Govt of India",
+    "department": "Govt of Jharkhand",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -4400,7 +4539,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Jharkhand (not Tamil Nadu-specific)",
     "benefits": "Rs 40,000 across installments",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://jsly.jharkhand.gov.in",
@@ -4410,12 +4549,13 @@
       "Birth Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Jharkhand"
   },
   {
     "id": "STATE-055",
     "title": "Chhattisgarh Rajiv Gandhi Kisan Nyay Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Chhattisgarh",
     "level": "State",
     "category": "Agriculture",
     "minAge": 18,
@@ -4431,7 +4571,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Chhattisgarh (not Tamil Nadu-specific)",
     "benefits": "Assistance per acre based on crop",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://kisan.cg.nic.in",
@@ -4441,12 +4581,13 @@
       "Land Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Chhattisgarh"
   },
   {
     "id": "STATE-056",
     "title": "Chhattisgarh Mukhyamantri Kanya Vivah Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Chhattisgarh",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 18,
@@ -4462,7 +4603,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Chhattisgarh (not Tamil Nadu-specific)",
     "benefits": "Rs 20,000 assistance",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://socialwelfare.cg.gov.in",
@@ -4472,12 +4613,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Chhattisgarh"
   },
   {
     "id": "STATE-057",
     "title": "Uttarakhand Nandadevi Kanya Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Uttarakhand",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -4493,7 +4635,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Uttarakhand (not Tamil Nadu-specific)",
     "benefits": "Rs 51,000 maturity amount",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://wecd.uk.gov.in",
@@ -4504,12 +4646,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Uttarakhand"
   },
   {
     "id": "STATE-058",
     "title": "Himachal Pradesh Beti Hai Anmol Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Himachal Pradesh",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -4525,7 +4668,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Himachal Pradesh (not Tamil Nadu-specific)",
     "benefits": "Rs 12,000-15,000 across installments",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://hpwcd.nic.in",
@@ -4536,12 +4679,13 @@
       "BPL Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Himachal Pradesh"
   },
   {
     "id": "STATE-059",
     "title": "Delhi Ladli Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Delhi",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -4557,7 +4701,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Delhi (not Tamil Nadu-specific)",
     "benefits": "Rs 1,00,000 maturity amount",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://wcd.delhi.gov.in",
@@ -4568,12 +4712,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Delhi"
   },
   {
     "id": "STATE-060",
     "title": "Delhi Mukhyamantri Tirth Yatra Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Delhi",
     "level": "State",
     "category": "Pension & Social Security",
     "minAge": 60,
@@ -4589,7 +4734,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Delhi (not Tamil Nadu-specific)",
     "benefits": "Free pilgrimage travel and accommodation",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://tirthyatra.delhi.gov.in",
@@ -4599,12 +4744,13 @@
       "Age Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Delhi"
   },
   {
     "id": "STATE-061",
     "title": "Jammu and Kashmir Ladli Beti Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Jammu and Kashmir",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -4620,7 +4766,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Jammu and Kashmir (not Tamil Nadu-specific)",
     "benefits": "Rs 50,000 maturity amount",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://jakdirsw.nic.in",
@@ -4630,12 +4776,13 @@
       "Birth Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Jammu and Kashmir"
   },
   {
     "id": "STATE-062",
     "title": "Goa Ladli Laxmi Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Goa",
     "level": "State",
     "category": "Women & Child Welfare",
     "minAge": 0,
@@ -4651,7 +4798,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Goa (not Tamil Nadu-specific)",
     "benefits": "Rs 1,00,000 maturity amount",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://goa.gov.in",
@@ -4662,12 +4809,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Goa"
   },
   {
     "id": "STATE-063",
     "title": "Manipur Chief Minister's Scholarship Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Manipur",
     "level": "State",
     "category": "Scholarship & Education",
     "minAge": 0,
@@ -4684,7 +4832,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Manipur (not Tamil Nadu-specific)",
     "benefits": "Scholarship as per merit list",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://manipur.gov.in",
@@ -4694,12 +4842,13 @@
       "Mark Sheet"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Manipur"
   },
   {
     "id": "STATE-064",
     "title": "Sikkim Chief Minister's Rural Housing Mission",
-    "department": "Govt of India",
+    "department": "Govt of Sikkim",
     "level": "State",
     "category": "Housing",
     "minAge": 18,
@@ -4715,7 +4864,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Sikkim (not Tamil Nadu-specific)",
     "benefits": "Financial assistance for house construction",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://sikkim.gov.in",
@@ -4725,12 +4874,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Sikkim"
   },
   {
     "id": "STATE-065",
     "title": "Tripura Chief Minister Jan Arogya Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Tripura",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -4746,7 +4896,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Tripura (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 5,00,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://tripura.gov.in",
@@ -4756,12 +4906,13 @@
       "Ration Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Tripura"
   },
   {
     "id": "STATE-066",
     "title": "Meghalaya Chief Minister's Elderly Support Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Meghalaya",
     "level": "State",
     "category": "Pension & Social Security",
     "minAge": 60,
@@ -4777,7 +4928,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Meghalaya (not Tamil Nadu-specific)",
     "benefits": "Monthly pension support",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://meghalaya.gov.in",
@@ -4787,12 +4938,13 @@
       "Age Proof"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Meghalaya"
   },
   {
     "id": "STATE-067",
     "title": "Nagaland Chief Minister's Comprehensive Health Insurance Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Nagaland",
     "level": "State",
     "category": "Healthcare",
     "minAge": 0,
@@ -4808,7 +4960,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Nagaland (not Tamil Nadu-specific)",
     "benefits": "Coverage up to Rs 5,00,000 per family",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://nagaland.gov.in",
@@ -4818,12 +4970,13 @@
       "Ration Card"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Nagaland"
   },
   {
     "id": "STATE-068",
     "title": "Mizoram Chief Minister's Rural Housing Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Mizoram",
     "level": "State",
     "category": "Housing",
     "minAge": 18,
@@ -4839,7 +4992,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Mizoram (not Tamil Nadu-specific)",
     "benefits": "Financial assistance for house construction",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://mizoram.gov.in",
@@ -4849,12 +5002,13 @@
       "Income Certificate"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Mizoram"
   },
   {
     "id": "STATE-069",
     "title": "Arunachal Pradesh Chief Minister's Adarsh Gram Yojana",
-    "department": "Govt of India",
+    "department": "Govt of Arunachal Pradesh",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 0,
@@ -4870,7 +5024,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Arunachal Pradesh (not Tamil Nadu-specific)",
     "benefits": "Village infrastructure development",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://arunachalpradesh.gov.in",
@@ -4879,12 +5033,13 @@
       "Village Records"
     ],
     "isNew": false,
-    "status": "Active"
+    "status": "Active",
+    "state": "Arunachal Pradesh"
   },
   {
     "id": "STATE-070",
     "title": "Punjab Ghar Ghar Rozgar Scheme",
-    "department": "Govt of India",
+    "department": "Govt of Punjab",
     "level": "State",
     "category": "General Welfare & Benefits",
     "minAge": 18,
@@ -4900,7 +5055,7 @@
     "casteCategory": [
       "All"
     ],
-    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "districtEligibility": "Applicable across Punjab (not Tamil Nadu-specific)",
     "benefits": "Employment linkage and training support",
     "applicationDeadline": "2026-12-31",
     "officialUrl": "https://pgrkam.com",
@@ -4910,6 +5065,1081 @@
       "Educational Certificate"
     ],
     "isNew": false,
+    "status": "Active",
+    "state": "Punjab"
+  },
+  {
+    "id": "TN-006",
+    "title": "Kalaignar Magalir Urimai Thittam (KMUT)",
+    "department": "Govt of Tamil Nadu",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 21,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 250000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Monthly direct income support of Rs 1,000 to eligible women heads of households",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://kmut.tn.gov.in",
+    "description": "Flagship monthly cash-assistance scheme for women who are the head of their household, credited directly to their bank account.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Passbook",
+      "Ration Card"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-007",
+    "title": "Thaimaaman Thanga Mothira Thittam",
+    "department": "Health and Family Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "1 gram, 22-carat gold ring for every child born in a Tamil Nadu government hospital",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://hfw.tn.gov.in",
+    "description": "Welfare initiative that gives a gold ring to mothers for every child delivered in a state-run government hospital, to encourage institutional deliveries.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Hospital Discharge Summary"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-008",
+    "title": "Chief Minister's Girl Child Protection Scheme",
+    "department": "Social Welfare and Women Empowerment Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 1,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Rs 50,000 fixed deposit for a single girl child, or Rs 25,000 each for two girl children, maturing after 18 years",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in/en",
+    "description": "Long-running scheme to prevent gender discrimination by giving families of girl children a maturity fixed deposit payable when the child turns 18, provided she stays unmarried and has completed schooling.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Parents' Marriage Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-009",
+    "title": "Marriage Assistance Scheme for Poor Women",
+    "department": "Social Welfare and Women Empowerment Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "One-time cash assistance of up to Rs 25,000 towards the wedding expenses of daughters from low-income, widow, or destitute families",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in/en",
+    "description": "Financial assistance paid to eligible brides (or their families) at the time of marriage to reduce the burden of wedding expenses for economically weaker households.",
+    "documents": [
+      "Aadhaar Card",
+      "Marriage Invitation/Certificate",
+      "Income Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-010",
+    "title": "Vettri Payana Thittam (Free Bus Travel for Women)",
+    "department": "Transport Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free travel for women and transgender persons on ordinary, deluxe, express and mofussil TNSTC/MTC buses",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tn.gov.in/transport",
+    "description": "Statewide scheme allowing women and transgender persons to travel free on government-operated town and mofussil buses across Tamil Nadu.",
+    "documents": [
+      "Any Government-issued Photo ID"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-011",
+    "title": "Chief Minister's Breakfast Scheme",
+    "department": "School Education Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 14,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free nutritious breakfast every school day for students studying in Tamil Nadu government schools",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnschools.gov.in",
+    "description": "Provides a free morning meal to children in government primary schools to improve nutrition and school attendance.",
+    "documents": [
+      "School ID / Admission Proof"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-012",
+    "title": "Illam Thedi Kalvi (ITK)",
+    "department": "School Education Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 14,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free after-school and home-based supplementary learning support delivered by community volunteers",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnschools.gov.in/itk",
+    "description": "Learning-recovery programme that sends trained volunteers to villages and neighbourhoods to give extra academic support to government school students, especially in foundational literacy and numeracy.",
+    "documents": [
+      "School ID / Admission Proof"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-013",
+    "title": "Vetri Laptop Scheme",
+    "department": "Higher Education Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 17,
+    "maxAge": 25,
+    "gender": "All",
+    "incomeCap": 250000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free laptop for eligible first-year government/government-aided college students",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tn.gov.in/highereducation",
+    "description": "Provides a free laptop to students joining government and government-aided arts, science and engineering colleges to support digital learning.",
+    "documents": [
+      "Aadhaar Card",
+      "College Admission Proof",
+      "Income Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-014",
+    "title": "Free Bicycle Scheme for Girl Students",
+    "department": "School Education Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 14,
+    "maxAge": 17,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free bicycle for girl students who complete Class 10 and continue into Class 11 in government/aided schools",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnschools.gov.in",
+    "description": "Encourages girls in rural areas to continue higher secondary education by removing the transport barrier to school.",
+    "documents": [
+      "School ID",
+      "Class 10 Marksheet"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-015",
+    "title": "Post-Matric Scholarship for SC/ST Students (Tamil Nadu)",
+    "department": "Adi Dravidar and Tribal Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 15,
+    "maxAge": 30,
+    "gender": "All",
+    "incomeCap": 250000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "SC",
+      "ST"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Tuition fee reimbursement plus a monthly maintenance allowance for SC/ST students in post-matric courses",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnadw.tn.gov.in",
+    "description": "State-implemented scholarship covering tuition fees and a living allowance for Scheduled Caste and Scheduled Tribe students pursuing courses beyond Class 10.",
+    "documents": [
+      "Community Certificate",
+      "Income Certificate",
+      "Bonafide Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-016",
+    "title": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+    "department": "Health and Family Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 400000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Cashless health insurance cover of up to Rs 5 lakh per family per year at empanelled government and private hospitals",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://cmchistn.com",
+    "description": "Flagship health-insurance scheme giving low-income families in Tamil Nadu cashless treatment for over 1,000 surgical/medical procedures.",
+    "documents": [
+      "Family Card / Ration Card",
+      "Aadhaar Card"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-017",
+    "title": "Makkalai Thedi Maruthuvam (MTM)",
+    "department": "Health and Family Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Healthcare",
+    "minAge": 45,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free doorstep delivery of medicines and basic checkups for non-communicable disease patients aged 45+",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://hfw.tn.gov.in/mtm",
+    "description": "Home-based healthcare programme that sends field health teams to deliver hypertension/diabetes medication, palliative care and physiotherapy to people with restricted mobility.",
+    "documents": [
+      "Aadhaar Card",
+      "Existing Prescription (if any)"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-018",
+    "title": "Amma Baby Care Kit",
+    "department": "Health and Family Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free baby-care kit with essential newborn items given to every mother delivering in a government hospital",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://hfw.tn.gov.in",
+    "description": "Provides new mothers with a kit of essential newborn-care items at the time of hospital discharge, at no cost.",
+    "documents": [
+      "Hospital Discharge Summary"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-019",
+    "title": "Tamil Nadu 108 Ambulance / Emergency Care Initiative",
+    "department": "Health and Family Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free, round-the-clock emergency ambulance response and transport to the nearest government hospital",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://hfw.tn.gov.in/108",
+    "description": "State emergency medical response service providing free ambulance transport for accident victims and medical emergencies anywhere in Tamil Nadu.",
+    "documents": [
+      "None required at point of use"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-020",
+    "title": "Destitute Widow Pension Scheme",
+    "department": "Social Welfare and Women Empowerment Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Pension & Social Security",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Monthly pension of Rs 1,000 to destitute widows with no regular source of income",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in/en",
+    "description": "Social security pension paid monthly to widows who lack a stable income source, administered through the Social Welfare Department.",
+    "documents": [
+      "Aadhaar Card",
+      "Husband's Death Certificate",
+      "Income Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-021",
+    "title": "Destitute Old Age Pension Scheme",
+    "department": "Social Welfare and Women Empowerment Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Monthly pension of Rs 1,000 for destitute senior citizens above 60 with no means of livelihood",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in/en",
+    "description": "State old-age pension paid to elderly residents of Tamil Nadu who have no regular income or family support.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Income Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-022",
+    "title": "Differently Abled Pension Scheme",
+    "department": "Department for the Welfare of Differently Abled Persons",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Pension & Social Security",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Monthly pension of Rs 1,000 to persons with 40% or more benchmark disability",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tndwd.tn.gov.in",
+    "description": "Monthly cash assistance for persons with disabilities who are unable to earn a regular livelihood, paid through the Department for the Welfare of Differently Abled Persons.",
+    "documents": [
+      "Disability Certificate (40%+)",
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-023",
+    "title": "Tamil Nadu Millet Mission",
+    "department": "Agriculture and Farmers Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Agriculture",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Input subsidies and support for cultivation of Cumbu, Cholam, Ragi and minor millets",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnagrisnet.tn.gov.in",
+    "description": "State mission promoting millet cultivation among Tamil Nadu farmers through seed subsidies, training and market linkage support.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records / Patta"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-024",
+    "title": "Cotton Renaissance Mission",
+    "department": "Agriculture and Farmers Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Agriculture",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Five-year support package for cotton farmers covering seeds, extension services and market linkages",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnagrisnet.tn.gov.in",
+    "description": "State mission to revive cotton cultivation in Tamil Nadu with subsidised inputs and technical support for cotton-growing farmers.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records / Patta"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-025",
+    "title": "Drop by Drop Water Scheme (Micro-Irrigation Subsidy)",
+    "department": "Agriculture and Farmers Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Agriculture",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Subsidy of up to 100% for small/marginal farmers to install drip and sprinkler micro-irrigation systems",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnagrisnet.tn.gov.in",
+    "description": "Micro-irrigation subsidy scheme helping farmers switch to water-efficient drip and sprinkler irrigation to reduce water use and improve yields.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records / Patta",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-026",
+    "title": "Uzhavar AI Scheme",
+    "department": "Agriculture and Farmers Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Agriculture",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free AI and machine-learning based crop advisories delivered to farmers' mobile phones",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnagrisnet.tn.gov.in",
+    "description": "Digital advisory scheme that uses AI/ML models to send farmers personalised crop, pest and weather advisories via SMS/app.",
+    "documents": [
+      "Aadhaar Card",
+      "Mobile Number"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-027",
+    "title": "New Entrepreneur-cum-Enterprise Development Scheme (NEEDS)",
+    "department": "MSME Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 21,
+    "maxAge": 45,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Unemployed"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Collateral-free bank loan of up to Rs 50 lakh with capital subsidy for first-generation entrepreneurs",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://msme.tn.gov.in/needs",
+    "description": "Flagship Tamil Nadu scheme helping educated first-generation entrepreneurs set up new manufacturing or service enterprises with subsidised, collateral-free loans.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificates",
+      "Project Report"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-028",
+    "title": "TAHDCO Loan Scheme for SC/ST Entrepreneurs",
+    "department": "Tamil Nadu Adi Dravidar Housing and Development Corporation (TAHDCO)",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 55,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Unemployed"
+    ],
+    "casteCategory": [
+      "SC",
+      "ST"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Subsidised term loans and margin-money assistance for SC/ST entrepreneurs starting small businesses",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tahdco.tn.gov.in",
+    "description": "TAHDCO provides collateral-light loans and subsidy support to Scheduled Caste and Scheduled Tribe individuals in Tamil Nadu to start or expand small enterprises.",
+    "documents": [
+      "Community Certificate",
+      "Aadhaar Card",
+      "Project Report"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-029",
+    "title": "Backward Classes Economic Development Corporation (BCEDC) Loan Scheme",
+    "department": "Backward Classes, Most Backward Classes and Minorities Welfare Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 55,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Unemployed"
+    ],
+    "casteCategory": [
+      "BC",
+      "MBC"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Low-interest term loans for BC/MBC/Minority individuals to start small businesses or self-employment ventures",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnbcmbcmw.tn.gov.in",
+    "description": "State corporation loan scheme offering subsidised credit to Backward Class, Most Backward Class and Minority community members for income-generating activities.",
+    "documents": [
+      "Community Certificate",
+      "Aadhaar Card",
+      "Project Report"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-030",
+    "title": "Payroll Subsidy Scheme for MSMEs",
+    "department": "MSME Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Reimbursement of a share of employee wages to registered MSMEs that create new jobs",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://msme.tn.gov.in",
+    "description": "Wage-subsidy scheme encouraging Tamil Nadu MSMEs to hire more workers by partially reimbursing employer-side payroll costs for new employees.",
+    "documents": [
+      "Udyam Registration",
+      "GST Certificate",
+      "Payroll Records"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-031",
+    "title": "Chief Minister's Green House Scheme",
+    "department": "Rural Development and Panchayat Raj Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Housing",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Fully-built subsidised house (Green House) for houseless rural poor families",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnrd.tn.gov.in",
+    "description": "Rural housing scheme providing a completed pucca house, rather than only a construction subsidy, to landless and houseless families in Tamil Nadu villages.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Income Certificate",
+      "No-House Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-032",
+    "title": "Tamil Nadu Slum Clearance Board Housing Scheme",
+    "department": "Tamil Nadu Slum Clearance Board",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Housing",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 100000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free or highly subsidised tenement housing for eligible slum-dwelling families in urban areas",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnscb.tn.gov.in",
+    "description": "Urban housing and slum-rehabilitation scheme that relocates and rehouses eligible slum families into multi-storey tenements with basic amenities.",
+    "documents": [
+      "Aadhaar Card",
+      "Slum Residency Proof",
+      "Ration Card"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-033",
+    "title": "Naan Mudhalvan Skill Training Programme",
+    "department": "Higher Education Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Skill Development & Employment",
+    "minAge": 18,
+    "maxAge": 35,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student",
+      "Unemployed"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free industry-aligned skill training, certification and placement support for students and job seekers",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://naanmudhalvan.tn.gov.in",
+    "description": "State-run employability mission offering free skill-development modules in colleges plus dedicated training and placement support for unemployed youth.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificates"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-034",
+    "title": "TN Free Electricity Scheme (200 Units)",
+    "department": "Tamil Nadu Generation and Distribution Corporation (TANGEDCO)",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Solar & Energy",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "First 200 units of electricity free every two-month billing cycle for domestic consumers",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://www.tangedco.gov.in",
+    "description": "Auto-applied electricity subsidy: eligible domestic TANGEDCO consumers pay zero bill if their household consumption stays within 200 units per two-month cycle.",
+    "documents": [
+      "None — auto-applied to eligible domestic accounts"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-035",
+    "title": "Chief Minister's Solar Rooftop Subsidy Scheme",
+    "department": "Tamil Nadu Energy Development Agency (TEDA)",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "Solar & Energy",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Capital subsidy of up to 40% on rooftop solar panel installation for residential consumers",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://teda.tn.gov.in",
+    "description": "State subsidy on top of the central rooftop solar subsidy, helping Tamil Nadu households cut installation costs for grid-connected rooftop solar systems.",
+    "documents": [
+      "Aadhaar Card",
+      "Electricity Connection Proof (EB Card)"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-036",
+    "title": "Free Rice / PDS Scheme (Tamil Nadu)",
+    "department": "Civil Supplies and Consumer Protection Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 100000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free rice (up to 20 kg per family per month) plus subsidised essential commodities via ration shops",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnpds.gov.in",
+    "description": "Public distribution system providing free rice and subsidised staples such as sugar, pulses and cooking oil to ration cardholders across Tamil Nadu.",
+    "documents": [
+      "Ration Card",
+      "Aadhaar Card"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-037",
+    "title": "Marriage Assistance Scheme for Government Employees' Children",
+    "department": "Finance Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Government Employee"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "One-time cash assistance towards the marriage of a government employee's son or daughter",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tn.gov.in/finance",
+    "description": "Financial assistance paid to serving or retired Tamil Nadu government employees when their son or daughter reaches legal marriageable age and gets married.",
+    "documents": [
+      "Employee ID",
+      "Marriage Certificate/Invitation"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-038",
+    "title": "Old Age Homes Scheme",
+    "department": "Social Welfare and Women Empowerment Department",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "category": "General Welfare & Benefits",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free shelter, food and basic medical care for destitute senior citizens in government-run old age homes",
+    "applicationDeadline": "2027-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in/en",
+    "description": "Provides free residential care — shelter, food and basic healthcare — to elderly persons in Tamil Nadu who have no family support.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof"
+    ],
+    "isNew": true,
     "status": "Active"
   }
 ]

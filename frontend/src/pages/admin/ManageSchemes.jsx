@@ -3,7 +3,7 @@ import SEO from '../../components/SEO.jsx';
 import { schemesApi, adminApi } from '../../services/api.js';
 
 const EMPTY_FORM = {
-  title: '', department: '', level: 'State', category: 'General Welfare & Benefits',
+  title: '', department: '', level: 'State', state: 'Tamil Nadu', category: 'General Welfare & Benefits',
   minAge: 0, maxAge: 100, gender: 'All', incomeCap: 9999999,
   education: 'All', occupation: 'All', benefits: '', applicationDeadline: '2027-12-31',
   officialUrl: '', description: '', documents: '',
@@ -29,7 +29,8 @@ export default function ManageSchemes() {
     e.preventDefault();
     setSaving(true);
     try {
-      await adminApi.createScheme(form);
+      const payload = { ...form, state: form.level === 'Central' ? 'All India' : (form.state || 'Tamil Nadu') };
+      await adminApi.createScheme(payload);
       setForm(EMPTY_FORM);
       setShowForm(false);
       load();
@@ -67,6 +68,13 @@ export default function ManageSchemes() {
             <option>State</option>
             <option>Central</option>
           </select>
+          <input
+            required={form.level === 'State'}
+            placeholder="State (e.g. Tamil Nadu) — leave blank for Central"
+            className="input-field"
+            value={form.state}
+            onChange={set('state')}
+          />
           <input required placeholder="Category / sector" className="input-field sm:col-span-2" value={form.category} onChange={set('category')} />
           <input required placeholder="Official URL" className="input-field sm:col-span-2" value={form.officialUrl} onChange={set('officialUrl')} />
           <textarea required placeholder="Description" className="input-field sm:col-span-2" value={form.description} onChange={set('description')} />
@@ -84,7 +92,7 @@ export default function ManageSchemes() {
             <tr>
               <th className="px-4 py-3">Title</th>
               <th className="px-4 py-3">Sector</th>
-              <th className="px-4 py-3">Level</th>
+              <th className="px-4 py-3">Level / State</th>
               <th className="px-4 py-3">Status</th>
               <th className="px-4 py-3">Actions</th>
             </tr>
@@ -97,7 +105,7 @@ export default function ManageSchemes() {
                 <tr key={s.id}>
                   <td className="px-4 py-3 font-semibold text-navy">{s.title}</td>
                   <td className="px-4 py-3 text-slate-500">{s.category}</td>
-                  <td className="px-4 py-3 text-slate-500">{s.level}</td>
+                  <td className="px-4 py-3 text-slate-500">{s.level === 'Central' ? 'Central' : s.state}</td>
                   <td className="px-4 py-3">
                     <span className={`badge ${s.status === 'Active' ? 'bg-emerald-light text-emerald' : 'bg-slate-100 text-slate-500'}`}>
                       {s.status}

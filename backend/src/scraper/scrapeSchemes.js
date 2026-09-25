@@ -98,11 +98,15 @@ async function scrapeMyScheme({ pages = 3, pageSize = 20 } = {}) {
         const title = f.schemeName?.[0] || f.schemeName || f.title;
         if (!title) continue;
 
+        const isStateScheme = (f.schemeCategory?.[0] || '').toLowerCase().includes('state');
+        const stateName = f.state?.[0] || f.state || (isStateScheme ? 'Unspecified State' : 'All India');
+
         results.push({
           id: `MS-${f.schemeId?.[0] || f.schemeId || title.slice(0, 12)}`,
           title,
           department: (f.nodalMinistryName?.[0] || f.nodalMinistryName || 'Government of India'),
-          level: (f.schemeCategory?.[0] || '').toLowerCase().includes('state') ? 'State' : 'Central',
+          level: isStateScheme ? 'State' : 'Central',
+          state: stateName,
           category: classifySector(`${title} ${f.tags?.join(' ') || ''}`),
           benefits: f.briefDescription?.[0] || f.briefDescription || 'See official page for benefit details',
           description: f.briefDescription?.[0] || f.briefDescription || title,
@@ -127,7 +131,7 @@ async function scrapeMyScheme({ pages = 3, pageSize = 20 } = {}) {
 // (many do — e.g. department press-release / scheme-list pages). Adjust the
 // selectors to match the target page's markup.
 // ---------------------------------------------------------------------------
-async function scrapeHtmlListing({ url, itemSelector, titleSelector, linkSelector, level = 'State', sourceName }) {
+async function scrapeHtmlListing({ url, itemSelector, titleSelector, linkSelector, level = 'State', state = 'Unspecified State', sourceName }) {
   const results = [];
   try {
     const { data: html } = await http.get(url);
@@ -146,6 +150,7 @@ async function scrapeHtmlListing({ url, itemSelector, titleSelector, linkSelecto
         title,
         department: sourceName,
         level,
+        state,
         category: classifySector(title),
         benefits: 'See official page for benefit details',
         description: title,
@@ -169,7 +174,8 @@ const HTML_SOURCES = [
   //   itemSelector: '.view-content .views-row',
   //   titleSelector: 'a',
   //   linkSelector: 'a',
-  //   level: 'State'
+  //   level: 'State',
+  //   state: 'Tamil Nadu'
   // }
 ];
 
@@ -187,6 +193,7 @@ async function upsertScrapedSchemes(rows) {
       s.title,
       s.department,
       s.level,
+      s.state || (s.level === 'Central' ? 'All India' : 'Unspecified State'),
       sector.category,
       0, 100, 'All', 9999999,
       JSON.stringify(['All']), JSON.stringify(['All']), JSON.stringify(['All']),
@@ -201,7 +208,7 @@ async function upsertScrapedSchemes(rows) {
 
     if (existing.length > 0) {
       await runAsync(
-        `UPDATE schemes SET title=?, department=?, level=?, category=?, min_age=?, max_age=?, gender=?, income_cap=?,
+        `UPDATE schemes SET title=?, department=?, level=?, state=?, category=?, min_age=?, max_age=?, gender=?, income_cap=?,
          education=?, occupation=?, caste_category=?, district_eligibility=?, benefits=?, application_deadline=?,
          official_url=?, description=?, documents=?, is_new=?, status=?, updated_at=CURRENT_TIMESTAMP WHERE id=?`,
         [...common, s.id]
@@ -209,9 +216,9 @@ async function upsertScrapedSchemes(rows) {
       updated++;
     } else {
       await runAsync(
-        `INSERT INTO schemes (id, title, department, level, category, min_age, max_age, gender, income_cap,
+        `INSERT INTO schemes (id, title, department, level, state, category, min_age, max_age, gender, income_cap,
          education, occupation, caste_category, district_eligibility, benefits, application_deadline,
-         official_url, description, documents, is_new, status) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+         official_url, description, documents, is_new, status) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
         [s.id, ...common]
       );
       inserted++;

@@ -56,7 +56,7 @@ router.get('/metrics', async (req, res) => {
   try {
     const totalRow = await getAsync(`SELECT COUNT(*) as count FROM schemes`);
     const activeRow = await getAsync(`SELECT COUNT(*) as count FROM schemes WHERE status = 'Active'`);
-    const tnRow = await getAsync(`SELECT COUNT(*) as count FROM schemes WHERE level = 'Tamil Nadu'`);
+    const tnRow = await getAsync(`SELECT COUNT(*) as count FROM schemes WHERE state = 'Tamil Nadu'`);
     const centralRow = await getAsync(`SELECT COUNT(*) as count FROM schemes WHERE level = 'Central'`);
     const userRow = await getAsync(`SELECT COUNT(*) as count FROM users WHERE role = 'user'`);
 
@@ -82,6 +82,7 @@ router.post('/schemes', async (req, res) => {
       title,
       department,
       level,
+      state,
       category,
       minAge,
       maxAge,
@@ -104,13 +105,14 @@ router.post('/schemes', async (req, res) => {
     const docArr = Array.isArray(documents) ? documents : typeof documents === 'string' ? documents.split(',').map(d => d.trim()) : [];
 
     await runAsync(
-      `INSERT INTO schemes (id, title, department, level, category, min_age, max_age, gender, income_cap, education, occupation, caste_category, district_eligibility, benefits, application_deadline, official_url, description, documents, is_new, status)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1, 'Active')`,
+      `INSERT INTO schemes (id, title, department, level, state, category, min_age, max_age, gender, income_cap, education, occupation, caste_category, district_eligibility, benefits, application_deadline, official_url, description, documents, is_new, status)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1, 'Active')`,
       [
         newId,
         title,
         department,
         level,
+        state || (level === 'Central' ? 'All India' : 'Tamil Nadu'),
         category,
         parseInt(minAge || 0),
         parseInt(maxAge || 100),

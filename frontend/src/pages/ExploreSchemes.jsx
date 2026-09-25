@@ -20,6 +20,7 @@ export default function ExploreSchemes() {
   const [totalPages, setTotalPages] = useState(1);
   const [search, setSearch] = useState('');
   const [level, setLevel] = useState('All');
+  const [stateFilter, setStateFilter] = useState('All');
   const [loadingSchemes, setLoadingSchemes] = useState(false);
 
   const [savedIds, setSavedIds] = useState([]);
@@ -39,11 +40,17 @@ export default function ExploreSchemes() {
 
   // Step 2: only when a sector is selected do we fetch its schemes — never
   // the whole catalog at once.
-  const loadSector = useCallback((slug, pageNum, searchTerm, levelFilter) => {
+  const loadSector = useCallback((slug, pageNum, searchTerm, levelFilter, stateValue) => {
     if (!slug) return;
     setLoadingSchemes(true);
     sectorsApi
-      .schemesBySector(slug, { page: pageNum, limit: 12, search: searchTerm || undefined, level: levelFilter !== 'All' ? levelFilter : undefined })
+      .schemesBySector(slug, {
+        page: pageNum,
+        limit: 12,
+        search: searchTerm || undefined,
+        level: levelFilter !== 'All' ? levelFilter : undefined,
+        state: stateValue && stateValue !== 'All' ? stateValue : undefined,
+      })
       .then(({ data }) => {
         setSchemes(data.schemes || []);
         setSectorMeta(data.sector || null);
@@ -58,23 +65,24 @@ export default function ExploreSchemes() {
 
   useEffect(() => {
     setPage(1);
-    if (activeSlug) loadSector(activeSlug, 1, search, level);
+    if (activeSlug) loadSector(activeSlug, 1, search, level, stateFilter);
   }, [activeSlug]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (activeSlug) loadSector(activeSlug, page, search, level);
+    if (activeSlug) loadSector(activeSlug, page, search, level, stateFilter);
   }, [page]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSectorClick = (slug) => {
     setSearchParams(slug === activeSlug ? {} : { sector: slug });
     setSearch('');
     setLevel('All');
+    setStateFilter('All');
   };
 
   const handleFilterSubmit = (e) => {
     e.preventDefault();
     setPage(1);
-    loadSector(activeSlug, 1, search, level);
+    loadSector(activeSlug, 1, search, level, stateFilter);
   };
 
   const handleToggleSave = async (schemeId) => {
@@ -117,6 +125,10 @@ export default function ExploreSchemes() {
               <option value="All">All levels</option>
               <option value="Central">Central</option>
               <option value="State">State</option>
+            </select>
+            <select className="input-field sm:max-w-[180px]" value={stateFilter} onChange={(e) => setStateFilter(e.target.value)}>
+              <option value="All">All states</option>
+              <option value="Tamil Nadu">Tamil Nadu only</option>
             </select>
             <button type="submit" className="btn-secondary sm:w-auto">Filter</button>
           </form>

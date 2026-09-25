@@ -9,7 +9,7 @@ export default function SchemeCard({ scheme, onToggleSave, isSaved }) {
             scheme.level === 'Central' ? 'bg-royal-light text-royal' : 'bg-teal-light text-teal'
           }`}
         >
-          {scheme.level}
+          {scheme.level === 'Central' ? 'Central' : scheme.state || 'State'}
         </span>
         {scheme.isNew && <span className="badge bg-emerald-light text-emerald">New</span>}
       </div>

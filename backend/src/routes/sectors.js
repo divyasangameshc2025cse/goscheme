@@ -15,6 +15,7 @@ function parseSchemeRow(row) {
     title: row.title,
     department: row.department,
     level: row.level,
+    state: row.state,
     category: row.category,
     minAge: row.min_age,
     maxAge: row.max_age,
@@ -71,7 +72,7 @@ router.get('/:slug/schemes', async (req, res) => {
     const page = Math.max(1, parseInt(req.query.page) || 1);
     const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 12));
     const offset = (page - 1) * limit;
-    const { search, level } = req.query;
+    const { search, level, state } = req.query;
 
     let sql = `SELECT * FROM schemes WHERE status = 'Active' AND category = ?`;
     const params = [category];
@@ -79,6 +80,10 @@ router.get('/:slug/schemes', async (req, res) => {
     if (level && level !== 'All') {
       sql += ` AND level = ?`;
       params.push(level);
+    }
+    if (state && state !== 'All') {
+      sql += ` AND state = ?`;
+      params.push(state);
     }
     if (search) {
       sql += ` AND (title LIKE ? OR description LIKE ? OR department LIKE ?)`;

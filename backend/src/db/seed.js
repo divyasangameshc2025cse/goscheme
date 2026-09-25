@@ -54,16 +54,16 @@ async function seedDatabase() {
     const existing = await getAsync(`SELECT id FROM schemes WHERE id = ?`, [s.id]);
     if (!existing) {
       await runAsync(
-        `INSERT INTO schemes (id, title, department, level, category, min_age, max_age, gender, income_cap, education, occupation, caste_category, district_eligibility, benefits, application_deadline, official_url, description, documents, is_new, status)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [s.id, s.title, s.department, s.level, s.category, s.minAge, s.maxAge, s.gender, s.incomeCap, edJson, occJson, casteJson, s.districtEligibility, s.benefits, s.applicationDeadline, s.officialUrl, s.description, docJson, s.isNew ? 1 : 0, s.status || 'Active']
+        `INSERT INTO schemes (id, title, department, level, state, category, min_age, max_age, gender, income_cap, education, occupation, caste_category, district_eligibility, benefits, application_deadline, official_url, description, documents, is_new, status)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [s.id, s.title, s.department, s.level, s.state || (s.level === 'Central' ? 'All India' : 'Tamil Nadu'), s.category, s.minAge, s.maxAge, s.gender, s.incomeCap, edJson, occJson, casteJson, s.districtEligibility, s.benefits, s.applicationDeadline, s.officialUrl, s.description, docJson, s.isNew ? 1 : 0, s.status || 'Active']
       );
     } else {
       await runAsync(
         `UPDATE schemes SET
-          title = ?, department = ?, level = ?, category = ?, min_age = ?, max_age = ?, gender = ?, income_cap = ?, education = ?, occupation = ?, caste_category = ?, district_eligibility = ?, benefits = ?, application_deadline = ?, official_url = ?, description = ?, documents = ?, is_new = ?, status = ?
+          title = ?, department = ?, level = ?, state = ?, category = ?, min_age = ?, max_age = ?, gender = ?, income_cap = ?, education = ?, occupation = ?, caste_category = ?, district_eligibility = ?, benefits = ?, application_deadline = ?, official_url = ?, description = ?, documents = ?, is_new = ?, status = ?
          WHERE id = ?`,
-        [s.title, s.department, s.level, s.category, s.minAge, s.maxAge, s.gender, s.incomeCap, edJson, occJson, casteJson, s.districtEligibility, s.benefits, s.applicationDeadline, s.officialUrl, s.description, docJson, s.isNew ? 1 : 0, s.status || 'Active', s.id]
+        [s.title, s.department, s.level, s.state || (s.level === 'Central' ? 'All India' : 'Tamil Nadu'), s.category, s.minAge, s.maxAge, s.gender, s.incomeCap, edJson, occJson, casteJson, s.districtEligibility, s.benefits, s.applicationDeadline, s.officialUrl, s.description, docJson, s.isNew ? 1 : 0, s.status || 'Active', s.id]
       );
     }
   }

@@ -47,7 +47,7 @@ export default function SchemeDetails() {
       <SEO title={scheme.title} description={scheme.description} path={`/schemes/${scheme.id}`} />
 
       <span className={`badge ${scheme.level === 'Central' ? 'bg-royal-light text-royal' : 'bg-teal-light text-teal'}`}>
-        {scheme.level} · {scheme.category}
+        {scheme.level === 'Central' ? 'Central Government' : `State · ${scheme.state}`} · {scheme.category}
       </span>
       <h1 className="mt-3 text-2xl font-extrabold text-navy sm:text-3xl">{scheme.title}</h1>
       <p className="mt-1 text-sm font-semibold text-slate-400">{scheme.department}</p>

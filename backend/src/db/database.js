@@ -99,6 +99,7 @@ async function initDatabaseSchema() {
       title TEXT NOT NULL,
       department TEXT NOT NULL,
       level TEXT NOT NULL,
+      state TEXT DEFAULT 'All India',
       category TEXT NOT NULL,
       min_age INTEGER DEFAULT 0,
       max_age INTEGER DEFAULT 100,
@@ -119,6 +120,51 @@ async function initDatabaseSchema() {
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
     );
   `);
+
+  // Check and add missing columns to existing tables (auto-migration)
+  const schemesCols = (await allAsync(`PRAGMA table_info(schemes)`)).map(c => c.name);
+  if (schemesCols.length > 0) {
+    if (!schemesCols.includes('state')) {
+      await runAsync(`ALTER TABLE schemes ADD COLUMN state TEXT DEFAULT 'All India'`);
+    }
+    if (!schemesCols.includes('district_eligibility')) {
+      await runAsync(`ALTER TABLE schemes ADD COLUMN district_eligibility TEXT DEFAULT 'All Tamil Nadu Districts'`);
+    }
+    if (!schemesCols.includes('status')) {
+      await runAsync(`ALTER TABLE schemes ADD COLUMN status TEXT DEFAULT 'Active'`);
+    }
+    if (!schemesCols.includes('is_new')) {
+      await runAsync(`ALTER TABLE schemes ADD COLUMN is_new INTEGER DEFAULT 1`);
+    }
+  }
+
+  const usersCols = (await allAsync(`PRAGMA table_info(users)`)).map(c => c.name);
+  if (usersCols.length > 0) {
+    if (!usersCols.includes('state')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN state TEXT DEFAULT 'Tamil Nadu'`);
+    }
+    if (!usersCols.includes('district')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN district TEXT DEFAULT 'Chennai'`);
+    }
+    if (!usersCols.includes('area')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN area TEXT DEFAULT 'Urban'`);
+    }
+    if (!usersCols.includes('ration_card')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN ration_card TEXT DEFAULT 'Rice Card'`);
+    }
+    if (!usersCols.includes('disability_status')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN disability_status TEXT DEFAULT 'No'`);
+    }
+    if (!usersCols.includes('first_gen_graduate')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN first_gen_graduate TEXT DEFAULT 'Yes'`);
+    }
+    if (!usersCols.includes('govt_school_studied')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN govt_school_studied TEXT DEFAULT 'Yes'`);
+    }
+    if (!usersCols.includes('role')) {
+      await runAsync(`ALTER TABLE users ADD COLUMN role TEXT DEFAULT 'user'`);
+    }
+  }
 
   // 3. Saved Schemes table
   await runAsync(`

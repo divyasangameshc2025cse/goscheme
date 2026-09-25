@@ -89,6 +89,7 @@ function parseSchemeRow(row) {
     title: row.title,
     department: row.department,
     level: row.level,
+    state: row.state,
     category: row.category,
     minAge: row.min_age,
     maxAge: row.max_age,
@@ -111,7 +112,7 @@ function parseSchemeRow(row) {
 // GET /api/schemes - List all schemes with filtering
 router.get('/', async (req, res) => {
   try {
-    const { level, category, search, status } = req.query;
+    const { level, state, category, search, status } = req.query;
     let sql = `SELECT * FROM schemes WHERE 1=1`;
     const params = [];
 
@@ -125,6 +126,11 @@ router.get('/', async (req, res) => {
     if (level && level !== 'All') {
       sql += ` AND level = ?`;
       params.push(level);
+    }
+
+    if (state && state !== 'All') {
+      sql += ` AND state = ?`;
+      params.push(state);
     }
 
     if (category && category !== 'All') {
