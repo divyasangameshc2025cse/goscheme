@@ -161,10 +161,10 @@ function formatCurrency(amount) {
 // Global Nav & Header Renderer
 async function updateHeaderNavState() {
   const userNavContainer = document.getElementById("header-user-nav");
-  if (!userNavContainer) return;
 
   const isSubdir = window.location.pathname.includes('/admin/');
   const prefix = isSubdir ? '../' : '';
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
   let user = null;
   const token = getToken();
@@ -179,26 +179,70 @@ async function updateHeaderNavState() {
     }
   }
 
-  if (token && user && user.isProfileComplete) {
-    const notifications = getNotifications();
-    const unreadCount = notifications.filter(n => !n.read).length;
+  if (userNavContainer) {
+    if (token && user && user.isProfileComplete) {
+      const notifications = getNotifications();
+      const unreadCount = notifications.filter(n => !n.read).length;
+      const isNotifPage = currentPath === 'notifications.html';
+      const isProfilePage = currentPath === 'profile.html';
 
-    userNavContainer.innerHTML = `
-      <a href="${prefix}notifications.html" class="nav-link" style="position: relative; margin-right: 0.5rem;" title="Notifications">
-        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
-        ${unreadCount > 0 ? `<span style="position: absolute; top: -2px; right: -4px; background: var(--rose); color: white; font-size: 0.65rem; font-weight: 800; border-radius: 50%; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center;">${unreadCount}</span>` : ''}
-      </a>
-      <div class="user-menu-btn" onclick="window.location.href='${prefix}profile.html'">
-        <div class="avatar-circle">${user.fullName ? user.fullName.charAt(0).toUpperCase() : 'U'}</div>
-        <span class="user-name-text">${user.fullName ? user.fullName.split(' ')[0] : 'User'}</span>
-      </div>
-      <button onclick="logoutUser()" class="btn btn-outline btn-sm" style="margin-left: 0.5rem;" title="Log Out">Log Out</button>
-    `;
-  } else {
-    userNavContainer.innerHTML = `
-      <a href="${prefix}login.html" class="btn btn-outline btn-sm">Log In</a>
-      <a href="${prefix}register.html" class="btn btn-primary btn-sm">Get Started</a>
-    `;
+      userNavContainer.innerHTML = `
+        <a href="${prefix}notifications.html" class="nav-link ${isNotifPage ? 'active' : ''}" style="position: relative; margin-right: 0.5rem; display: flex; align-items: center;" title="Notifications">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+          ${unreadCount > 0 ? `<span style="position: absolute; top: -2px; right: -4px; background: var(--rose); color: white; font-size: 0.65rem; font-weight: 800; border-radius: 50%; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center;">${unreadCount}</span>` : ''}
+        </a>
+        <div class="user-menu-btn ${isProfilePage ? 'active' : ''}" style="${isProfilePage ? 'border-color: var(--royal-blue); box-shadow: 0 0 0 2px var(--royal-blue-light);' : ''}" onclick="window.location.href='${prefix}profile.html'" title="Citizen Profile">
+          <div class="avatar-circle">${user.fullName ? user.fullName.charAt(0).toUpperCase() : 'U'}</div>
+          <span class="user-name-text">${user.fullName ? user.fullName.split(' ')[0] : 'User'}</span>
+        </div>
+        <button onclick="logoutUser()" class="btn btn-outline btn-sm" style="margin-left: 0.5rem;" title="Log Out">Log Out</button>
+      `;
+    } else {
+      const isLoginPage = currentPath === 'login.html';
+      const isRegisterPage = currentPath === 'register.html';
+      userNavContainer.innerHTML = `
+        <a href="${prefix}login.html" class="btn ${isLoginPage ? 'btn-primary' : 'btn-outline'} btn-sm">Log In</a>
+        <a href="${prefix}register.html" class="btn ${isRegisterPage ? 'btn-outline' : 'btn-primary'} btn-sm">Get Started</a>
+      `;
+    }
+  }
+
+  highlightActiveNavLink();
+}
+
+function highlightActiveNavLink() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-links .nav-link');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const linkPath = href.split('#')[0].split('/').pop();
+
+    let isMatch = false;
+    if (currentPath === linkPath || (currentPath === '' && linkPath === 'index.html')) {
+      isMatch = true;
+    } else if (currentPath === 'scheme-details.html' && linkPath === 'explore-schemes.html') {
+      isMatch = true;
+    } else if (currentPath === 'profile-setup.html' && linkPath === 'eligible-schemes.html') {
+      isMatch = true;
+    }
+
+    if (isMatch) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // Mobile menu toggle handling
+  const mobileToggle = document.getElementById("mobile-nav-toggle");
+  const navLinksContainer = document.getElementById("main-nav-links") || document.querySelector(".nav-links");
+  if (mobileToggle && navLinksContainer && !mobileToggle.dataset.bound) {
+    mobileToggle.dataset.bound = "true";
+    mobileToggle.addEventListener("click", () => {
+      navLinksContainer.classList.toggle("mobile-open");
+    });
   }
 }
 
@@ -213,4 +257,5 @@ function logoutUser() {
 
 document.addEventListener("DOMContentLoaded", () => {
   updateHeaderNavState();
+  highlightActiveNavLink();
 });
