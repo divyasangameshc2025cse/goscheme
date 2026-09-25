@@ -1,0 +1,19 @@
+{
+  "name": "goscheme-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GO SCHEME — React Frontend + Node.js Backend",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "backend": "npm start --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently -n backend,frontend -c blue,magenta \"npm:backend\" \"npm:frontend\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

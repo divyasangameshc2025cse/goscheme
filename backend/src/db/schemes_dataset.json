@@ -1,0 +1,4915 @@
+[
+  {
+    "id": "CENT-001",
+    "title": "PM Kisan Samman Nidhi",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Agriculture",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 6,000 per year in 3 installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmkisan.gov.in",
+    "description": "Income support to small and marginal farmer families.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-002",
+    "title": "Ayushman Bharat - PMJAY",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 5,00,000 per family per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmjay.gov.in",
+    "description": "Health insurance cover for poor and vulnerable families for secondary and tertiary care hospitalization.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "SECC Database Proof"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-003",
+    "title": "Pradhan Mantri Awas Yojana - Urban",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Housing",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 1800000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Up to Rs 2,67,000 subsidy",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmaymis.gov.in",
+    "description": "Financial assistance for construction/purchase of house for urban poor.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Property Documents"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-004",
+    "title": "Pradhan Mantri Awas Yojana - Gramin",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Housing",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,20,000 (plain area) / Rs 1,30,000 (hilly)",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmayg.nic.in",
+    "description": "Financial assistance to rural households for pucca house construction.",
+    "documents": [
+      "Aadhaar Card",
+      "Job Card",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-005",
+    "title": "Pradhan Mantri Ujjwala Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free LPG connection with first refill",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmuy.gov.in",
+    "description": "Free LPG connections to women from BPL households.",
+    "documents": [
+      "Aadhaar Card",
+      "BPL Ration Card",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-006",
+    "title": "Pradhan Mantri Jan Dhan Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 10,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 10,000 overdraft facility, Rs 2 lakh accident cover",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmjdy.gov.in",
+    "description": "Universal access to banking facilities with zero balance account.",
+    "documents": [
+      "Aadhaar Card",
+      "Address Proof"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-007",
+    "title": "Pradhan Mantri Suraksha Bima Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Healthcare",
+    "minAge": 18,
+    "maxAge": 70,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 2,00,000 on accidental death",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://jansuraksha.gov.in",
+    "description": "Accidental death and disability insurance scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-008",
+    "title": "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Healthcare",
+    "minAge": 18,
+    "maxAge": 50,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 2,00,000 on death",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://jansuraksha.gov.in",
+    "description": "Life insurance scheme offering renewable one-year cover.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-009",
+    "title": "Atal Pension Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 18,
+    "maxAge": 40,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,000-5,000 monthly pension",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://npscra.nsdl.co.in",
+    "description": "Pension scheme for unorganized sector workers.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-010",
+    "title": "Sukanya Samriddhi Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 10,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Interest linked maturity amount",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.nsiindia.gov.in",
+    "description": "Small savings scheme for girl child's education and marriage.",
+    "documents": [
+      "Birth Certificate",
+      "Aadhaar Card of guardian"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-011",
+    "title": "Beti Bachao Beti Padhao",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Awareness and incentive based support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.nic.in",
+    "description": "Scheme to prevent gender-biased sex selection and promote girl child education.",
+    "documents": [
+      "Birth Certificate",
+      "Aadhaar Card"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-012",
+    "title": "Pradhan Mantri Mudra Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Loan up to Rs 10 lakh",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.mudra.org.in",
+    "description": "Collateral-free loans to micro and small enterprises.",
+    "documents": [
+      "Aadhaar Card",
+      "Business Plan",
+      "Bank Details"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-013",
+    "title": "Stand Up India Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "casteCategory": [
+      "SC",
+      "ST"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Loan Rs 10 lakh to Rs 1 crore",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.standupmitra.in",
+    "description": "Bank loans for SC/ST and women entrepreneurs for greenfield enterprises.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Business Plan"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-014",
+    "title": "Startup India Seed Fund Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Up to Rs 20 lakh grant / Rs 50 lakh debt",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.startupindia.gov.in",
+    "description": "Financial assistance to startups for proof of concept and commercialization.",
+    "documents": [
+      "Aadhaar Card",
+      "Company Registration",
+      "Business Plan"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-015",
+    "title": "Mahatma Gandhi NREGA",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Wage as per state rates for 100 days",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nrega.nic.in",
+    "description": "Guaranteed 100 days wage employment to rural households.",
+    "documents": [
+      "Job Card",
+      "Aadhaar Card"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-016",
+    "title": "Pradhan Mantri Fasal Bima Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Healthcare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Insurance claim as per crop loss assessment",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmfby.gov.in",
+    "description": "Crop insurance scheme for farmers against crop loss.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-017",
+    "title": "Kisan Credit Card Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Credit limit as per land holding",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.pmkisan.gov.in",
+    "description": "Short term credit facility for farmers for agricultural needs.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-018",
+    "title": "Soil Health Card Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Healthcare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free soil testing and advisory",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://soilhealth.dac.gov.in",
+    "description": "Provides soil nutrient status and fertilizer recommendation to farmers.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-019",
+    "title": "PM Kisan Maandhan Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 40,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 3,000 monthly pension after 60 years",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://maandhan.in",
+    "description": "Pension scheme for small and marginal farmers.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records",
+      "Bank Account"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-020",
+    "title": "Pradhan Mantri Matru Vandana Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 19,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 5,000 in installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmmvy.wcd.gov.in",
+    "description": "Cash incentive for pregnant and lactating women for first live birth.",
+    "documents": [
+      "Aadhaar Card",
+      "MCP Card",
+      "Bank Account"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-021",
+    "title": "Janani Suraksha Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 19,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 700-1,400 depending on area",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nhm.gov.in",
+    "description": "Cash assistance to pregnant women for institutional delivery.",
+    "documents": [
+      "Aadhaar Card",
+      "JSY Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-022",
+    "title": "Pradhan Mantri Vaya Vandana Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Guaranteed pension based on investment",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.licindia.in",
+    "description": "Pension scheme for senior citizens with guaranteed returns.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Bank Account"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-023",
+    "title": "National Pension System",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 18,
+    "maxAge": 70,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Market linked pension corpus",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.npscra.nsdl.co.in",
+    "description": "Voluntary defined contribution pension scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Bank Account"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-024",
+    "title": "Pradhan Mantri Gram Sadak Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Road infrastructure development",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmgsy.nic.in",
+    "description": "Provides all-weather road connectivity to unconnected rural habitations.",
+    "documents": [
+      "Village Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-025",
+    "title": "Deendayal Antyodaya Yojana - NRLM",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Bank linkage and revolving fund support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://aajeevika.gov.in",
+    "description": "Promotes self-employment through Self Help Groups in rural areas.",
+    "documents": [
+      "Aadhaar Card",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-026",
+    "title": "Pradhan Mantri Kaushal Vikas Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Skill Development & Employment",
+    "minAge": 15,
+    "maxAge": 45,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Unemployed",
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free skill training with stipend",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.pmkvyofficial.org",
+    "description": "Skill training and certification for youth employability.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-027",
+    "title": "National Apprenticeship Promotion Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Skill Development & Employment",
+    "minAge": 14,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Unemployed",
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Stipend as per apprenticeship norms",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://apprenticeshipindia.gov.in",
+    "description": "Promotes apprenticeship training with financial support to employers.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-028",
+    "title": "Skill India Mission",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Skill Development & Employment",
+    "minAge": 15,
+    "maxAge": 45,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Unemployed",
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Certification and placement support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.skillindia.gov.in",
+    "description": "Umbrella scheme to provide skill training to Indian youth.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-029",
+    "title": "Digital India Land Records Modernisation",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Digitized land record access",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://digitalindia.gov.in",
+    "description": "Digitization and modernization of land records across India.",
+    "documents": [
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-030",
+    "title": "Swachh Bharat Mission - Gramin",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 12,000 incentive per toilet",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://swachhbharatmission.gov.in",
+    "description": "Provides financial assistance for construction of household toilets.",
+    "documents": [
+      "Aadhaar Card",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-031",
+    "title": "Namami Gange Programme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Infrastructure and afforestation support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nmcg.nic.in",
+    "description": "Integrated conservation mission for river Ganga rejuvenation.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-032",
+    "title": "Saubhagya Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Solar & Energy",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free electricity connection",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://saubhagya.gov.in",
+    "description": "Provides free electricity connections to un-electrified households.",
+    "documents": [
+      "Aadhaar Card",
+      "Address Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-033",
+    "title": "Pradhan Mantri Garib Kalyan Anna Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "5 kg free foodgrain per person per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://dfpd.gov.in",
+    "description": "Free additional foodgrains to poor families during crisis period.",
+    "documents": [
+      "Ration Card",
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-034",
+    "title": "One Nation One Ration Card",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Continued foodgrain subsidy across India",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nfsa.gov.in",
+    "description": "Portability of ration card benefits across states.",
+    "documents": [
+      "Ration Card",
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-035",
+    "title": "Integrated Child Development Services",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 6,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Supplementary nutrition and health services",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://icds-wcd.nic.in",
+    "description": "Provides nutrition, health check-up and pre-school education to children.",
+    "documents": [
+      "Aadhaar Card of guardian"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-036",
+    "title": "PM Poshan (Mid Day Meal Scheme)",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 6,
+    "maxAge": 14,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free daily nutritious meal",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmposhan.education.gov.in",
+    "description": "Provides free hot cooked meals to school children.",
+    "documents": [
+      "School Enrollment Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-037",
+    "title": "Samagra Shiksha Abhiyan",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 6,
+    "maxAge": 18,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free education support and infrastructure",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://samagra.education.gov.in",
+    "description": "Integrated scheme for school education from pre-school to senior secondary.",
+    "documents": [
+      "Aadhaar Card",
+      "School Enrollment"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-038",
+    "title": "National Means cum Merit Scholarship",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 13,
+    "maxAge": 16,
+    "gender": "All",
+    "incomeCap": 150000,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 12,000 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarships.gov.in",
+    "description": "Scholarship to meritorious students of economically weaker sections.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Mark Sheet"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-039",
+    "title": "Central Sector Scheme of Scholarship",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 18,
+    "maxAge": 25,
+    "gender": "All",
+    "incomeCap": 450000,
+    "education": [
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 10,000-20,000 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarships.gov.in",
+    "description": "Scholarship for college and university students with merit.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Mark Sheet"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-040",
+    "title": "Post Matric Scholarship for OBC Students",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 100000,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "BC",
+      "SC",
+      "ST"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "As per course fee and maintenance allowance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarships.gov.in",
+    "description": "Financial assistance to OBC students for post matriculation studies.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-041",
+    "title": "Pre Matric Scholarship for Minorities",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 6,
+    "maxAge": 16,
+    "gender": "All",
+    "incomeCap": 100000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,000-7,000 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarships.gov.in",
+    "description": "Scholarship to minority community students studying in classes 1-10.",
+    "documents": [
+      "Aadhaar Card",
+      "Minority Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-042",
+    "title": "Maulana Azad National Fellowship",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Fellowship as per UGC norms",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://maef.nic.in",
+    "description": "Fellowship for minority students pursuing M.Phil and PhD.",
+    "documents": [
+      "Aadhaar Card",
+      "Minority Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-043",
+    "title": "AICTE Pragati Scholarship for Girls",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 800000,
+    "education": [
+      "Diploma",
+      "ITI",
+      "Undergraduate"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 50,000 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.aicte-pragati-saksham-gov.in",
+    "description": "Scholarship for girl students pursuing technical education.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Admission Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-044",
+    "title": "AICTE Saksham Scholarship for Disabled",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 800000,
+    "education": [
+      "Diploma",
+      "ITI",
+      "Undergraduate"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 50,000 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.aicte-pragati-saksham-gov.in",
+    "description": "Scholarship for differently-abled students in technical education.",
+    "documents": [
+      "Aadhaar Card",
+      "Disability Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-045",
+    "title": "Deendayal Disabled Rehabilitation Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Grant-in-aid for rehabilitation services",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://disabilityaffairs.gov.in",
+    "description": "Financial support to NGOs for rehabilitation of persons with disabilities.",
+    "documents": [
+      "Disability Certificate",
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-046",
+    "title": "Accessible India Campaign",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Infrastructure accessibility support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://accessibleindia.gov.in",
+    "description": "Creates universal accessibility for persons with disabilities.",
+    "documents": [
+      "Disability Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-047",
+    "title": "Indira Gandhi National Old Age Pension Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 200-500 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nsap.nic.in",
+    "description": "Monthly pension to elderly persons living below poverty line.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-048",
+    "title": "Indira Gandhi National Widow Pension Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 40,
+    "maxAge": 79,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 300 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nsap.nic.in",
+    "description": "Monthly pension to widows living below poverty line.",
+    "documents": [
+      "Aadhaar Card",
+      "Death Certificate of spouse",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-049",
+    "title": "Indira Gandhi National Disability Pension Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 18,
+    "maxAge": 79,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 300-500 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nsap.nic.in",
+    "description": "Monthly pension to severely disabled persons below poverty line.",
+    "documents": [
+      "Aadhaar Card",
+      "Disability Certificate",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-050",
+    "title": "National Family Benefit Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 59,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 20,000 lump sum",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nsap.nic.in",
+    "description": "One-time financial assistance to family on death of breadwinner.",
+    "documents": [
+      "Aadhaar Card",
+      "Death Certificate",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-051",
+    "title": "Annapurna Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 65,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "10 kg free foodgrain per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nsap.nic.in",
+    "description": "Provides food grains to senior citizens not covered under pension scheme.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-052",
+    "title": "Pradhan Mantri Van Dhan Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Livelihood and market linkage support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://trifed.tribal.gov.in",
+    "description": "Value addition and marketing support for tribal forest produce.",
+    "documents": [
+      "Aadhaar Card",
+      "Tribal Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-053",
+    "title": "Eklavya Model Residential Schools Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 10,
+    "maxAge": 18,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free residential education",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tribal.nic.in",
+    "description": "Residential schools for tribal students for quality education.",
+    "documents": [
+      "Aadhaar Card",
+      "Tribal Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-054",
+    "title": "Dr Ambedkar Post Matric Scholarship for SC",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 250000,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "As per course fee and maintenance allowance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarships.gov.in",
+    "description": "Financial assistance to SC students for post matric education.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-055",
+    "title": "Pre Matric Scholarship for SC Students",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 13,
+    "maxAge": 16,
+    "gender": "All",
+    "incomeCap": 250000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 3,500-4,500 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarships.gov.in",
+    "description": "Scholarship for SC students studying in classes 9 and 10.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-056",
+    "title": "National Overseas Scholarship for SC",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 800000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Full tuition and maintenance allowance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarships.gov.in",
+    "description": "Financial assistance to SC students for study abroad.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Admission Letter"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-057",
+    "title": "National Safai Karamcharis Finance Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Concessional loan for self employment",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nsfdc.nic.in",
+    "description": "Financial assistance for self-employment to safai karamcharis.",
+    "documents": [
+      "Aadhaar Card",
+      "Occupation Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-058",
+    "title": "Self Employment Scheme for Manual Scavengers",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Cash assistance and skill training",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sje.gov.in",
+    "description": "Rehabilitation and self-employment support for manual scavengers.",
+    "documents": [
+      "Aadhaar Card",
+      "Occupation Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-059",
+    "title": "Pradhan Mantri Jan Vikas Karyakram",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Infrastructure and welfare projects",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://minorityaffairs.gov.in",
+    "description": "Infrastructure development in minority concentration areas.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-060",
+    "title": "Nai Roshni Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free leadership training",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://minorityaffairs.gov.in",
+    "description": "Leadership development training for minority women.",
+    "documents": [
+      "Aadhaar Card",
+      "Minority Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-061",
+    "title": "Nai Manzil Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 17,
+    "maxAge": 35,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free training with stipend",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://minorityaffairs.gov.in",
+    "description": "Education and skill training for minority youth.",
+    "documents": [
+      "Aadhaar Card",
+      "Minority Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-062",
+    "title": "USTTAD Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Skill Development & Employment",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Skill upgradation support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://minorityaffairs.gov.in",
+    "description": "Upgrades traditional skills and trades of minority artisans.",
+    "documents": [
+      "Aadhaar Card",
+      "Minority Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-063",
+    "title": "Padho Pardesh Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 600000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Interest subsidy on education loan",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://minorityaffairs.gov.in",
+    "description": "Interest subsidy on education loans for minority students abroad.",
+    "documents": [
+      "Aadhaar Card",
+      "Minority Certificate",
+      "Loan Documents"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-064",
+    "title": "Mahila Shakti Kendra Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Skill development and awareness support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.nic.in",
+    "description": "Community engagement for women empowerment at grassroot level.",
+    "documents": [
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-065",
+    "title": "Support to Training and Employment Programme for Women",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 16,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Unemployed",
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free skill training and credit linkage",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.nic.in",
+    "description": "Skill training and employment support for women.",
+    "documents": [
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-066",
+    "title": "Working Women Hostel Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Subsidized hostel accommodation",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.nic.in",
+    "description": "Safe accommodation for working women away from home.",
+    "documents": [
+      "Aadhaar Card",
+      "Employment Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-067",
+    "title": "One Stop Centre Scheme (Sakhi)",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Medical, legal and counselling support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.nic.in",
+    "description": "Support services for women affected by violence.",
+    "documents": [
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-068",
+    "title": "Swadhar Greh Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Shelter, food and vocational training",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.nic.in",
+    "description": "Rehabilitation of women in difficult circumstances.",
+    "documents": [
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-069",
+    "title": "Deendayal Antyodaya Yojana - NULM",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Bank linkage and skill training support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nulm.gov.in",
+    "description": "Urban livelihood mission for urban poor self-employment.",
+    "documents": [
+      "Aadhaar Card",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-070",
+    "title": "PM SVANidhi Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Loan up to Rs 50,000 in tranches",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pmsvanidhi.mohua.gov.in",
+    "description": "Micro credit facility for street vendors.",
+    "documents": [
+      "Aadhaar Card",
+      "Vendor Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-071",
+    "title": "Atmanirbhar Bharat Rojgar Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "EPF contribution support by government",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://labour.gov.in",
+    "description": "Incentivizes employers for creating new employment.",
+    "documents": [
+      "Aadhaar Card",
+      "EPFO Registration"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-072",
+    "title": "National Career Service Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free job matching and career guidance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.ncs.gov.in",
+    "description": "Online portal connecting job seekers with employers.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-073",
+    "title": "Prime Minister Employment Generation Programme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "15-35 percent subsidy on project cost",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.kviconline.gov.in/pmegp",
+    "description": "Credit linked subsidy for setting up micro enterprises.",
+    "documents": [
+      "Aadhaar Card",
+      "Project Report"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-074",
+    "title": "ASPIRE Scheme",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Grant support for incubation centers",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://msme.gov.in",
+    "description": "Promotes innovation and rural entrepreneurship in MSME sector.",
+    "documents": [
+      "Aadhaar Card",
+      "Business Plan"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-075",
+    "title": "Rajiv Gandhi Udyami Mitra Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Handholding support and financial assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://msme.gov.in",
+    "description": "Handholding support to first generation entrepreneurs.",
+    "documents": [
+      "Aadhaar Card",
+      "Business Plan"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-076",
+    "title": "Credit Guarantee Fund Scheme for Micro and Small Enterprises",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Collateral free loan up to Rs 2 crore",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.cgtmse.in",
+    "description": "Collateral free credit guarantee to micro and small enterprises.",
+    "documents": [
+      "Aadhaar Card",
+      "Business Registration"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-077",
+    "title": "Ayushman Bharat Digital Mission",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free digital health ID and records",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://abdm.gov.in",
+    "description": "Creates digital health ID and records for citizens.",
+    "documents": [
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-078",
+    "title": "Rashtriya Vayoshri Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free assistive devices",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://vayoshri.gov.in",
+    "description": "Provides aids and assistive living devices to senior citizens.",
+    "documents": [
+      "Aadhaar Card",
+      "BPL Certificate",
+      "Age Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-079",
+    "title": "National Fellowship for Higher Education of ST Students",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Fellowship as per UGC norms",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tribal.nic.in",
+    "description": "Fellowship for ST students pursuing M.Phil and PhD.",
+    "documents": [
+      "Aadhaar Card",
+      "Tribal Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-080",
+    "title": "Pradhan Mantri Adarsh Gram Yojana",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Village infrastructure development",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://rural.nic.in",
+    "description": "Integrated development of villages with significant SC population.",
+    "documents": [
+      "Village Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "CENT-081",
+    "title": "Venture Capital Fund for Scheduled Castes",
+    "department": "Govt of India",
+    "level": "Central",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "casteCategory": [
+      "SC",
+      "ST"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Equity/venture capital assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nsfdc.nic.in",
+    "description": "Equity support to SC entrepreneurs for business growth.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Business Plan"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-001",
+    "title": "Kanya Vidya Dhan Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 200000,
+    "education": [
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 30,000 lump sum",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scholarship.up.gov.in",
+    "description": "Financial assistance to meritorious girl students for higher education.",
+    "documents": [
+      "Aadhaar Card",
+      "Mark Sheet",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-002",
+    "title": "Mukhyamantri Kanya Sumangala Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 21,
+    "gender": "Female",
+    "incomeCap": 300000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 15,000 across installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://mksy.up.gov.in",
+    "description": "Financial assistance to girl child from birth to graduation.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-003",
+    "title": "UP Vidhwa Pension Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Pension & Social Security",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 200000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,000 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sspy-up.gov.in",
+    "description": "Monthly pension for widows in Uttar Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Death Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-004",
+    "title": "UP Free Boring Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Subsidy on boring installation cost",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://upagriculture.com",
+    "description": "Financial assistance for boring installation for small farmers.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-005",
+    "title": "Sarvajan Pension Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 200000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,000 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sspy-up.gov.in",
+    "description": "Old age pension scheme for elderly citizens of Uttar Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-001",
+    "title": "Amma Unavagam",
+    "department": "Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Meals at subsidized price",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.tn.gov.in",
+    "description": "Subsidized meal scheme for urban poor in Tamil Nadu.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-002",
+    "title": "Dr Muthulakshmi Reddy Maternity Benefit Scheme",
+    "department": "Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 19,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Rs 18,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in",
+    "description": "Financial assistance to pregnant women workers in Tamil Nadu.",
+    "documents": [
+      "Aadhaar Card",
+      "Employment Proof",
+      "MCP Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-003",
+    "title": "Moovalur Ramamirtham Ammaiyar Higher Education Assistance Scheme",
+    "department": "Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 250000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Rs 1,000-6,000 depending on course",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in",
+    "description": "Financial assistance to girl students of poor families for higher education.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Mark Sheet"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-004",
+    "title": "Naan Mudhalvan Scheme",
+    "department": "Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Free skill training and certification",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://naanmudhalvan.tn.gov.in",
+    "description": "Skill development and employability enhancement for students in Tamil Nadu.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-005",
+    "title": "Chief Minister's Comprehensive Health Insurance Scheme",
+    "department": "Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 400000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Tamil Nadu Districts",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.cmchistn.com",
+    "description": "Health insurance coverage for low income families in Tamil Nadu.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-006",
+    "title": "Rythu Bandhu Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 10,000 per acre per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://rythubandhu.telangana.gov.in",
+    "description": "Investment support to farmers for agricultural inputs in Telangana.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-007",
+    "title": "Kalyana Lakshmi Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 200000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,00,116 lump sum",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://kalyanalakshmi.cgg.gov.in",
+    "description": "Financial assistance for marriage of girls from poor families in Telangana.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-008",
+    "title": "Aasara Pension Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Pension & Social Security",
+    "minAge": 57,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 2,016-3,016 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://aasara.telangana.gov.in",
+    "description": "Social security pension for elderly, disabled and widows in Telangana.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-009",
+    "title": "KCR Kit Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 19,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 12,000-13,000 and nutrition kit",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://kcrkit.telangana.gov.in",
+    "description": "Nutrition kit and cash assistance for pregnant women in Telangana.",
+    "documents": [
+      "Aadhaar Card",
+      "MCP Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-010",
+    "title": "YSR Rythu Bharosa",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 13,500 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ysrrythubharosa.ap.gov.in",
+    "description": "Financial assistance to farmer families in Andhra Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-011",
+    "title": "YSR Aarogyasri",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 500000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ysraarogyasri.ap.gov.in",
+    "description": "Health insurance scheme for BPL families in Andhra Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "White Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-012",
+    "title": "Amma Vodi",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 100000,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 15,000 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://jaganannaammavodi.ap.gov.in",
+    "description": "Financial assistance to mothers for children's school education in Andhra Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "School Enrollment",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-013",
+    "title": "YSR Pension Kanuka",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 2,750-10,000 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ysrpensionkanuka.ap.gov.in",
+    "description": "Social security pension for elderly, disabled and widows in Andhra Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-014",
+    "title": "Karunya Health Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 300000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 3,00,000",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://karunyabenevolentfund.kerala.gov.in",
+    "description": "Financial assistance for treatment of critical illnesses in Kerala.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Medical Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-015",
+    "title": "Kudumbashree Mission",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Micro credit and livelihood support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://kudumbashree.org",
+    "description": "Poverty eradication and women empowerment programme in Kerala.",
+    "documents": [
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-016",
+    "title": "Bhagyalakshmi Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,00,000 maturity amount",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ahvahinikaryakramagalu.karnataka.gov.in",
+    "description": "Financial assistance for girl child born in BPL families in Karnataka.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "BPL Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-017",
+    "title": "Vidyasiri Scholarship",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 250000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 11,000-16,750 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ssp.postmatric.karnataka.gov.in",
+    "description": "Scholarship for backward class students pursuing higher education in Karnataka.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-018",
+    "title": "Gruha Lakshmi Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 2,000 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://gruhalakshmi.karnataka.gov.in",
+    "description": "Monthly financial assistance to woman head of family in Karnataka.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-019",
+    "title": "Anna Bhagya Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "10 kg free rice per member per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ahara.kar.nic.in",
+    "description": "Free rice distribution to BPL families in Karnataka.",
+    "documents": [
+      "Ration Card",
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-020",
+    "title": "Shiv Bhojan Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Meal at Rs 5-10",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://mahafood.gov.in",
+    "description": "Subsidized meal scheme for poor in Maharashtra.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-021",
+    "title": "Majhi Kanya Bhagyashree Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 100000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 50,000-1,01,000 maturity amount",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://womenchild.maharashtra.gov.in",
+    "description": "Financial assistance for girl child welfare in Maharashtra.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-022",
+    "title": "Mahatma Jyotirao Phule Jan Arogya Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 100000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 1,50,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.jeevandayee.gov.in",
+    "description": "Health insurance scheme for economically weaker families in Maharashtra.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-023",
+    "title": "Lek Ladki Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 100000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 75,000 across installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://womenchild.maharashtra.gov.in",
+    "description": "Financial assistance scheme for girl child in Maharashtra.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-024",
+    "title": "Kanyashree Prakalpa",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 13,
+    "maxAge": 19,
+    "gender": "Female",
+    "incomeCap": 120000,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,000 annual and Rs 25,000 one time",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wbkanyashree.gov.in",
+    "description": "Conditional cash transfer to prevent child marriage and promote girl education in West Bengal.",
+    "documents": [
+      "Aadhaar Card",
+      "School Enrollment",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-025",
+    "title": "Sabuj Sathi Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 9,
+    "maxAge": 12,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free bicycle",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sabujsathi.gov.in",
+    "description": "Free bicycles to students to improve school attendance in West Bengal.",
+    "documents": [
+      "School Enrollment Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-026",
+    "title": "Swasthya Sathi Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://swasthyasathi.gov.in",
+    "description": "Health insurance coverage for all residents of West Bengal.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-027",
+    "title": "Rupashree Prakalpa",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 150000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 25,000 lump sum",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wbcdwdsw.gov.in",
+    "description": "One-time financial grant for marriage of economically weak girls in West Bengal.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-028",
+    "title": "Krishak Bandhu Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 18,
+    "maxAge": 60,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 4,000-10,000 per year plus insurance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://krishakbandhu.net",
+    "description": "Financial assistance and insurance coverage for farmers in West Bengal.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-029",
+    "title": "Mukhyamantri Kanya Utthan Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 21,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 54,100 across stages",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://medhasoft.bih.nic.in",
+    "description": "Financial assistance for girl child from birth to graduation in Bihar.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-030",
+    "title": "Bihar Student Credit Card Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Loan up to Rs 4,00,000",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://www.7nishchay-yuvaupmission.bihar.gov.in",
+    "description": "Education loan facility for higher studies for students of Bihar.",
+    "documents": [
+      "Aadhaar Card",
+      "Admission Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-031",
+    "title": "Mukhyamantri Kanya Vivah Yojana Bihar",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 5,000-6,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://state.bihar.gov.in",
+    "description": "Financial assistance for marriage of girls from poor families in Bihar.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-032",
+    "title": "Ladli Laxmi Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 21,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,43,000 across installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ladlilaxmi.mp.gov.in",
+    "description": "Financial assistance scheme for girl child welfare in Madhya Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-033",
+    "title": "Sambal Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 60,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Insurance, pension and welfare benefits",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sambal.mp.gov.in",
+    "description": "Social security scheme for unorganized workers in Madhya Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Labour Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-034",
+    "title": "Mukhyamantri Medhavi Vidyarthi Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 600000,
+    "education": [
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Fee reimbursement up to Rs 1,50,000",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://mmvy.mp.gov.in",
+    "description": "Fee reimbursement for meritorious students in Madhya Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Mark Sheet",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-035",
+    "title": "Mukhyamantri Tirth Yatra Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free pilgrimage travel and accommodation",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://mptirthdarshan.mp.gov.in",
+    "description": "Free pilgrimage travel scheme for senior citizens in Madhya Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-036",
+    "title": "Bhamashah Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Direct benefit transfer of subsidies",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://bhamashah.rajasthan.gov.in",
+    "description": "Financial inclusion and direct benefit transfer scheme in Rajasthan.",
+    "documents": [
+      "Aadhaar Card",
+      "Bhamashah Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-037",
+    "title": "Mukhyamantri Rajshri Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 50,000 across installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.rajasthan.gov.in",
+    "description": "Financial assistance for girl child from birth to class 12 in Rajasthan.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-038",
+    "title": "Anuprati Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 800000,
+    "education": [
+      "Diploma",
+      "ITI"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "SC",
+      "ST"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 10,000-1,20,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sje.rajasthan.gov.in",
+    "description": "Financial assistance to SC/ST/OBC students clearing competitive exams in Rajasthan.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Admission Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-039",
+    "title": "Kalibai Bheel Scholarship",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free scooty or cash incentive",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sje.rajasthan.gov.in",
+    "description": "Scholarship for tribal girl students in Rajasthan.",
+    "documents": [
+      "Aadhaar Card",
+      "Tribal Certificate",
+      "Mark Sheet"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-040",
+    "title": "Ladli Beti Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 21,000 fixed deposit",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcdhry.gov.in",
+    "description": "Financial assistance scheme for girl child welfare in Haryana.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-041",
+    "title": "Chirayu Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 180000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://chirayuayushmanharyana.in",
+    "description": "Health insurance scheme for low income families in Haryana.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-042",
+    "title": "Deen Dayal Jan Awas Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Housing",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 300000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Affordable housing plots and units",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tcpharyana.gov.in",
+    "description": "Affordable housing scheme for low income group in Haryana.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-043",
+    "title": "Punjab Shagun Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 51,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sswcd.punjab.gov.in",
+    "description": "Financial assistance for marriage of girls from SC/BPL families in Punjab.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-044",
+    "title": "Ashirwad Scheme Punjab",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 32790,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 51,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sswcd.punjab.gov.in",
+    "description": "Financial assistance for marriage of daughters of widows and poor women in Punjab.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-045",
+    "title": "Assam Orunodoi Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 200000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,250 per month",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://orunodoi.assam.gov.in",
+    "description": "Direct cash transfer to economically weaker women beneficiaries in Assam.",
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-046",
+    "title": "Mukhya Mantri Krishi Sahay Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Compensation as per crop loss assessment",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ikhedut.gujarat.gov.in",
+    "description": "Crop loss compensation scheme for farmers in Gujarat.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-047",
+    "title": "Vahli Dikri Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 600000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,10,000 across installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.gujarat.gov.in",
+    "description": "Financial assistance scheme for girl child welfare in Gujarat.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-048",
+    "title": "Mukhyamantri Amrutum Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://magujarat.com",
+    "description": "Health insurance scheme for BPL families in Gujarat.",
+    "documents": [
+      "Aadhaar Card",
+      "BPL Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-049",
+    "title": "Manav Kalyan Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 16,
+    "maxAge": 60,
+    "gender": "All",
+    "incomeCap": 120000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free tool kits for self employment",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://e-kutir.gujarat.gov.in",
+    "description": "Financial assistance for self-employment tool kits in Gujarat.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-050",
+    "title": "Odisha KALIA Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 10,000-12,500 per year",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://kalia.odisha.gov.in",
+    "description": "Financial assistance to farmers and landless agricultural labourers in Odisha.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-051",
+    "title": "Biju Swasthya Kalyan Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://bsky.odisha.gov.in",
+    "description": "Health insurance scheme for residents of Odisha.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-052",
+    "title": "Mukhyamantri Kanya Vivah Yojana Odisha",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 10,000-25,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://ssepd.odisha.gov.in",
+    "description": "Financial assistance for marriage of poor girls in Odisha.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-053",
+    "title": "Jharkhand Mukhyamantri Kanyadan Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 30,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://jsly.jharkhand.gov.in",
+    "description": "Financial assistance for marriage of girls from poor families in Jharkhand.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-054",
+    "title": "Mukhyamantri Sukanya Yojana Jharkhand",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 40,000 across installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://jsly.jharkhand.gov.in",
+    "description": "Financial assistance scheme for girl child education in Jharkhand.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-055",
+    "title": "Chhattisgarh Rajiv Gandhi Kisan Nyay Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Assistance per acre based on crop",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://kisan.cg.nic.in",
+    "description": "Input assistance to paddy and other crop farmers in Chhattisgarh.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-056",
+    "title": "Chhattisgarh Mukhyamantri Kanya Vivah Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 20,000 assistance",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://socialwelfare.cg.gov.in",
+    "description": "Financial assistance for marriage of poor girls in Chhattisgarh.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-057",
+    "title": "Uttarakhand Nandadevi Kanya Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 72000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 51,000 maturity amount",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wecd.uk.gov.in",
+    "description": "Financial assistance scheme for girl child welfare in Uttarakhand.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-058",
+    "title": "Himachal Pradesh Beti Hai Anmol Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 12,000-15,000 across installments",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://hpwcd.nic.in",
+    "description": "Financial assistance scheme for girl child from BPL families in Himachal Pradesh.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "BPL Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-059",
+    "title": "Delhi Ladli Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 100000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,00,000 maturity amount",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://wcd.delhi.gov.in",
+    "description": "Financial assistance scheme for girl child welfare in Delhi.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-060",
+    "title": "Delhi Mukhyamantri Tirth Yatra Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Free pilgrimage travel and accommodation",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tirthyatra.delhi.gov.in",
+    "description": "Free pilgrimage travel scheme for senior citizens in Delhi.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-061",
+    "title": "Jammu and Kashmir Ladli Beti Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 50,000 maturity amount",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://jakdirsw.nic.in",
+    "description": "Financial assistance scheme for girl child welfare in Jammu and Kashmir.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-062",
+    "title": "Goa Ladli Laxmi Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Women & Child Welfare",
+    "minAge": 0,
+    "maxAge": 18,
+    "gender": "Female",
+    "incomeCap": 800000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Rs 1,00,000 maturity amount",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://goa.gov.in",
+    "description": "Financial assistance scheme for girl child welfare in Goa.",
+    "documents": [
+      "Aadhaar Card",
+      "Birth Certificate",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-063",
+    "title": "Manipur Chief Minister's Scholarship Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Scholarship & Education",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School",
+      "High School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Scholarship as per merit list",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://manipur.gov.in",
+    "description": "Scholarship for meritorious students in Manipur.",
+    "documents": [
+      "Aadhaar Card",
+      "Mark Sheet"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-064",
+    "title": "Sikkim Chief Minister's Rural Housing Mission",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Housing",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Financial assistance for house construction",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://sikkim.gov.in",
+    "description": "Housing assistance scheme for rural poor in Sikkim.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-065",
+    "title": "Tripura Chief Minister Jan Arogya Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tripura.gov.in",
+    "description": "Health insurance scheme for residents of Tripura.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-066",
+    "title": "Meghalaya Chief Minister's Elderly Support Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Pension & Social Security",
+    "minAge": 60,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Monthly pension support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://meghalaya.gov.in",
+    "description": "Monthly pension support for elderly citizens in Meghalaya.",
+    "documents": [
+      "Aadhaar Card",
+      "Age Proof"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-067",
+    "title": "Nagaland Chief Minister's Comprehensive Health Insurance Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Coverage up to Rs 5,00,000 per family",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://nagaland.gov.in",
+    "description": "Health insurance coverage for residents of Nagaland.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-068",
+    "title": "Mizoram Chief Minister's Rural Housing Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "Housing",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Financial assistance for house construction",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://mizoram.gov.in",
+    "description": "Rural housing assistance scheme in Mizoram.",
+    "documents": [
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-069",
+    "title": "Arunachal Pradesh Chief Minister's Adarsh Gram Yojana",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Village infrastructure development",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://arunachalpradesh.gov.in",
+    "description": "Village development scheme in Arunachal Pradesh.",
+    "documents": [
+      "Village Records"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "STATE-070",
+    "title": "Punjab Ghar Ghar Rozgar Scheme",
+    "department": "Govt of India",
+    "level": "State",
+    "category": "General Welfare & Benefits",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "Applicable in Tamil Nadu & All India",
+    "benefits": "Employment linkage and training support",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://pgrkam.com",
+    "description": "Employment and self-employment support scheme in Punjab.",
+    "documents": [
+      "Aadhaar Card",
+      "Educational Certificate"
+    ],
+    "isNew": false,
+    "status": "Active"
+  }
+]
