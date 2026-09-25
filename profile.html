@@ -12,20 +12,36 @@
   <header class="header-nav">
     <div class="container nav-container">
       <a href="index.html" class="brand-logo">
-        <svg viewBox="0 0 40 40" fill="none" width="36" height="36"><rect width="40" height="40" rx="10" fill="#2563EB"/><path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/></svg>
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="url(#brand-grad)"/>
+          <path d="M12 28L20 12L28 28H23L20 21L17 28H12Z" fill="white"/>
+          <path d="M20 21L23 28H17L20 21Z" fill="#14B8A6"/>
+          <defs>
+            <linearGradient id="brand-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0F172A"/>
+              <stop offset="1" stop-color="#2563EB"/>
+            </linearGradient>
+          </defs>
+        </svg>
         <span>GO SCHEME</span>
+        <span class="brand-tagline-sm">TN Edition</span>
       </a>
 
-      <nav class="nav-links">
+      <nav class="nav-links" id="main-nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore-schemes.html" class="nav-link">Explore Schemes</a>
+        <a href="eligible-schemes.html" class="nav-link">Check Eligibility</a>
         <a href="dashboard.html" class="nav-link">Dashboard</a>
-        <a href="eligible-schemes.html" class="nav-link">Eligible Schemes</a>
-        <a href="explore-schemes.html" class="nav-link">Explore All</a>
-        <a href="profile.html" class="nav-link active">Profile</a>
+        <a href="saved-schemes.html" class="nav-link">Saved Schemes</a>
       </nav>
 
       <div class="nav-actions" id="header-user-nav">
         <!-- Rendered dynamically -->
       </div>
+
+      <button class="mobile-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
   </header>
 
