@@ -162,6 +162,21 @@ async function initDatabaseSchema() {
     );
   `);
 
+  // 6. Scraper Logs table
+  await runAsync(`
+    CREATE TABLE IF NOT EXISTS scraper_logs (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      started_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      completed_at DATETIME,
+      status TEXT DEFAULT 'running',
+      source TEXT,
+      schemes_scraped INTEGER DEFAULT 0,
+      schemes_added INTEGER DEFAULT 0,
+      schemes_updated INTEGER DEFAULT 0,
+      details TEXT
+    );
+  `);
+
   saveDb();
   console.log('Database schema initialized successfully (SQLite WASM).');
 }

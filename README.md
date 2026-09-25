@@ -193,12 +193,16 @@ For quick testing and evaluation, the backend database is pre-seeded with two ac
 - `GET /api/saved-schemes` — Fetch user's bookmarked schemes (*Requires Bearer Token*).
 - `POST /api/saved-schemes/toggle` — Bookmark or unbookmark scheme by ID (*Requires Bearer Token*).
 
-### ⚙️ Admin Endpoints
-- `POST /api/admin/login` — Authenticate admin.
-- `GET /api/admin/metrics` — Aggregate platform dashboard metrics.
-- `POST /api/admin/schemes` — Add new scheme.
-- `PUT /api/admin/schemes/:id/status` — Toggle scheme active/inactive status.
-- `DELETE /api/admin/schemes/:id` — Delete scheme.
+### 🤖 Automated Scraper Endpoints
+- `GET /api/scraper/status` — Get background scheduler status, cron expression, and last execution summary.
+- `POST /api/scraper/trigger` — Trigger immediate live scraper crawl across Tamil Nadu & central portals.
+- `GET /api/scraper/logs` — Fetch chronological execution history and synchronization statistics.
+
+### 🔄 Scraper CLI Command
+```bash
+cd backend
+npm run scrape
+```
 
 ---
 

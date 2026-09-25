@@ -206,3 +206,117 @@ window.deleteAdminScheme = async function(schemeId) {
     renderAdminSchemesTable();
   }
 };
+
+/* ==========================================================================
+   Automated Scheme Scraper Admin Controls & Live Sync Viewer
+   ========================================================================== */
+
+async function renderScraperControls() {
+  const badgeEl = document.getElementById("scraper-status-badge");
+  const lastRunEl = document.getElementById("scraper-last-run-time");
+  const nextSchedEl = document.getElementById("scraper-next-schedule");
+  const logsTbody = document.getElementById("scraper-logs-table-body");
+  const triggerBtn = document.getElementById("btn-trigger-scraper");
+  const btnText = document.getElementById("btn-scraper-text");
+
+  // 1. Fetch live status from /api/scraper/status
+  try {
+    const res = await apiFetch("/scraper/status");
+    if (res && res.success && res.data) {
+      const data = res.data;
+      if (badgeEl) {
+        badgeEl.innerText = data.isSchedulerActive ? "🟢 Active (Cron Every 6 hrs)" : "⚪ Idle";
+        badgeEl.style.color = data.isSchedulerActive ? "var(--teal)" : "var(--text-muted)";
+      }
+      if (lastRunEl) {
+        if (data.lastLog && data.lastLog.completed_at) {
+          const date = new Date(data.lastLog.completed_at);
+          lastRunEl.innerText = date.toLocaleString();
+        } else {
+          lastRunEl.innerText = "Never / Initializing";
+        }
+      }
+      if (nextSchedEl && data.schedule) {
+        nextSchedEl.innerText = `Scheduled (${data.schedule})`;
+      }
+    }
+  } catch (err) {
+    if (lastRunEl) lastRunEl.innerText = "Local Mode";
+  }
+
+  // 2. Fetch and draw execution logs
+  async function loadLogs() {
+    if (!logsTbody) return;
+    try {
+      const res = await apiFetch("/scraper/logs?limit=10");
+      if (res && res.success && res.logs && res.logs.length > 0) {
+        logsTbody.innerHTML = res.logs.map(log => {
+          const dateStr = log.completed_at ? new Date(log.completed_at).toLocaleString() : (log.started_at ? new Date(log.started_at).toLocaleString() : 'Just now');
+          const statusBadge = log.status === 'success' 
+            ? `<span class="badge" style="background: rgba(16, 185, 129, 0.15); color: var(--emerald-hover); font-weight: 700;">Success</span>`
+            : `<span class="badge" style="background: rgba(244, 63, 94, 0.15); color: var(--rose); font-weight: 700;">${log.status}</span>`;
+
+          return `
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.65rem 0.5rem; font-size: 0.82rem; color: var(--text-secondary); white-space: nowrap;">${dateStr}</td>
+              <td style="padding: 0.65rem 0.5rem; font-weight: 600; color: var(--primary-navy);">${log.source || 'Auto'}</td>
+              <td style="padding: 0.65rem 0.5rem;">${statusBadge}</td>
+              <td style="padding: 0.65rem 0.5rem; font-weight: 700; color: var(--primary-navy);">${log.schemes_scraped || 0}</td>
+              <td style="padding: 0.65rem 0.5rem; font-weight: 700; color: var(--teal);">${log.schemes_added || 0}</td>
+              <td style="padding: 0.65rem 0.5rem; font-weight: 700; color: var(--royal-blue);">${log.schemes_updated || 0}</td>
+              <td style="padding: 0.65rem 0.5rem; font-size: 0.8rem; color: var(--text-muted); max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${log.details || ''}">
+                ${log.details || 'Scrape completed'}
+              </td>
+            </tr>
+          `;
+        }).join('');
+      } else {
+        logsTbody.innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 1.5rem; color: var(--text-muted);">No scraper logs recorded yet. Click "Run Scraper Now" above to initiate first scrape.</td></tr>`;
+      }
+    } catch (err) {
+      logsTbody.innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 1.5rem; color: var(--text-muted);">Scraper logging available when backend server is active.</td></tr>`;
+    }
+  }
+
+  loadLogs();
+
+  // 3. Wire up manual scraper trigger button
+  if (triggerBtn) {
+    triggerBtn.addEventListener("click", async () => {
+      triggerBtn.disabled = true;
+      if (btnText) btnText.innerText = "Scraping Portals...";
+      triggerBtn.style.opacity = "0.7";
+      showToast("Live scraper initiated! Crawling Tamil Nadu portal...", "info");
+
+      try {
+        const res = await apiFetch("/scraper/trigger", {
+          method: "POST",
+          body: JSON.stringify({ source: "Admin Dashboard Manual Run" })
+        });
+
+        if (res && res.success) {
+          showToast(res.message || "Scraper completed! Database synchronized.", "success");
+          if (lastRunEl) lastRunEl.innerText = new Date().toLocaleString();
+          renderAdminDashboardMetrics();
+          loadLogs();
+        } else {
+          showToast(res?.message || "Scraper could not complete.", "error");
+        }
+      } catch (err) {
+        showToast("Error communicating with scraper API.", "error");
+      } finally {
+        triggerBtn.disabled = false;
+        if (btnText) btnText.innerText = "Run Scraper Now";
+        triggerBtn.style.opacity = "1";
+      }
+    });
+  }
+}
+
+// Call renderScraperControls if panel exists on admin dashboard
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById("btn-trigger-scraper")) {
+    renderScraperControls();
+  }
+});
+
