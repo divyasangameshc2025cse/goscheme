@@ -1,5 +1,511 @@
 [
   {
+    "id": "TN-001",
+    "title": "Kalaignar Magalir Urimai Thittam",
+    "department": "Social Welfare & Women Empowerment Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 21,
+    "maxAge": 65,
+    "gender": "Female",
+    "incomeCap": 250000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Housewife",
+      "Self-Employed",
+      "Daily Wage Worker",
+      "Unemployed"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "₹1,000 per month direct bank transfer (₹12,000/year)",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://kmut.tn.gov.in",
+    "description": "Flagship women empowerment scheme providing ₹1,000 monthly entitlement directly to bank accounts of women family heads across Tamil Nadu.",
+    "documents": [
+      "Aadhaar Card",
+      "Smart Ration Card",
+      "Electricity Bill",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-002",
+    "title": "Pudhumai Penn Scheme (Moovalur Higher Education)",
+    "department": "Social Welfare Department, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 17,
+    "maxAge": 26,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "12th Pass",
+      "Undergraduate",
+      "Diploma",
+      "ITI"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "₹1,000 per month deposited throughout college graduation",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://penkalvi.tn.gov.in",
+    "description": "Financial assistance of ₹1,000/month to girl students who studied Classes 6 to 12 in Tamil Nadu government schools to promote higher education.",
+    "documents": [
+      "Aadhaar Card",
+      "Govt School Study Certificate (Classes 6-12)",
+      "College ID",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-003",
+    "title": "Thamizh Pudhalvan Scheme",
+    "department": "Higher Education Department, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Scholarship & Education",
+    "minAge": 17,
+    "maxAge": 26,
+    "gender": "Male",
+    "incomeCap": 9999999,
+    "education": [
+      "12th Pass",
+      "Undergraduate",
+      "Diploma",
+      "ITI"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "₹1,00,000 yearly benefit / ₹1,000 per month deposited directly into bank account",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tamilpudhalvan.tn.gov.in",
+    "description": "Higher education incentive providing ₹1,000 monthly to boy students from Tamil Nadu Government schools pursuing diploma and undergraduate degrees.",
+    "documents": [
+      "Aadhaar Card",
+      "Classes 6-12 Govt School Certificate",
+      "College Bonafide",
+      "Bank Passbook"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-004",
+    "title": "Chief Minister Comprehensive Health Insurance Scheme (CMCHIS)",
+    "department": "Health & Family Welfare Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Healthcare",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 120000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "Cashless treatment up to ₹5,00,000 per family per year in 1000+ hospitals",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://cmchistn.com",
+    "description": "Premier health scheme providing cashless hospitalisation cover up to ₹5 Lakhs across 1,513 medical procedures in public and private hospitals.",
+    "documents": [
+      "Smart Ration Card",
+      "Aadhaar Card",
+      "Income Certificate / VAO Verification"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-005",
+    "title": "Naan Mudhalvan Scheme",
+    "department": "Tamil Nadu Skill Development Corporation (TNSDC)",
+    "level": "Tamil Nadu",
+    "category": "Skill Development & Employment",
+    "minAge": 18,
+    "maxAge": 32,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Undergraduate",
+      "Postgraduate",
+      "Diploma",
+      "Engineering"
+    ],
+    "occupation": [
+      "Student",
+      "Unemployed"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "Free Industry 4.0 certifications, AI/Coding training & job placement",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://naanmudhalvan.tn.gov.in",
+    "description": "Dynamic skilling initiative offering free modern tech training in AI, Data Analytics, Cybersecurity, Robotics and campus placement across Tamil Nadu colleges.",
+    "documents": [
+      "Aadhaar Card",
+      "College Student ID",
+      "Resume"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-006",
+    "title": "Chief Minister Uzhavar Pathukappu Thittam (Farmers Protection)",
+    "department": "Revenue & Disaster Management Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 65,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer",
+      "Agricultural Laborer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "₹1,00,000 accident relief, old age pension & marriage grants",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://cms.tn.gov.in",
+    "description": "Comprehensive welfare and safety net for farmers and agricultural laborers in Tamil Nadu covering accidents, disability, natural death, and children education.",
+    "documents": [
+      "Uzhavar Member Card",
+      "Land Patta / Chitta",
+      "Aadhaar Card",
+      "Bank Passbook"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-007",
+    "title": "Free Electricity Scheme for Agriculture",
+    "department": "TANGEDCO, Energy Department, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Agriculture",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "Farmer"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "100% Free uninterrupted electricity for all farm irrigation pump sets",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tangedco.org",
+    "description": "Full power tariff subsidy for agricultural power connections across Tamil Nadu, supporting over 23 lakh farming households.",
+    "documents": [
+      "Land Title Deed",
+      "TANGEDCO Service Connection Order",
+      "Aadhaar Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-008",
+    "title": "Kalaignar Kanavu Illam (Rural Housing Scheme)",
+    "department": "Rural Development & Panchayat Raj Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Housing",
+    "minAge": 21,
+    "maxAge": 80,
+    "gender": "All",
+    "incomeCap": 180000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All Rural Panchayats of Tamil Nadu",
+    "benefits": "₹3,50,000 per house grant to construct disaster-resilient concrete houses",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tnrd.tn.gov.in",
+    "description": "Massive housing initiative to transform 8 lakh huts into modern concrete pucca houses across rural Tamil Nadu with ₹3.50 lakh unit financial grant.",
+    "documents": [
+      "Land Patta",
+      "Smart Ration Card",
+      "Aadhaar Card",
+      "Bank Account Details"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-009",
+    "title": "Makkalai Thedi Maruthuvam (Doorstep Healthcare)",
+    "department": "Health & Family Welfare Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Healthcare",
+    "minAge": 18,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "Free regular home delivery of hypertension & diabetes medicines",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tnhealth.tn.gov.in",
+    "description": "Healthcare doorstep delivery program sending health workers to screen and supply vital chronic disease medicines directly to citizens at their doorsteps.",
+    "documents": [
+      "Aadhaar Card",
+      "Doctor Diagnosis Slip"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-010",
+    "title": "NEEDS (New Entrepreneur-cum-Enterprise Development Scheme)",
+    "department": "MSME Department, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 21,
+    "maxAge": 45,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Degree",
+      "Diploma",
+      "ITI",
+      "Engineering"
+    ],
+    "occupation": [
+      "Unemployed",
+      "Self-Employed",
+      "Business Owner"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "25% capital subsidy up to ₹75 Lakhs + 3% interest rebate",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://msmeonline.tn.gov.in",
+    "description": "High-impact enterprise promotion scheme providing first-generation graduate entrepreneurs in Tamil Nadu with up to ₹75 Lakhs subsidy for MSME units.",
+    "documents": [
+      "Degree / Diploma Certificate",
+      "Detailed Project Report",
+      "Aadhaar Card",
+      "Community Certificate"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-011",
+    "title": "UYEGP (Unemployed Youth Employment Generation Programme)",
+    "department": "MSME Department, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Entrepreneurship & Loans",
+    "minAge": 18,
+    "maxAge": 45,
+    "gender": "All",
+    "incomeCap": 500000,
+    "education": [
+      "8th Pass",
+      "10th Pass",
+      "12th Pass",
+      "ITI"
+    ],
+    "occupation": [
+      "Unemployed",
+      "Self-Employed"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "Subsidized bank loan up to ₹15 Lakhs with 25% govt subsidy",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://msmeonline.tn.gov.in/uyegp",
+    "description": "Micro-enterprise assistance enabling educated unemployed youth in Tamil Nadu to launch service, manufacturing, and commercial ventures with minimal capital.",
+    "documents": [
+      "School Transfer Certificate",
+      "Aadhaar Card",
+      "Quotations",
+      "Ration Card"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-012",
+    "title": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme",
+    "department": "Health & Family Welfare Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Women & Child Welfare",
+    "minAge": 19,
+    "maxAge": 45,
+    "gender": "Female",
+    "incomeCap": 150000,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "₹18,000 cash benefit in 5 installments + 2 Amma Nutrition Kits",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://picme.tn.gov.in",
+    "description": "Financial assistance and nutrient kits delivered to pregnant and lactating mothers delivering in Tamil Nadu government healthcare institutions.",
+    "documents": [
+      "PICME RCH ID",
+      "Aadhaar Card",
+      "Mother Child Health Card",
+      "Bank Passbook"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-013",
+    "title": "Vidiyal Payanam (Free Bus Travel for Women)",
+    "department": "Transport Department, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "General Welfare & Benefits",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "Female",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "100% Free zero-fare bus travel in ordinary town buses across TN",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://transport.tn.gov.in",
+    "description": "Empowers millions of women workers, students, and elders across Tamil Nadu with unlimited free travel in ordinary government public transport buses.",
+    "documents": [
+      "No documentation required (Direct boarding)"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
+    "id": "TN-014",
+    "title": "Chief Minister Breakfast Scheme (Kalaignar Kaalai Unavu)",
+    "department": "Social Welfare & Nutritious Meal Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "General Welfare & Benefits",
+    "minAge": 5,
+    "maxAge": 12,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "Primary School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 31,000+ Govt Primary Schools in TN",
+    "benefits": "Free fresh cooked nutritious hot breakfast every school morning",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://tnsocialwelfare.tn.gov.in",
+    "description": "Pioneering meal initiative serving fresh hot breakfast to 17 Lakh+ elementary students in all govt primary schools across Tamil Nadu.",
+    "documents": [
+      "Govt School Admission EMIS Record"
+    ],
+    "isNew": true,
+    "status": "Active"
+  },
+  {
+    "id": "TN-015",
+    "title": "Tamil Nadu Differently Abled Welfare Pension & Assistance",
+    "department": "Differently Abled Welfare Dept, Govt of Tamil Nadu",
+    "level": "Tamil Nadu",
+    "category": "Pension & Social Security",
+    "minAge": 0,
+    "maxAge": 100,
+    "gender": "All",
+    "incomeCap": 9999999,
+    "education": [
+      "All"
+    ],
+    "occupation": [
+      "All"
+    ],
+    "casteCategory": [
+      "All"
+    ],
+    "districtEligibility": "All 38 Districts of Tamil Nadu",
+    "benefits": "₹1,500/month pension + free retrofitted motorized scooters",
+    "applicationDeadline": "2026-12-31",
+    "officialUrl": "https://scd.tn.gov.in",
+    "description": "Monthly direct financial support of ₹1,500 and free customized motorized wheelchairs and scooters for differently abled individuals in Tamil Nadu.",
+    "documents": [
+      "Unique Disability ID (UDID) Card",
+      "Aadhaar Card",
+      "Bank Passbook"
+    ],
+    "isNew": false,
+    "status": "Active"
+  },
+  {
     "id": "CENT-001",
     "title": "PM Kisan Samman Nidhi",
     "department": "Govt of India",
@@ -2709,163 +3215,6 @@
     "documents": [
       "Aadhaar Card",
       "Age Proof",
-      "Income Certificate"
-    ],
-    "isNew": false,
-    "status": "Active"
-  },
-  {
-    "id": "TN-001",
-    "title": "Amma Unavagam",
-    "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
-    "category": "General Welfare & Benefits",
-    "minAge": 0,
-    "maxAge": 100,
-    "gender": "All",
-    "incomeCap": 9999999,
-    "education": [
-      "All"
-    ],
-    "occupation": [
-      "All"
-    ],
-    "casteCategory": [
-      "All"
-    ],
-    "districtEligibility": "All Tamil Nadu Districts",
-    "benefits": "Meals at subsidized price",
-    "applicationDeadline": "2026-12-31",
-    "officialUrl": "https://www.tn.gov.in",
-    "description": "Subsidized meal scheme for urban poor in Tamil Nadu.",
-    "documents": [
-      "Aadhaar Card",
-      "Income Certificate"
-    ],
-    "isNew": false,
-    "status": "Active"
-  },
-  {
-    "id": "TN-002",
-    "title": "Dr Muthulakshmi Reddy Maternity Benefit Scheme",
-    "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
-    "category": "Women & Child Welfare",
-    "minAge": 19,
-    "maxAge": 100,
-    "gender": "Female",
-    "incomeCap": 9999999,
-    "education": [
-      "All"
-    ],
-    "occupation": [
-      "All"
-    ],
-    "casteCategory": [
-      "All"
-    ],
-    "districtEligibility": "All Tamil Nadu Districts",
-    "benefits": "Rs 18,000 assistance",
-    "applicationDeadline": "2026-12-31",
-    "officialUrl": "https://tnsocialwelfare.tn.gov.in",
-    "description": "Financial assistance to pregnant women workers in Tamil Nadu.",
-    "documents": [
-      "Aadhaar Card",
-      "Employment Proof",
-      "MCP Card"
-    ],
-    "isNew": false,
-    "status": "Active"
-  },
-  {
-    "id": "TN-003",
-    "title": "Moovalur Ramamirtham Ammaiyar Higher Education Assistance Scheme",
-    "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
-    "category": "Scholarship & Education",
-    "minAge": 0,
-    "maxAge": 100,
-    "gender": "Female",
-    "incomeCap": 250000,
-    "education": [
-      "All"
-    ],
-    "occupation": [
-      "Student"
-    ],
-    "casteCategory": [
-      "All"
-    ],
-    "districtEligibility": "All Tamil Nadu Districts",
-    "benefits": "Rs 1,000-6,000 depending on course",
-    "applicationDeadline": "2026-12-31",
-    "officialUrl": "https://tnsocialwelfare.tn.gov.in",
-    "description": "Financial assistance to girl students of poor families for higher education.",
-    "documents": [
-      "Aadhaar Card",
-      "Income Certificate",
-      "Mark Sheet"
-    ],
-    "isNew": false,
-    "status": "Active"
-  },
-  {
-    "id": "TN-004",
-    "title": "Naan Mudhalvan Scheme",
-    "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
-    "category": "Scholarship & Education",
-    "minAge": 18,
-    "maxAge": 100,
-    "gender": "All",
-    "incomeCap": 9999999,
-    "education": [
-      "All"
-    ],
-    "occupation": [
-      "Student"
-    ],
-    "casteCategory": [
-      "All"
-    ],
-    "districtEligibility": "All Tamil Nadu Districts",
-    "benefits": "Free skill training and certification",
-    "applicationDeadline": "2026-12-31",
-    "officialUrl": "https://naanmudhalvan.tn.gov.in",
-    "description": "Skill development and employability enhancement for students in Tamil Nadu.",
-    "documents": [
-      "Aadhaar Card",
-      "Educational Certificate"
-    ],
-    "isNew": false,
-    "status": "Active"
-  },
-  {
-    "id": "TN-005",
-    "title": "Chief Minister's Comprehensive Health Insurance Scheme",
-    "department": "Govt of Tamil Nadu",
-    "level": "Tamil Nadu",
-    "category": "Healthcare",
-    "minAge": 0,
-    "maxAge": 100,
-    "gender": "All",
-    "incomeCap": 400000,
-    "education": [
-      "All"
-    ],
-    "occupation": [
-      "All"
-    ],
-    "casteCategory": [
-      "All"
-    ],
-    "districtEligibility": "All Tamil Nadu Districts",
-    "benefits": "Coverage up to Rs 5,00,000 per family",
-    "applicationDeadline": "2026-12-31",
-    "officialUrl": "https://www.cmchistn.com",
-    "description": "Health insurance coverage for low income families in Tamil Nadu.",
-    "documents": [
-      "Aadhaar Card",
       "Income Certificate"
     ],
     "isNew": false,

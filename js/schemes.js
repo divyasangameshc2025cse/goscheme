@@ -81,6 +81,7 @@ function evaluateEligibility(scheme, user) {
 }
 
 // Generate Scheme Card HTML
+// Generate Scheme Card HTML
 function createSchemeCardHTML(scheme, user = null, isEligibleOnlyPage = false) {
   const savedIds = getSavedSchemeIds();
   const isSaved = savedIds.includes(scheme.id);
@@ -91,10 +92,17 @@ function createSchemeCardHTML(scheme, user = null, isEligibleOnlyPage = false) {
   const today = new Date();
   const diffDays = Math.ceil((deadlineDate - today) / (1000 * 60 * 60 * 24));
   const isDeadlineSoon = diffDays <= 30 && diffDays > 0;
+  const isTN = scheme.level === 'Tamil Nadu';
 
   let badgesHTML = `
-    <span class="badge ${scheme.level === 'Tamil Nadu' ? 'badge-tn' : 'badge-central'}">${scheme.level}</span>
+    <span class="badge ${isTN ? 'badge-tn' : 'badge-central'}">${scheme.level}</span>
   `;
+  if (isTN) {
+    badgesHTML += `<span class="badge tn-priority-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> TN Priority</span>`;
+  }
+  if (scheme.category) {
+    badgesHTML += `<span class="badge" style="background: var(--surface-bg); color: var(--text-secondary); border: 1px solid var(--border-color);">${scheme.category}</span>`;
+  }
   if (scheme.isNew) badgesHTML += `<span class="badge badge-new">New</span>`;
   if (isDeadlineSoon) badgesHTML += `<span class="badge badge-deadline">Deadline Soon</span>`;
   if (evalResult.isEligible && user && user.isProfileComplete) {
@@ -117,7 +125,7 @@ function createSchemeCardHTML(scheme, user = null, isEligibleOnlyPage = false) {
   }
 
   return `
-    <div class="scheme-card" id="scheme-card-${scheme.id}">
+    <div class="scheme-card ${isTN ? 'tn-priority-card' : ''}" id="scheme-card-${scheme.id}">
       <div>
         <div class="scheme-card-top">
           <div class="scheme-badges-wrapper">${badgesHTML}</div>
@@ -199,6 +207,7 @@ async function renderExploreSchemes(user) {
   const levelFilter = document.getElementById("filter-level");
   const categoryFilter = document.getElementById("filter-category");
   const countDisplay = document.getElementById("schemes-count-text");
+  const pillsContainer = document.getElementById("category-pills-container");
 
   let schemes = [];
   const res = await apiFetch("/schemes");
@@ -208,6 +217,65 @@ async function renderExploreSchemes(user) {
   } else {
     schemes = getStoredSchemes().filter(s => s.status === "Active");
   }
+
+  // Update dynamic pill counts if pills exist
+  const pills = pillsContainer ? pillsContainer.querySelectorAll(".category-pill") : document.querySelectorAll(".category-pill");
+  const allCountEl = document.getElementById("cat-count-all");
+  if (allCountEl) {
+    allCountEl.innerText = schemes.length;
+  }
+
+  // Check URL query parameters (e.g., ?category=... or ?level=...)
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialCategory = urlParams.get("category");
+  const initialLevel = urlParams.get("level");
+
+  if (initialLevel && levelFilter) {
+    levelFilter.value = initialLevel;
+  }
+
+  if (initialCategory) {
+    if (categoryFilter) categoryFilter.value = initialCategory;
+    // Set active pill
+    pills.forEach(pill => {
+      const pillCat = pill.getAttribute("data-cat");
+      if (pillCat === initialCategory) {
+        pill.classList.add("active");
+        try {
+          pill.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+        } catch (e) {}
+      } else {
+        pill.classList.remove("active");
+      }
+    });
+  }
+
+  // Wire up category pill click events
+  pills.forEach(pill => {
+    pill.addEventListener("click", () => {
+      const clickedCat = pill.getAttribute("data-cat") || "All";
+      
+      // Update active class on pills
+      pills.forEach(p => p.classList.remove("active"));
+      pill.classList.add("active");
+
+      // Sync select dropdown
+      if (categoryFilter) {
+        categoryFilter.value = clickedCat;
+      }
+
+      // Update URL search param seamlessly without reload
+      const newUrl = new URL(window.location);
+      if (clickedCat === "All") {
+        newUrl.searchParams.delete("category");
+      } else {
+        newUrl.searchParams.set("category", clickedCat);
+      }
+      window.history.replaceState({}, '', newUrl);
+
+      filterAndDraw();
+    });
+  });
 
   function filterAndDraw() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
@@ -221,8 +289,17 @@ async function renderExploreSchemes(user) {
       return matchQuery && matchLevel && matchCat;
     });
 
+    // FIRST PRIORITY: Always sort Tamil Nadu schemes first!
+    filtered.sort((a, b) => {
+      const aTN = a.level === 'Tamil Nadu' ? 1 : 0;
+      const bTN = b.level === 'Tamil Nadu' ? 1 : 0;
+      if (aTN !== bTN) return bTN - aTN; // 1 (TN) before 0 (Central)
+      return 0; // retain natural order
+    });
+
     if (countDisplay) {
-      countDisplay.innerText = `Showing ${filtered.length} Schemes`;
+      const tnCount = filtered.filter(s => s.level === 'Tamil Nadu').length;
+      countDisplay.innerHTML = `Showing <strong>${filtered.length}</strong> Schemes <span style="font-size: 0.85rem; color: var(--teal); font-weight: 600; margin-left: 0.5rem;">(⭐ ${tnCount} Tamil Nadu First Priority)</span>`;
     }
 
     if (filtered.length === 0) {
@@ -230,7 +307,7 @@ async function renderExploreSchemes(user) {
         <div style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem;" class="card">
           <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="margin: 0 auto 1rem; color: var(--text-muted);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">No schemes found</h3>
-          <p style="color: var(--text-muted);">Try adjusting your search terms or filters.</p>
+          <p style="color: var(--text-muted);">Try adjusting your search terms or selecting another category.</p>
         </div>
       `;
     } else {
@@ -240,7 +317,19 @@ async function renderExploreSchemes(user) {
 
   if (searchInput) searchInput.addEventListener("input", filterAndDraw);
   if (levelFilter) levelFilter.addEventListener("change", filterAndDraw);
-  if (categoryFilter) categoryFilter.addEventListener("change", filterAndDraw);
+  if (categoryFilter) {
+    categoryFilter.addEventListener("change", () => {
+      const val = categoryFilter.value;
+      pills.forEach(p => {
+        if ((p.getAttribute("data-cat") || "All") === val) {
+          p.classList.add("active");
+        } else {
+          p.classList.remove("active");
+        }
+      });
+      filterAndDraw();
+    });
+  }
 
   filterAndDraw();
 }
@@ -272,12 +361,20 @@ async function renderEligibleSchemes(user) {
     const schemes = getStoredSchemes().filter(s => s.status === "Active");
     eligibleList = schemes
       .map(s => ({ scheme: s, eval: evaluateEligibility(s, user) }))
-      .filter(item => item.eval.isEligible)
-      .sort((a, b) => b.eval.matchPercent - a.eval.matchPercent);
+      .filter(item => item.eval.isEligible);
   }
 
+  // FIRST PRIORITY: Tamil Nadu schemes first, then by match percentage
+  eligibleList.sort((a, b) => {
+    const aTN = a.scheme.level === 'Tamil Nadu' ? 1 : 0;
+    const bTN = b.scheme.level === 'Tamil Nadu' ? 1 : 0;
+    if (aTN !== bTN) return bTN - aTN;
+    return (b.eval?.matchPercent || 0) - (a.eval?.matchPercent || 0);
+  });
+
   if (countDisplay) {
-    countDisplay.innerText = `Matched (${eligibleList.length}) Schemes For ${user.fullName}`;
+    const tnCount = eligibleList.filter(item => item.scheme.level === 'Tamil Nadu').length;
+    countDisplay.innerHTML = `Matched (<strong>${eligibleList.length}</strong>) Schemes For ${user.fullName} <span style="font-size: 0.95rem; color: var(--teal); font-weight: 600; margin-left: 0.5rem;">(⭐ ${tnCount} Tamil Nadu Schemes First)</span>`;
   }
 
   if (eligibleList.length === 0) {
@@ -310,6 +407,13 @@ async function renderSavedSchemesPage() {
     const savedIds = getSavedSchemeIds();
     schemes = getStoredSchemes().filter(s => savedIds.includes(s.id));
   }
+
+  // FIRST PRIORITY: Tamil Nadu schemes first!
+  schemes.sort((a, b) => {
+    const aTN = a.level === 'Tamil Nadu' ? 1 : 0;
+    const bTN = b.level === 'Tamil Nadu' ? 1 : 0;
+    return bTN - aTN;
+  });
 
   if (countDisplay) {
     countDisplay.innerText = `${schemes.length} Bookmarked Schemes`;

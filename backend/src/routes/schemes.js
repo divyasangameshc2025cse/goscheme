@@ -138,7 +138,7 @@ router.get('/', async (req, res) => {
       params.push(q, q, q, q);
     }
 
-    sql += ` ORDER BY level DESC, id ASC`;
+    sql += ` ORDER BY CASE WHEN level = 'Tamil Nadu' THEN 0 WHEN level = 'State' THEN 1 ELSE 2 END, id ASC`;
 
     const rows = await allAsync(sql, params);
     const schemes = rows.map(parseSchemeRow);
@@ -194,7 +194,12 @@ router.get('/eligible', authenticateToken, async (req, res) => {
         };
       })
       .filter(item => item.isEligible)
-      .sort((a, b) => b.matchPercent - a.matchPercent);
+      .sort((a, b) => {
+        const aIsTN = (a.level === 'Tamil Nadu' || a.level === 'State') ? 1 : 0;
+        const bIsTN = (b.level === 'Tamil Nadu' || b.level === 'State') ? 1 : 0;
+        if (aIsTN !== bIsTN) return bIsTN - aIsTN;
+        return b.matchPercent - a.matchPercent;
+      });
 
     return res.json({
       success: true,

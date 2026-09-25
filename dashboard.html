@@ -205,6 +205,13 @@
       const schemes = getStoredSchemes().filter(s => s.status === "Active");
       const eligibleList = user ? schemes.filter(s => evaluateEligibility(s, user).isEligible) : schemes;
 
+      // FIRST PRIORITY: Tamil Nadu schemes first
+      eligibleList.sort((a, b) => {
+        const aTN = a.level === 'Tamil Nadu' ? 1 : 0;
+        const bTN = b.level === 'Tamil Nadu' ? 1 : 0;
+        return bTN - aTN;
+      });
+
       if (document.getElementById("dash-eligible-count")) {
         document.getElementById("dash-eligible-count").innerText = eligibleList.length;
       }
