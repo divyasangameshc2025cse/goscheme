@@ -338,10 +338,74 @@
       initialText += `Click **"Check My Eligibility"** or ask me about any welfare scheme to get started!`;
     }
 
-    addMessage('bot', initialText);
+    streamBotMessage(initialText);
   }
 
-  // Add Message to Chat History & DOM
+  // Stream / Type Bot Message with Realistic Typing Effect
+  function streamBotMessage(fullText, meta = null, callback = null) {
+    const container = document.getElementById('goscheme-chat-messages');
+    if (!container) return;
+
+    const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const msgObj = { role: 'bot', text: fullText, meta, timestamp };
+    chatbotState.history.push(msgObj);
+
+    const msgRow = document.createElement('div');
+    msgRow.className = 'goscheme-msg goscheme-msg-bot';
+
+    msgRow.innerHTML = `
+      <div class="goscheme-msg-avatar bot">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="goscheme-msg-content">
+        <div class="goscheme-msg-bubble">
+          <span class="goscheme-typed-content"></span><span class="goscheme-typing-cursor">▌</span>
+        </div>
+        <div class="goscheme-msg-meta" style="opacity: 0; transition: opacity 0.3s ease;">
+          <span>${timestamp}</span>
+          <span>•</span>
+          <button class="goscheme-copy-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(fullText)}).then(() => { this.textContent = 'Copied!'; setTimeout(() => this.textContent = 'Copy', 1500); })">Copy</button>
+        </div>
+      </div>
+    `;
+
+    container.appendChild(msgRow);
+    container.scrollTop = container.scrollHeight;
+
+    const bubbleSpan = msgRow.querySelector('.goscheme-typed-content');
+    const cursor = msgRow.querySelector('.goscheme-typing-cursor');
+    const metaRow = msgRow.querySelector('.goscheme-msg-meta');
+
+    // Split text into word / whitespace tokens for fluid progressive rendering
+    const tokens = fullText.split(/(\s+)/);
+    let index = 0;
+    let accumulatedText = '';
+    chatbotState.isTypingActive = true;
+
+    // Fluid typing speed
+    const intervalMs = Math.max(10, Math.min(26, Math.floor(2600 / Math.max(tokens.length, 1))));
+
+    const timer = setInterval(() => {
+      if (!chatbotState.isTypingActive || index >= tokens.length) {
+        clearInterval(timer);
+        chatbotState.isTypingActive = false;
+        bubbleSpan.innerHTML = renderMarkdown(fullText);
+        if (cursor) cursor.remove();
+        if (metaRow) metaRow.style.opacity = '1';
+        container.scrollTop = container.scrollHeight;
+        if (callback) callback();
+        return;
+      }
+
+      accumulatedText += tokens[index];
+      index++;
+
+      bubbleSpan.innerHTML = renderMarkdown(accumulatedText);
+      container.scrollTop = container.scrollHeight;
+    }, intervalMs);
+  }
+
+  // Add Static Message to Chat History & DOM (Instant, for user messages)
   function addMessage(role, text, meta = null) {
     chatbotState.history.push({ role, text, meta, timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) });
     renderLatestMessage();
@@ -410,7 +474,7 @@
           <div class="goscheme-msg-content">
             <div class="goscheme-typing-indicator">
               <span></span><span></span><span></span>
-              <div class="goscheme-typing-text">NVIDIA NIM analyzing scheme...</div>
+              <div class="goscheme-typing-text">AI is typing...</div>
             </div>
           </div>
         `;
@@ -426,6 +490,9 @@
   async function handleSendMessage(msgText) {
     const text = (msgText || '').trim();
     if (!text || chatbotState.isLoading) return;
+
+    // Interrupt any ongoing typing effect
+    chatbotState.isTypingActive = false;
 
     addMessage('user', text);
     setTyping(true);
@@ -457,18 +524,17 @@
       setTyping(false);
 
       if (data && data.success && data.reply) {
-        addMessage('bot', data.reply, {
-          model: data.model || 'NVIDIA NIM',
+        streamBotMessage(data.reply, {
           provider: data.provider
         });
       } else {
-        addMessage('bot', '⚠️ ' + (data?.message || 'Unable to analyze scheme at this moment. Please check backend server.'));
+        streamBotMessage('⚠️ ' + (data?.message || 'Unable to analyze scheme at this moment. Please check backend server.'));
       }
     } catch (err) {
       console.error('Chat error:', err);
       setTyping(false);
       // Fallback local response if backend cannot be reached
-      addMessage('bot', `⚠️ Could not reach GoScheme API server at http://localhost:5000. Please ensure the backend is running with \`npm start\`.`);
+      streamBotMessage(`⚠️ Could not reach GoScheme API server at http://localhost:5000. Please ensure the backend is running with \`npm start\`.`);
     }
   }
 
@@ -516,6 +582,7 @@
     // Clear Button
     if (btnClear) {
       btnClear.addEventListener('click', () => {
+        chatbotState.isTypingActive = false;
         chatbotState.history = [];
         const msgContainer = document.getElementById('goscheme-chat-messages');
         if (msgContainer) msgContainer.innerHTML = '';
@@ -612,7 +679,7 @@
     if (btnTestNim) {
       btnTestNim.addEventListener('click', async () => {
         const key = document.getElementById('nim-cfg-api-key').value.trim();
-        const model = document.getElementById('nim-cfg-model').value;
+        const model = chatbotState.nimConfig.model || 'meta/llama-3.1-70b-instruct';
         const baseUrl = document.getElementById('nim-cfg-base-url').value.trim();
         const resultBox = document.getElementById('nim-test-result');
 
@@ -629,7 +696,7 @@
           const data = await res.json();
           if (data && data.success) {
             resultBox.className = 'goscheme-nim-test-result success';
-            resultBox.textContent = `✅ Connected! Latency: ${data.latencyMs}ms | Model: ${data.model}`;
+            resultBox.textContent = `✅ Connected! Latency: ${data.latencyMs}ms | Status: Online`;
           } else {
             resultBox.className = 'goscheme-nim-test-result error';
             resultBox.textContent = `❌ Test Failed: ${data?.message || 'Connection error'}`;
