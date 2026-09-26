@@ -60,6 +60,47 @@
     localStorage.setItem('goscheme_nim_config', JSON.stringify(chatbotState.nimConfig));
   }
 
+  // Conversation Memory Persistence Across Page Navigation
+  const CHAT_HISTORY_STORAGE_KEY = 'goscheme_ai_chat_history';
+  const CHAT_OPEN_STORAGE_KEY = 'goscheme_ai_chat_open';
+
+  function loadChatHistory() {
+    try {
+      const saved = localStorage.getItem(CHAT_HISTORY_STORAGE_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          chatbotState.history = parsed;
+          return true;
+        }
+      }
+    } catch (e) {
+      console.warn('Failed to load chat history from storage:', e);
+    }
+    return false;
+  }
+
+  function saveChatHistory() {
+    try {
+      if (Array.isArray(chatbotState.history)) {
+        // Retain up to 40 recent messages to preserve long-term context
+        const toSave = chatbotState.history.slice(-40);
+        localStorage.setItem(CHAT_HISTORY_STORAGE_KEY, JSON.stringify(toSave));
+      }
+    } catch (e) {
+      console.warn('Failed to save chat history to storage:', e);
+    }
+  }
+
+  function clearChatHistory() {
+    chatbotState.history = [];
+    try {
+      localStorage.removeItem(CHAT_HISTORY_STORAGE_KEY);
+    } catch (e) {
+      console.warn('Failed to clear chat history from storage:', e);
+    }
+  }
+
   // Load User Profile from existing GoScheme session
   function loadUserProfile() {
     try {
@@ -298,7 +339,28 @@
     attachEventHandlers();
     updateFedProfileDisplay();
     checkActiveScheme();
-    sendWelcomeMessage();
+
+    // Restore persistent conversation memory across page switches
+    const hasStoredHistory = loadChatHistory();
+    if (hasStoredHistory) {
+      renderAllMessages();
+    } else {
+      sendWelcomeMessage();
+    }
+
+    // Restore open state if user had the chat open before navigating
+    try {
+      const wasOpen = sessionStorage.getItem(CHAT_OPEN_STORAGE_KEY) === 'true';
+      if (wasOpen) {
+        chatbotState.isOpen = true;
+        const windowElem = document.getElementById('goscheme-chatbot-window');
+        const launcher = document.getElementById('goscheme-chatbot-launcher');
+        if (windowElem) windowElem.classList.add('active');
+        if (launcher) launcher.style.display = 'none';
+      }
+    } catch (e) {
+      // quiet fallback
+    }
   }
 
   // Update fed profile in background
@@ -353,6 +415,7 @@
     const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     const msgObj = { role: 'bot', text: fullText, meta, timestamp };
     chatbotState.history.push(msgObj);
+    saveChatHistory();
 
     const msgRow = document.createElement('div');
     msgRow.className = 'goscheme-msg goscheme-msg-bot';
@@ -412,7 +475,51 @@
   // Add Static Message to Chat History & DOM (Instant, for user messages)
   function addMessage(role, text, meta = null) {
     chatbotState.history.push({ role, text, meta, timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) });
+    saveChatHistory();
     renderLatestMessage();
+  }
+
+  // Render Full Saved History on Page Switch
+  function renderAllMessages() {
+    const container = document.getElementById('goscheme-chat-messages');
+    if (!container) return;
+    container.innerHTML = '';
+
+    chatbotState.history.forEach(msg => {
+      const msgRow = document.createElement('div');
+      msgRow.className = `goscheme-msg ${msg.role === 'user' ? 'goscheme-msg-user' : 'goscheme-msg-bot'}`;
+
+      if (msg.role === 'bot') {
+        msgRow.innerHTML = `
+          <div class="goscheme-msg-avatar bot">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="goscheme-msg-content">
+            <div class="goscheme-msg-bubble">${renderMarkdown(msg.text)}</div>
+            <div class="goscheme-msg-meta">
+              <span>${msg.timestamp || ''}</span>
+              <span>•</span>
+              <button class="goscheme-copy-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(msg.text)}).then(() => { this.textContent = 'Copied!'; setTimeout(() => this.textContent = 'Copy', 1500); })">Copy</button>
+            </div>
+          </div>
+        `;
+      } else {
+        msgRow.innerHTML = `
+          <div class="goscheme-msg-avatar user">
+            <span>${chatbotState.userProfile.fullName ? chatbotState.userProfile.fullName.charAt(0).toUpperCase() : 'U'}</span>
+          </div>
+          <div class="goscheme-msg-content">
+            <div class="goscheme-msg-bubble">${renderMarkdown(msg.text)}</div>
+            <div class="goscheme-msg-meta">
+              <span>${msg.timestamp || ''}</span>
+            </div>
+          </div>
+        `;
+      }
+      container.appendChild(msgRow);
+    });
+
+    container.scrollTop = container.scrollHeight;
   }
 
   function renderLatestMessage() {
@@ -501,10 +608,10 @@
     addMessage('user', text);
     setTyping(true);
 
-    // Prepare API request payload
+    // Prepare API request payload with extended conversation memory
     const payload = {
       message: text,
-      history: chatbotState.history.slice(-8).map(h => ({
+      history: chatbotState.history.slice(-14).map(h => ({
         role: h.role === 'user' ? 'user' : 'assistant',
         content: h.text
       })),
@@ -566,6 +673,7 @@
     if (launcher) {
       launcher.addEventListener('click', () => {
         chatbotState.isOpen = !chatbotState.isOpen;
+        sessionStorage.setItem(CHAT_OPEN_STORAGE_KEY, chatbotState.isOpen ? 'true' : 'false');
         if (chatbotState.isOpen) {
           windowElem.classList.add('active');
           launcher.style.display = 'none';
@@ -578,6 +686,7 @@
     if (btnClose) {
       btnClose.addEventListener('click', () => {
         chatbotState.isOpen = false;
+        sessionStorage.setItem(CHAT_OPEN_STORAGE_KEY, 'false');
         windowElem.classList.remove('active');
         if (launcher) launcher.style.display = 'flex';
       });
@@ -587,7 +696,7 @@
     if (btnClear) {
       btnClear.addEventListener('click', () => {
         chatbotState.isTypingActive = false;
-        chatbotState.history = [];
+        clearChatHistory();
         const msgContainer = document.getElementById('goscheme-chat-messages');
         if (msgContainer) msgContainer.innerHTML = '';
         sendWelcomeMessage();
@@ -719,6 +828,7 @@
       const windowElem = document.getElementById('goscheme-chatbot-window');
       const launcher = document.getElementById('goscheme-chatbot-launcher');
       chatbotState.isOpen = true;
+      sessionStorage.setItem(CHAT_OPEN_STORAGE_KEY, 'true');
       if (windowElem) windowElem.classList.add('active');
       if (launcher) launcher.style.display = 'none';
     },
@@ -726,6 +836,7 @@
       const windowElem = document.getElementById('goscheme-chatbot-window');
       const launcher = document.getElementById('goscheme-chatbot-launcher');
       chatbotState.isOpen = false;
+      sessionStorage.setItem(CHAT_OPEN_STORAGE_KEY, 'false');
       if (windowElem) windowElem.classList.remove('active');
       if (launcher) launcher.style.display = 'flex';
     },

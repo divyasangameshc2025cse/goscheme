@@ -374,10 +374,10 @@ KEY INSTRUCTIONS FOR ANALYSIS:
     const activeBaseUrl = (process.env.NVIDIA_NIM_BASE_URL || nimConfig.baseUrl || DEFAULT_NIM_BASE_URL).trim();
     const activeModel = (process.env.NVIDIA_NIM_MODEL || nimConfig.model || DEFAULT_NIM_MODEL).trim();
 
-    // Clean and prepare message history (up to last 10 messages)
+    // Clean and prepare message history (up to last 16 messages for continuous multi-page memory)
     const formattedHistory = [];
     if (Array.isArray(history)) {
-      for (const h of history.slice(-10)) {
+      for (const h of history.slice(-16)) {
         if (h && (h.role === 'user' || h.role === 'assistant') && h.content) {
           formattedHistory.push({ role: h.role, content: String(h.content) });
         }
@@ -440,6 +440,7 @@ KEY INSTRUCTIONS FOR ANALYSIS:
     // 6. Intelligent Local Fallback Engine (Guarantees immediate responsiveness even before user configures NIM key)
     const localReply = generateLocalSchemeAnalysis({
       message,
+      history: formattedHistory,
       user,
       currentScheme,
       currentSchemeEval,
@@ -467,6 +468,7 @@ KEY INSTRUCTIONS FOR ANALYSIS:
 // Deterministic Rich Scheme Analysis Fallback Engine
 function generateLocalSchemeAnalysis({
   message,
+  history = [],
   user,
   currentScheme,
   currentSchemeEval,
@@ -476,13 +478,28 @@ function generateLocalSchemeAnalysis({
 }) {
   const lowerMsg = message.toLowerCase();
 
-  // If user asks to analyze current scheme or mentions current scheme
-  if (currentScheme && (lowerMsg.includes('this scheme') || lowerMsg.includes('analyze') || lowerMsg.includes('eligible') || lowerMsg.includes(currentScheme.title.toLowerCase()) || lowerMsg.includes(currentScheme.id.toLowerCase()))) {
-    const isEligible = currentSchemeEval.isEligible;
-    const matchScore = currentSchemeEval.matchPercent;
+  // Multi-turn conversational memory: if no active currentScheme, detect if previous turns referenced a scheme
+  let contextualScheme = currentScheme;
+  let contextualSchemeEval = currentSchemeEval;
 
-    let response = `### 🏛️ Scheme Analysis: **${currentScheme.title}** (${currentScheme.id})\n\n`;
-    response += `**Department:** ${currentScheme.department} | **Level:** ${currentScheme.level}\n\n`;
+  if (!contextualScheme && Array.isArray(history) && history.length > 0) {
+    const combinedHistory = history.map(h => h.content || '').join(' ').toLowerCase();
+    contextualScheme = allSchemes.find(s =>
+      combinedHistory.includes(s.title.toLowerCase()) ||
+      combinedHistory.includes(s.id.toLowerCase())
+    );
+    if (contextualScheme) {
+      contextualSchemeEval = evaluateSchemeEligibility(contextualScheme, user);
+    }
+  }
+
+  // If user asks to analyze active or contextually remembered scheme
+  if (contextualScheme && (lowerMsg.includes('this scheme') || lowerMsg.includes('analyze') || lowerMsg.includes('eligible') || lowerMsg.includes('document') || lowerMsg.includes('apply') || lowerMsg.includes(contextualScheme.title.toLowerCase()) || lowerMsg.includes(contextualScheme.id.toLowerCase()))) {
+    const isEligible = contextualSchemeEval.isEligible;
+    const matchScore = contextualSchemeEval.matchPercent;
+
+    let response = `### 🏛️ Scheme Analysis: **${contextualScheme.title}** (${contextualScheme.id})\n\n`;
+    response += `**Department:** ${contextualScheme.department} | **Level:** ${contextualScheme.level}\n\n`;
     response += `**Citizen Evaluated:** ${user.fullName} (${user.gender}, ${user.age} yrs, ${user.caste}, Income ₹${Number(user.income).toLocaleString('en-IN')})\n\n`;
 
     if (isEligible) {
