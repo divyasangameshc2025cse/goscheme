@@ -255,7 +255,29 @@ function logoutUser() {
   }, 800);
 }
 
+// Auto-load NVIDIA NIM Chatbot Assets across all pages
+function initChatbotAssets() {
+  const isSubdir = window.location.pathname.includes('/admin/');
+  const prefix = isSubdir ? '../' : '';
+
+  if (!document.getElementById('goscheme-chatbot-css')) {
+    const link = document.createElement('link');
+    link.id = 'goscheme-chatbot-css';
+    link.rel = 'stylesheet';
+    link.href = `${prefix}css/chatbot.css`;
+    document.head.appendChild(link);
+  }
+
+  if (!document.getElementById('goscheme-chatbot-js') && !window.GoSchemeChatbot) {
+    const script = document.createElement('script');
+    script.id = 'goscheme-chatbot-js';
+    script.src = `${prefix}js/chatbot.js`;
+    document.body.appendChild(script);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   updateHeaderNavState();
   highlightActiveNavLink();
+  initChatbotAssets();
 });

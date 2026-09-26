@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -10,6 +11,7 @@ const savedRoutes = require('./routes/saved');
 const notificationsRoutes = require('./routes/notifications');
 const adminRoutes = require('./routes/admin');
 const scraperRoutes = require('./routes/scraper');
+const chatbotRoutes = require('./routes/chatbot');
 const { startScraperScheduler } = require('./scraper/scheduler');
 
 const app = express();
@@ -26,6 +28,7 @@ app.use('/api/saved-schemes', savedRoutes);
 app.use('/api/notifications', notificationsRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/scraper', scraperRoutes);
+app.use('/api/chatbot', chatbotRoutes);
 
 // Health Check
 app.get('/api/health', (req, res) => {

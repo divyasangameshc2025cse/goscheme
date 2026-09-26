@@ -486,6 +486,10 @@ async function renderSchemeDetailsPage(user) {
 
       <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
         <button onclick="confirmApplyModal()" class="btn btn-primary btn-lg">Apply on Official Government Website &nearr;</button>
+        <button onclick="window.GoSchemeChatbot && window.GoSchemeChatbot.analyzeScheme('${scheme.id}', '${scheme.title.replace(/'/g, "\\'")}')" class="btn btn-outline btn-lg" style="border-color: #76B900; color: #0F172A; display: inline-flex; align-items: center; gap: 0.5rem; background: #F7FEE7;" title="Analyze eligibility with NVIDIA NIM">
+          <svg width="20" height="20" fill="#76B900" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>Analyze with NVIDIA NIM AI</span>
+        </button>
         <button onclick="window.print()" class="btn btn-outline btn-lg">Print Details</button>
       </div>
     </div>
