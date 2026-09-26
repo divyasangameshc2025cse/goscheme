@@ -4,16 +4,16 @@ const { authenticateToken } = require('../middleware/auth');
 
 const router = express.Router();
 
-const DEFAULT_NIM_BASE_URL = 'https://integrate.api.nvidia.com/v1';
-const DEFAULT_NIM_MODEL = 'meta/llama-3.1-70b-instruct';
+const DEFAULT_NIM_BASE_URL = process.env.NVIDIA_NIM_BASE_URL || 'https://integrate.api.nvidia.com/v1';
+const DEFAULT_NIM_MODEL = process.env.NVIDIA_NIM_MODEL || 'nvidia/nemotron-3.5-lightning-30b-a3b';
 
 const AVAILABLE_NIM_MODELS = [
-  { id: 'meta/llama-3.1-70b-instruct', name: 'Llama 3.1 70B Instruct (Recommended - Fast & Powerful)' },
-  { id: 'meta/llama-3.3-70b-instruct', name: 'Llama 3.3 70B Instruct (Latest Generation)' },
-  { id: 'meta/llama-3.1-8b-instruct', name: 'Llama 3.1 8B Instruct (Ultra Low Latency)' },
-  { id: 'nvidia/llama-3.1-nemotron-70b-instruct', name: 'NVIDIA Nemotron 70B (Optimized Reasoning)' },
-  { id: 'mistralai/mixtral-8x7b-instruct', name: 'Mixtral 8x7B Instruct' },
-  { id: 'deepseek-ai/deepseek-r1', name: 'DeepSeek R1 (Deep Reasoning)' }
+  { id: 'nvidia/nemotron-3.5-lightning-30b-a3b', name: 'NVIDIA Nemotron 3.5 Lightning (High Performance & Precision)' },
+  { id: 'meta/llama-3.3-70b-instruct', name: 'Llama 3.3 70B Instruct' },
+  { id: 'meta/llama-3.1-8b-instruct', name: 'Llama 3.1 8B Instruct' },
+  { id: 'nvidia/llama-3.1-nemotron-70b-instruct', name: 'NVIDIA Nemotron 70B' },
+  { id: 'mistralai/mistral-large-2-instruct', name: 'Mistral Large 2 Instruct' },
+  { id: 'deepseek-ai/deepseek-v4.1-flash', name: 'DeepSeek Flash' }
 ];
 
 // Helper to calculate age from DOB
@@ -132,7 +132,7 @@ router.post('/test-nim', async (req, res) => {
   const { apiKey, baseUrl, model } = req.body;
   const activeKey = apiKey || process.env.NVIDIA_NIM_API_KEY || process.env.NIM_API_KEY;
   const activeBaseUrl = baseUrl || process.env.NVIDIA_NIM_BASE_URL || DEFAULT_NIM_BASE_URL;
-  const activeModel = model || process.env.NVIDIA_NIM_MODEL || DEFAULT_NIM_MODEL;
+  const activeModel = (process.env.NVIDIA_NIM_MODEL || model || DEFAULT_NIM_MODEL).trim();
 
   if (!activeKey) {
     return res.status(400).json({
@@ -159,7 +159,7 @@ router.post('/test-nim', async (req, res) => {
         max_tokens: 16,
         temperature: 0.1
       }),
-      signal: AbortSignal.timeout(6000)
+      signal: AbortSignal.timeout(35000)
     });
 
     const latencyMs = Date.now() - startTime;
@@ -344,8 +344,8 @@ ACTIVE SCHEME BEING VIEWED & ANALYZED:
       `• [${s.id}] ${s.title} (${s.level}) - Benefits: ${s.benefits} | Match: ${s.evaluation.matchPercent}% | Category: ${s.category}`
     ).join('\n');
 
-    const systemPrompt = `You are the official GoScheme AI Assistant powered by NVIDIA NIM inference microservice (Meta Llama 3.1 70B architecture).
-Your role is to analyze government welfare schemes in Tamil Nadu and India for the citizen, based strictly on the user details fed into your context.
+    const systemPrompt = `You are the official GoScheme AI Assistant powered by NVIDIA NIM inference microservice (NVIDIA Nemotron 3.5 Lightning Architecture).
+Your role is to analyze government welfare schemes in Tamil Nadu and India for the citizen, based strictly on the user details fed into your context. Provide direct, beautifully structured, accurate responses without outputting internal scratchpad thinking.
 
 CURRENT CITIZEN PROFILE FED TO YOU:
 ${userSummary}
@@ -369,10 +369,10 @@ KEY INSTRUCTIONS FOR ANALYSIS:
 6. Tone: Warm, respectful, authoritative, transparent, and encouraging. Use clean Markdown (bold text, bullet points, emojis where appropriate).
 7. If the user writes in Tamil, reply in Tamil (or Tanglish if user prefers). Otherwise, reply in English.`;
 
-    // 4. Determine NVIDIA NIM Credentials & Endpoint
-    const activeApiKey = (nimConfig.apiKey || process.env.NVIDIA_NIM_API_KEY || process.env.NIM_API_KEY || '').trim();
-    const activeBaseUrl = (nimConfig.baseUrl || process.env.NVIDIA_NIM_BASE_URL || DEFAULT_NIM_BASE_URL).trim();
-    const activeModel = (nimConfig.model || process.env.NVIDIA_NIM_MODEL || DEFAULT_NIM_MODEL).trim();
+    // 4. Determine NVIDIA NIM Credentials & Endpoint (Prioritize model in .env)
+    const activeApiKey = (process.env.NVIDIA_NIM_API_KEY || nimConfig.apiKey || process.env.NIM_API_KEY || '').trim();
+    const activeBaseUrl = (process.env.NVIDIA_NIM_BASE_URL || nimConfig.baseUrl || DEFAULT_NIM_BASE_URL).trim();
+    const activeModel = (process.env.NVIDIA_NIM_MODEL || nimConfig.model || DEFAULT_NIM_MODEL).trim();
 
     // Clean and prepare message history (up to last 10 messages)
     const formattedHistory = [];
@@ -407,13 +407,18 @@ KEY INSTRUCTIONS FOR ANALYSIS:
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(nimPayload),
-          signal: AbortSignal.timeout(6000)
+          signal: AbortSignal.timeout(15000)
         });
 
         if (nimRes.ok) {
           const nimData = await nimRes.json();
-          const replyText = nimData.choices?.[0]?.message?.content;
+          let replyText = nimData.choices?.[0]?.message?.content;
+          if (!replyText && nimData.choices?.[0]?.message?.reasoning_content) {
+            replyText = nimData.choices[0].message.reasoning_content;
+          }
           if (replyText) {
+            // Clean up any internal raw thought blocks if present
+            replyText = replyText.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
             return res.json({
               success: true,
               reply: replyText,

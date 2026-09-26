@@ -18,7 +18,7 @@
     nimConfig: {
       apiKey: '',
       baseUrl: 'https://integrate.api.nvidia.com/v1',
-      model: 'meta/llama-3.1-70b-instruct'
+      model: 'nvidia/nemotron-3.5-lightning-30b-a3b'
     },
     userProfile: {
       fullName: 'Citizen',
@@ -45,6 +45,10 @@
       if (saved) {
         const parsed = JSON.parse(saved);
         chatbotState.nimConfig = { ...chatbotState.nimConfig, ...parsed };
+      }
+      // Ensure deprecated or legacy model names in localStorage are migrated to active nemotron model
+      if (!chatbotState.nimConfig.model || chatbotState.nimConfig.model.includes('llama-3.1-70b')) {
+        chatbotState.nimConfig.model = 'nvidia/nemotron-3.5-lightning-30b-a3b';
       }
     } catch (e) {
       console.warn('Failed to load NIM config:', e);
@@ -679,7 +683,7 @@
     if (btnTestNim) {
       btnTestNim.addEventListener('click', async () => {
         const key = document.getElementById('nim-cfg-api-key').value.trim();
-        const model = chatbotState.nimConfig.model || 'meta/llama-3.1-70b-instruct';
+        const model = chatbotState.nimConfig.model || 'nvidia/nemotron-3.5-lightning-30b-a3b';
         const baseUrl = document.getElementById('nim-cfg-base-url').value.trim();
         const resultBox = document.getElementById('nim-test-result');
 
@@ -738,6 +742,15 @@
   function init() {
     loadNimConfig();
     loadUserProfile();
+    // Synchronize default model with backend .env config
+    fetch('http://localhost:5000/api/chatbot/config')
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.defaultModel) {
+          chatbotState.nimConfig.model = data.defaultModel;
+        }
+      })
+      .catch(() => {});
     mountChatbotUI();
   }
 
