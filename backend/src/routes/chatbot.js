@@ -495,8 +495,8 @@ function generateLocalSchemeAnalysis({
 
   // If user asks to analyze active or contextually remembered scheme
   if (contextualScheme && (lowerMsg.includes('this scheme') || lowerMsg.includes('analyze') || lowerMsg.includes('eligible') || lowerMsg.includes('document') || lowerMsg.includes('apply') || lowerMsg.includes(contextualScheme.title.toLowerCase()) || lowerMsg.includes(contextualScheme.id.toLowerCase()))) {
-    const isEligible = contextualSchemeEval.isEligible;
-    const matchScore = contextualSchemeEval.matchPercent;
+    const isEligible = contextualSchemeEval ? contextualSchemeEval.isEligible : true;
+    const matchScore = contextualSchemeEval ? contextualSchemeEval.matchPercent : 100;
 
     let response = `### 🏛️ Scheme Analysis: **${contextualScheme.title}** (${contextualScheme.id})\n\n`;
     response += `**Department:** ${contextualScheme.department} | **Level:** ${contextualScheme.level}\n\n`;
@@ -505,28 +505,34 @@ function generateLocalSchemeAnalysis({
     if (isEligible) {
       response += `#### 🎯 Eligibility Verdict: **100% ELIGIBLE (Match Score: ${matchScore}%)**\n`;
       response += `Great news! You meet all mandatory criteria set by the Tamil Nadu Government for this scheme.\n\n`;
-      response += `#### 💰 Key Benefits & Financial Aid:\n${currentScheme.benefits}\n\n`;
+      response += `#### 💰 Key Benefits & Financial Aid:\n${contextualScheme.benefits || 'Financial assistance provided as per government guidelines'}\n\n`;
       response += `#### 📋 Why You Qualify:\n`;
-      currentSchemeEval.matches.forEach(m => {
-        response += `- ✅ **${m}**\n`;
-      });
+      if (contextualSchemeEval && Array.isArray(contextualSchemeEval.matches)) {
+        contextualSchemeEval.matches.forEach(m => {
+          response += `- ✅ **${m}**\n`;
+        });
+      }
       response += `\n#### 📑 Required Documents to Keep Ready:\n`;
-      currentScheme.documents.forEach(doc => {
-        response += `- 📄 **${doc}**\n`;
-      });
+      if (Array.isArray(contextualScheme.documents)) {
+        contextualScheme.documents.forEach(doc => {
+          response += `- 📄 **${doc}**\n`;
+        });
+      }
       response += `\n#### 🚀 Next Steps to Apply:\n`;
       response += `1. Verify you have soft copies of all listed certificates.\n`;
-      response += `2. Visit the official portal: [**Official Application Portal**](${currentScheme.officialUrl}) or visit your local e-Sevai Center / District Collectorate.\n`;
-      response += `3. Application Deadline: **${currentScheme.applicationDeadline || 'Rolling / Open'}**.\n`;
+      response += `2. Visit the official portal: [**Official Application Portal**](${contextualScheme.officialUrl || '#'}) or visit your local e-Sevai Center / District Collectorate.\n`;
+      response += `3. Application Deadline: **${contextualScheme.applicationDeadline || 'Rolling / Open'}**.\n`;
     } else {
       response += `#### 🎯 Eligibility Verdict: **DISQUALIFIED / NOT ELIGIBLE**\n\n`;
       response += `Based on the criteria, your current profile does not qualify for this specific scheme due to:\n`;
-      currentSchemeEval.disqualification.forEach(d => {
-        response += `- ❌ **${d}**\n`;
-      });
+      if (contextualSchemeEval && Array.isArray(contextualSchemeEval.disqualification)) {
+        contextualSchemeEval.disqualification.forEach(d => {
+          response += `- ❌ **${d}**\n`;
+        });
+      }
       response += `\n#### 💡 Alternative Schemes You DO Qualify For:\n`;
       eligibleSchemes.slice(0, 3).forEach(s => {
-        response += `- [**${s.title}**](${s.officialUrl}) (${s.category}) — Benefits: *${s.benefits}*\n`;
+        response += `- [**${s.title}**](${s.officialUrl || '#'}) (${s.category}) — Benefits: *${s.benefits}*\n`;
       });
       response += `\n*Tip: You can update your profile parameters in the Citizen Details card above to recalculate.*`;
     }
